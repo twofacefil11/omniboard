@@ -13,6 +13,7 @@ class Pawn {
         this.trueColor = this.calculateColor();
         this.points = [];
         this.actualThing = this.generateSVG(this.r)
+        this.fell = false;
     }
 
     generateSVG(r) {
