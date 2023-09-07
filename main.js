@@ -33,7 +33,6 @@ let pawnsArr = [];
 let dragged = null;
 let er = 0;
 
-
 createBoard();
 
 //SpawnListener
