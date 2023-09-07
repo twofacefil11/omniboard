@@ -44,23 +44,8 @@ createBoard();
 const pawnSpawners = [{spawner : pawnSpawn[0], color : blacks},
                       {spawner : pawnSpawn[1], color : whites}];
 
-function activateSpawner(spawner, r) {
-    spawner.addEventListener('mousedown', function(event) {
-
-        const spawnPosition = getAbsolutePosition(spawner.spawner.children[0]);
-        mousePressed = true;
-
-        pawnsArr.push(new Pawn(spawner.color, "pawn", r, spawnPosition.left, spawnPosition.top, idIt()));
-        dragged = pawnsArr[pawnsArr.length - 1];
-        document.body.appendChild(dragged.actualThing);
-
-        event.preventDefault;
-
-        doocument.addEventListener('mousemove', onMouseMove);
-    });
-}
-
-
+activateSpawner(pawnSpawners[0]);
+activateSpawner(pawnSpawners[1]);
 //spawn Blacks and drag the copies
 pawnSpawn[0].addEventListener('mousedown', function(event) {
     
