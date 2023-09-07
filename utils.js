@@ -35,14 +35,14 @@ function idIt() {
   return ID;
 }
 
-function activateSpawner(spawner) {
+function activateSpawner(spawner, color) {
 
   spawner.addEventListener('mousedown', function(event, color) {
     
     const spawnPosition = getAbsolutePosition(spawner.children[0]);
     mousePressed = true;
     // console.log(whites, )
-    pawnsArr.push(new Pawn(whites, "pawn", er, spawnPosition.left, spawnPosition.top, idIt()));
+    pawnsArr.push(new Pawn(color, "pawn", er, spawnPosition.left, spawnPosition.top, idIt()));
     dragged = pawnsArr[pawnsArr.length - 1];
     document.body.appendChild(dragged.actualThing);
     
