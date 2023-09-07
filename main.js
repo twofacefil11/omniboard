@@ -37,12 +37,12 @@ let er = 0;
 createBoard();
 
 //pawnSpawn
-const pawnSpawners = [{spawner : pawnSpawn[0], color : blacks},
-                      {spawner : pawnSpawn[1], color : whites}];
+// const pawnSpawners = [{spawner : pawnSpawn[0], color : blacks},
+//                       {spawner : pawnSpawn[1], color : whites}];
 
 //SpawnListener
-activateSpawner(pawnSpawners[0]);
-activateSpawner(pawnSpawners[1]);
+activateSpawner(pawnSpawn[0], blacks);
+activateSpawner(pawnSpawn[1], whites);
 
 //action on mouseup
 document.addEventListener('mouseup', function() {
