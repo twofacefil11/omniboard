@@ -37,8 +37,8 @@ let er = 0;
 createBoard();
 
 //SpawnListener
-activateSpawner(pawnSpawn[0], 'b');
-activateSpawner(pawnSpawn[1], 'w');
+activateSpawner(pawnSpawn[0], blackSpawn);
+activateSpawner(pawnSpawn[1], whiteSpawn);
 
 //action on mouseup
 document.addEventListener('mouseup', function() {
@@ -57,13 +57,12 @@ document.addEventListener('mouseup', function() {
 
 
 function update(r) {
-    
-    
-    if (pawnsArr.length > 0) {
-        pawnsArr.forEach(e => {
-            if (!e.isOnBoard())
+
+if (pawnsArr.length > 0) {
+    pawnsArr.forEach(e => {
+        if (!e.isOnBoard())
             e.makeItFall();
-    })
+})
 }
 pawnSpawn[0].innerHTML = '';
 pawnSpawn[1].innerHTML = '';
