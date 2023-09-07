@@ -37,17 +37,18 @@ function idIt() {
 function activateSpawner(spawner, r) {
   console.log ('1', r)
   spawner.spawner.addEventListener('mousedown', function(event) {
-    console.log ('2', r)
     
-      const spawnPosition = getAbsolutePosition(spawner.spawner.children[0]);
-      mousePressed = true;
+    const spawnPosition = getAbsolutePosition(spawner.spawner.children[0]);
+    mousePressed = true;
+    
+    console.log ('2', r)
+    pawnsArr.push(new Pawn(spawner.color, "pawn", r, spawnPosition.left, spawnPosition.top, idIt()));
+    dragged = pawnsArr[pawnsArr.length - 1];
+    document.body.appendChild(dragged.actualThing);
+    console.log ('3', r)
+    
+    event.preventDefault;
 
-      pawnsArr.push(new Pawn(spawner.color, "pawn", r, spawnPosition.left, spawnPosition.top, idIt()));
-      dragged = pawnsArr[pawnsArr.length - 1];
-      document.body.appendChild(dragged.actualThing);
-
-      event.preventDefault;
-
-      document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mousemove', onMouseMove);
   });
 }
