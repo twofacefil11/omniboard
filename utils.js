@@ -31,7 +31,8 @@ function deHex(hex) {
 }
 
 function idIt() {
-  return ID++;
+  ID++;
+  return ID;;
 }
 
 function activateSpawner(spawner) {
