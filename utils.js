@@ -35,7 +35,14 @@ function idIt() {
   return ID;
 }
 
-function activateSpawner(spawner, color) {
+function activateSpawner(c) {
+  let color;
+  switch(c) {
+    case 'b':
+        color = blacks;
+    case 'w':
+        color = whites
+  }
   spawner.addEventListener('mousedown', function(event) {
     
     const spawnPosition = getAbsolutePosition(spawner.children[0]);
@@ -50,3 +57,5 @@ function activateSpawner(spawner, color) {
     document.addEventListener('mousemove', onMouseMove);
   });
 }
+
+// function fetchColor(color) {}
