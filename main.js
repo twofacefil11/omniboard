@@ -44,17 +44,17 @@ const pawnSpawners = [{spawner : pawnSpawn[0], color : blacks},
 activateSpawner(pawnSpawners[0]);
 activateSpawner(pawnSpawners[1]);
 
-    //action on mouseup
-    document.addEventListener('mouseup', function() {
-        if (dragged) {
-            mousePressed = false;
-            console.log("puściłęś się");
-            
-            document.removeEventListener('mousemove', onMouseMove);
-            
-            if (!(dragged.isOnBoard())) 
-            dragged.makeItFall();
+//action on mouseup
+document.addEventListener('mouseup', function() {
+    if (dragged) {
+        mousePressed = false;
+        console.log("puściłęś się");
         
+        document.removeEventListener('mousemove', onMouseMove);
+        
+        if (!(dragged.isOnBoard())) 
+              dragged.makeItFall();
+    
         dragged = null;
     }
 });
