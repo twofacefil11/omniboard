@@ -1,10 +1,11 @@
 class Pawn {
-    constructor(color, type, r, xpos = 0, ypos = 0) {
+    constructor(color, type, r, xpos = 0, ypos = 0, id = null) {
 
         this.xpos = xpos;
         this.ypos = ypos;
         this.type = type;
         this.r = r;
+        this.ID = id;
         this.NS = "http://www.w3.org/2000/svg";
         this.color = deHex(color);
         this.gradient = this.calculateGradient();
