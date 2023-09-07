@@ -82,10 +82,11 @@ function createBoard() {
     //setting new colours
     whites = whitesPicker.value;
     blacks = blacksPicker.value;
+
     board.style.backgroundColor = boardClrPicker.value;
     
     // setting board looks
-    board
+    
     board.style.borderRadius = boardRadiusSldr.value + 'px';
     
     //clear all
