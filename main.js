@@ -62,6 +62,9 @@ if (pawnsArr.length > 0) {
         if (!e.isOnBoard()) {
             e.makeItFall();
             e.fell = true;
+            if (e.isOnBoard() && e.fell) {
+                e.makeItBlink();
+            }
         }
     })
 }
