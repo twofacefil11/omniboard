@@ -47,7 +47,7 @@ pawnSpawn[0].addEventListener('mousedown', function(event) {
     mousePressed = true;
 
     //spawnPawn
-    pawnsArr.push(new Pawn(blacks, "pawn", er, spawnPos0.left, spawnPos0.top));
+    pawnsArr.push(new Pawn(blacks, "pawn", er, spawnPos0.left, spawnPos0.top, idIt()));
     dragged = pawnsArr[pawnsArr.length - 1];
     document.body.appendChild(dragged.actualThing);
 

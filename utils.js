@@ -30,6 +30,6 @@ function deHex(hex) {
     return { left, top };
 }
 
-function pawnId() {
+function idIt() {
   return ID++;
 }
