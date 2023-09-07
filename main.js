@@ -31,7 +31,7 @@ let ID = 0;
 let mousePressed = false;
 let pawnsArr = [];
 let dragged = null;
-const er = 0;
+let er = 0;
 
 
 createBoard();
