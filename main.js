@@ -69,9 +69,9 @@ pawnSpawn[0].innerHTML = '';
 pawnSpawn[1].innerHTML = '';
 
 const blacksSpawn = new Pawn(blacks, "pawnSpawn", r);
-pawnSpawn[0].appendChild(blacksSpawn.actualThing);
-
 const whitesSpawn = new Pawn(whites, "pawnSpawn", r);
+
+pawnSpawn[0].appendChild(blacksSpawn.actualThing);
 pawnSpawn[1].appendChild(whitesSpawn.actualThing);
 
 blacksSpawn.currentCollor = whitesPicker.value;
