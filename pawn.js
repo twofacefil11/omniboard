@@ -156,8 +156,6 @@ class Pawn {
     isOnBoard() {
         const boardRect = board.getBoundingClientRect();
 
-        console.log(pawnsArr.length, this.actualThing)
-
         const pawnRect = this.actualThing.getBoundingClientRect();
 
         const boardCenterX = boardRect.left + boardRect.width / 2;
