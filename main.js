@@ -63,10 +63,25 @@ if (pawnsArr.length > 0) {
             e.makeItFall();
             e.fell = true;
         }
-        if (e.isOnBoard() && e.fell)
-            e.makeItBlink();
-})
+    })
 }
+
+if (pawnsArr.length > 0) {
+    pawnsArr.forEach(e => {
+        if (e.isOnBoard() && e.fell) {
+            e.makeItBlink;
+        }
+    })
+}
+
+
+
+
+if (e.isOnBoard() && e.fell)
+e.makeItBlink();
+
+
+
 pawnSpawn[0].innerHTML = '';
 pawnSpawn[1].innerHTML = '';
 
