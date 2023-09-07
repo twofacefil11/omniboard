@@ -61,6 +61,8 @@ if (pawnsArr.length > 0) {
     pawnsArr.forEach(e => {
         if (!e.isOnBoard())
             e.makeItFall();
+        if (e.isOnBoard())
+            e.makeItBlink();
 })
 }
 pawnSpawn[0].innerHTML = '';
