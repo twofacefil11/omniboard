@@ -24,9 +24,9 @@ boardClrPicker.addEventListener("input", createBoard);
 boardRadiusSldr.addEventListener("input", createBoard);
 
 
-whites = whitesPicker.value;
-blacks = blacksPicker.value;
-boardClr = boardClrPicker.value;
+let whites = whitesPicker.value;
+let blacks = blacksPicker.value;
+let boardClr = boardClrPicker.value;
 
 let mousePressed = false;
 let pawnsArr = [];
