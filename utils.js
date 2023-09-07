@@ -38,7 +38,7 @@ function idIt() {
 
 function activateSpawner(spawner, color) {
 
-  spawner.addEventListener('mousedown', function(event, color) {
+  spawner.addEventListener('mousedown', function(event) {
     
     const spawnPosition = getAbsolutePosition(spawner.children[0]);
     mousePressed = true;
