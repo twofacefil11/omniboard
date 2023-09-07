@@ -36,19 +36,13 @@ function idIt() {
 }
 
 function activateSpawner(spawner, c) {
-  let color;
-  switch(c) {
-    case 'b':
-        color = blacks;
-    case 'w':
-        color = whites;
-  }
+
   spawner.addEventListener('mousedown', function(event, color) {
     
     const spawnPosition = getAbsolutePosition(spawner.children[0]);
     mousePressed = true;
     
-    pawnsArr.push(new Pawn(color, "pawn", er, spawnPosition.left, spawnPosition.top, idIt()));
+    pawnsArr.push(new Pawn(c, "pawn", er, spawnPosition.left, spawnPosition.top, idIt()));
     dragged = pawnsArr[pawnsArr.length - 1];
     document.body.appendChild(dragged.actualThing);
     
