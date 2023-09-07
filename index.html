@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>OmniBoard</title>
+</head>
+
+<body>
+
+
+    <div id="controls">
+        <div class="spawnContainer"></div>
+
+        <div class="flexRow">
+            <!-- suwaki -->
+            <div id="sliderRowsD" class="ctrlDiv">
+                <input type="range" id="rows" name="rows" value="8" min="0" max="16" step="1">
+                <label>ROWS</label>
+            </div>
+            <div id="sliderColumnsD" class="ctrlDiv">
+                <input type="range" id="columns" name="columns" value="8" min="2" max="16" step="1">
+                <label>COLUMNS</label>
+            </div>
+            <div id="sliderPawnsD" class="ctrlDiv">
+                <input type="range" id="pawns" name="pawns" min="1" max="69">
+                <label>PAWNS</label>
+            </div>
+        </div>
+
+
+        <!-- kolory -->
+        <div class="flexRow">
+            <div id="whitesPicker" class="ctrlDiv">
+                <input type="color" id="whites" name="whites" value="#FFFFFF">
+                <label for="whites">WHITES</label>
+            </div>
+            <div id="blacksPicker" class="ctrlDiv">
+                <input type="color" id="blacks" name="blacks" value="#000000">
+                <label for="blacks">BLACKS`</label>
+            </div>
+            <div id="boardClrPicker" class="ctrlDiv">
+                <input type="color" id="boardClr" name="boardClr" value="#C08261">
+                <label for="boardClr">BOARD</label>
+            </div>
+        </div>
+
+        <!-- spacing -->
+        <div class="flexRow">
+            <div id="borderRadiusSlider" class="ctrlDiv">
+                <input type="range" id="borderRadius" name="borderRadius" value="10" min="0" max="75" step="5">
+                <label for="borderRadius">ROUND</label>
+            </div>
+
+        </div>
+
+        <div class="spawnContainer"></div>
+
+    </div>
+
+    <div id="board"></div>
+
+    <script src="utils.js"></script>
+    <script src="pawn.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
