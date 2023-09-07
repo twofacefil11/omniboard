@@ -69,7 +69,7 @@ if (pawnsArr.length > 0) {
 if (pawnsArr.length > 0) {
     pawnsArr.forEach(e => {
         if (e.isOnBoard() && e.fell) {
-            e.makeItBlink;
+            e.makeItBlink();
         }
     })
 }
