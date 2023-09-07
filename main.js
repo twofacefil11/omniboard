@@ -24,7 +24,7 @@ boardClrPicker.addEventListener("input", createBoard);
 boardRadiusSldr.addEventListener("input", createBoard);
 
 
-let ID = 0
+let ID = 0;
 
 let whites = whitesPicker.value;
 let blacks = blacksPicker.value;
@@ -114,15 +114,6 @@ function update(r) {
     
     const whitesSpawn = new Pawn(whites, "pawnSpawn", r);
     pawnSpawn[1].appendChild(whitesSpawn.actualThing);
-    
-
-    // if (pawnsArr.length > 0) {
-    //     pawnsArr.forEach(e => {
-    //         if (!e.isOnBoard()) {
-    //             e.makeItFall()
-    //         }
-    //     })
-    // }
 }
 
 
@@ -206,10 +197,6 @@ function createBoard() {
 
 }
  
-
-
-
-
 //TODO:
 // COLOR PAWN SYSTEMS,
 //QOL: color change, snapping on grid, intersections, borders, buttons, 
