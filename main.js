@@ -44,7 +44,6 @@ createBoard();
 const pawnSpawners = [{spawner : pawnSpawn[0], color : blacks},
                       {spawner : pawnSpawn[1], color : whites}];
 
-console.log(er)
 activateSpawner(pawnSpawners[0], r);
 activateSpawner(pawnSpawners[1], r);
 
@@ -103,7 +102,6 @@ function update(r) {
     if (pawnsArr[0]) {
         if (!pawnsArr[0].isOnBoard()) {
             pawnsArr[0].makeItFall();
-            console.log("wielku chuj")
         }
     }
 
