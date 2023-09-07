@@ -43,7 +43,7 @@ function activateSpawner(c) {
     case 'w':
         color = whites
   }
-  spawner.addEventListener('mousedown', function(event) {
+  spawner.addEventListener('mousedown', function(event, color) {
     
     const spawnPosition = getAbsolutePosition(spawner.children[0]);
     mousePressed = true;
