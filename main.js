@@ -41,8 +41,8 @@ createBoard();
 
 //SpawnListener
 
-const pawnSpawner = [{spawnersChild: pawnSpawn[0],
-}]
+const pawnSpawners = [{spawner : pawnSpawn[0], color : blacks},
+                      {spawner : pawnSpawn[1], color : whites}];
 
 
 //spawn Blacks and drag the copies
