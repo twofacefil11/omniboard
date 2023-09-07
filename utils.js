@@ -35,7 +35,7 @@ function idIt() {
   return ID;
 }
 
-function activateSpawner(c) {
+function activateSpawner(spawner, c) {
   let color;
   switch(c) {
     case 'b':
