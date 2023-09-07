@@ -23,18 +23,17 @@ boardClrPicker.addEventListener("input", createBoard);
 //spacing action:
 boardRadiusSldr.addEventListener("input", createBoard);
 
-
-let ID = 0;
-
 let whites = whitesPicker.value;
 let blacks = blacksPicker.value;
 let boardClr = boardClrPicker.value;
 
+let ID = 0;
 let mousePressed = false;
 let pawnsArr = [];
 let dragged = null;
-
 let er;
+
+
 createBoard();
 
 //pawnSpawn
@@ -99,11 +98,6 @@ document.addEventListener('mouseup', function() {
 
 function update(r) {
 
-    if (pawnsArr[0]) {
-        if (!pawnsArr[0].isOnBoard()) {
-            pawnsArr[0].makeItFall();
-        }
-    }
 
     if (pawnsArr.length > 0) {
         pawnsArr.forEach(e => {
