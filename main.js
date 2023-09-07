@@ -46,39 +46,40 @@ const pawnSpawners = [{spawner : pawnSpawn[0], color : blacks},
 
 activateSpawner(pawnSpawners[0]);
 activateSpawner(pawnSpawners[1]);
+
 //spawn Blacks and drag the copies
-pawnSpawn[0].addEventListener('mousedown', function(event) {
+// pawnSpawn[0].addEventListener('mousedown', function(event) {
     
-    const spawnPos0 = getAbsolutePosition(pawnSpawn[0].children[0]);
-    mousePressed = true;
+//     const spawnPos0 = getAbsolutePosition(pawnSpawn[0].children[0]);
+//     mousePressed = true;
 
-    //spawnPawn
-    pawnsArr.push(new Pawn(blacks, "pawn", er, spawnPos0.left, spawnPos0.top, idIt()));
-    dragged = pawnsArr[pawnsArr.length - 1];
-    document.body.appendChild(dragged.actualThing);
+//     //spawnPawn
+//     pawnsArr.push(new Pawn(blacks, "pawn", er, spawnPos0.left, spawnPos0.top, idIt()));
+//     dragged = pawnsArr[pawnsArr.length - 1];
+//     document.body.appendChild(dragged.actualThing);
 
-    //dont highlight text xd
-    event.preventDefault();
+//     //dont highlight text xd
+//     event.preventDefault();
 
-    document.addEventListener('mousemove', onMouseMove);
-});
+//     document.addEventListener('mousemove', onMouseMove);
+// });
 
 //whites spawn
-pawnSpawn[1].addEventListener('mousedown', function(event) {
+// pawnSpawn[1].addEventListener('mousedown', function(event) {
     
-    const spawnPos1 = getAbsolutePosition(pawnSpawn[1].children[0]);
-    mousePressed = true;
+//     const spawnPos1 = getAbsolutePosition(pawnSpawn[1].children[0]);
+//     mousePressed = true;
     
-    //spawnPawn
-    pawnsArr.push(new Pawn(whites, "pawn", er, spawnPos1.left, spawnPos1.top, idIt()));
-    dragged = pawnsArr[pawnsArr.length - 1];
-    document.body.appendChild(dragged.actualThing);
+//     //spawnPawn
+//     pawnsArr.push(new Pawn(whites, "pawn", er, spawnPos1.left, spawnPos1.top, idIt()));
+//     dragged = pawnsArr[pawnsArr.length - 1];
+//     document.body.appendChild(dragged.actualThing);
     
-    //dont highlight text xd
-    event.preventDefault();
+//     //dont highlight text xd
+//     event.preventDefault();
     
-    document.addEventListener('mousemove', onMouseMove);
-});
+//     document.addEventListener('mousemove', onMouseMove);
+// });
 
 //action on mouseup
 document.addEventListener('mouseup', function() {
