@@ -1,5 +1,6 @@
 function deHex(hex) {
     // Remove the '#' if it's present
+    console.log(hex)
     hex = hex.replace(/^#/, '');
   
     // Parse the hexadecimal values into separate RGB components
