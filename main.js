@@ -37,8 +37,8 @@ let er = 0;
 createBoard();
 
 //SpawnListener
-activateSpawner(pawnSpawn[0], blackSpawn);
-activateSpawner(pawnSpawn[1], whiteSpawn);
+activateSpawner(pawnSpawn[0], blacks);
+activateSpawner(pawnSpawn[1], whites);
 
 //action on mouseup
 document.addEventListener('mouseup', function() {
