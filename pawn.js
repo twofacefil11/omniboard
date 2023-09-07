@@ -179,7 +179,7 @@ class Pawn {
         this.actualThing.style.zIndex = "-100";
     }
 
-    makeItblink() {
+    makeItBlink() {
         this.actualThing.style.transform = 'scale(0.1)';
         this.actualThing.style.opacity = '0'
         this.actualThing.style.zIndex = "-100";
