@@ -41,7 +41,7 @@ function activateSpawner(c) {
     case 'b':
         color = blacks;
     case 'w':
-        color = whites
+        color = whites;
   }
   spawner.addEventListener('mousedown', function(event, color) {
     
