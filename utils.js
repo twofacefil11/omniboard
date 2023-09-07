@@ -35,7 +35,7 @@ function idIt() {
   return ID;
 }
 
-function activateSpawner(spawner, c) {
+function activateSpawner(spawner) {
 
   spawner.addEventListener('mousedown', function(event, color) {
     
