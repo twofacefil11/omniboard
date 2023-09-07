@@ -77,8 +77,8 @@ if (pawnsArr.length > 0) {
 
 
 
-if (e.isOnBoard() && e.fell)
-e.makeItBlink();
+// if (e.isOnBoard() && e.fell)
+// e.makeItBlink();
 
 
 
