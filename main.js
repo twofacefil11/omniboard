@@ -44,8 +44,8 @@ createBoard();
 const pawnSpawners = [{spawner : pawnSpawn[0], color : blacks},
                       {spawner : pawnSpawn[1], color : whites}];
 
-activateSpawner(pawnSpawners[0], r);
-activateSpawner(pawnSpawners[1], r);
+activateSpawner(pawnSpawners[0], er);
+activateSpawner(pawnSpawners[1], er);
 
 //spawn Blacks and drag the copies
 // pawnSpawn[0].addEventListener('mousedown', function(event) {
