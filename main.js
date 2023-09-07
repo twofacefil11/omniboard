@@ -42,7 +42,7 @@ createBoard();
 
 const pawnSpawners = [{spawner : pawnSpawn[0], color : blacks},
                       {spawner : pawnSpawn[1], color : whites}];
-
+console.log(er)
 activateSpawner(pawnSpawners[0], er);
 activateSpawner(pawnSpawners[1], er);
 
