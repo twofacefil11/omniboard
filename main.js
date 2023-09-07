@@ -23,9 +23,9 @@ boardClrPicker.addEventListener("input", createBoard);
 //spacing action:
 boardRadiusSldr.addEventListener("input", createBoard);
 
-let whites = whitesPicker.value;
-let blacks = blacksPicker.value;
-let boardClr = boardClrPicker.value;
+whites = whitesPicker.value;
+blacks = blacksPicker.value;
+boardClr = boardClrPicker.value;
 
 let ID = 0;
 let mousePressed = false;
