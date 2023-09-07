@@ -34,8 +34,7 @@ let mousePressed = false;
 let pawnsArr = [];
 let dragged = null;
 
-let er;
-createBoard();
+let er = createBoard();
 
 //pawnSpawn
 
@@ -191,8 +190,8 @@ function createBoard() {
         } 
     }
     
-    update(sqrSize / 2);
     er = sqrSize / 2;
+    update(sqrSize / 2);
     return sqrSize / 2;
 
 }
