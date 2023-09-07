@@ -24,6 +24,8 @@ boardClrPicker.addEventListener("input", createBoard);
 boardRadiusSldr.addEventListener("input", createBoard);
 
 
+let ID = 0
+
 let whites = whitesPicker.value;
 let blacks = blacksPicker.value;
 let boardClr = boardClrPicker.value;
