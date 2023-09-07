@@ -54,7 +54,7 @@ document.addEventListener('mouseup', function() {
         
         if (!(dragged.isOnBoard())) 
               dragged.makeItFall();
-    
+
         dragged = null;
     }
 });
