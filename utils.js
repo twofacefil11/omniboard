@@ -29,3 +29,7 @@ function deHex(hex) {
     }
     return { left, top };
 }
+
+function pawnId() {
+  return ID++;
+}
