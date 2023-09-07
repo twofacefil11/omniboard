@@ -74,8 +74,8 @@ pawnSpawn[0].appendChild(blacksSpawn.actualThing);
 const whitesSpawn = new Pawn(whites, "pawnSpawn", r);
 pawnSpawn[1].appendChild(whitesSpawn.actualThing);
 
-whites = whitesPicker.value;
-blacks = blacksPicker.value;
+blacksSpawn.currentCollor = whitesPicker.value;
+whitesSpawn.currentCollor = blacksPicker.value;
 }
 
 
