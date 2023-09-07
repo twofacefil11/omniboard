@@ -46,6 +46,6 @@ function activateSpawner(spawner, r) {
 
       event.preventDefault;
 
-      doocument.addEventListener('mousemove', onMouseMove);
+      document.addEventListener('mousemove', onMouseMove);
   });
 }
