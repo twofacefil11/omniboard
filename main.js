@@ -39,6 +39,11 @@ createBoard();
 
 //pawnSpawn
 
+//SpawnListener
+
+const pawnSpawner = [{spawnersChild: pawnSpawn[0],
+}]
+
 
 //spawn Blacks and drag the copies
 pawnSpawn[0].addEventListener('mousedown', function(event) {
