@@ -103,6 +103,7 @@ function createBoard() {
     // setting board looks
     board.style.backgroundColor = boardClrPicker.value;
     board.style.borderRadius = boardRadiusSldr.value + 'px';
+    board.style.border = `1vw groove ${boardClrPicker.value}`;
     dropzone.style.border = `1vw groove ${boardClrPicker.value}`;
     
     //clear all
