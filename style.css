@@ -9,7 +9,7 @@ body {
 }
 
 #board {
-    padding: 15px;
+    /* padding: 15px; */
     display: flex;
     flex-wrap: wrap;
     background-color: #C08261;
