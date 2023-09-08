@@ -127,17 +127,11 @@ function createBoard() {
     let dropWidth = (window.innerWidth * 0.9).toFixed(1);
     let dropHeight = (window.innerHeight * fixed).toFixed(1);
     
-    let dd = (board.getBoundingClientRect());
-    dropzone.style.left = (dd.left - (window.innerWidth * 0.05) + (15 / 2)).toString() + "px";
-    dropzone.style.top = dd.top.toString() + "px";
-    dropzone.style.width = dropWidth.toString() + 'px';
-    dropzone.style.height = dropHeight.toString() + 'px';
-    
-    
     
     if (window.innerHeight > window.inner)
     sqrSize = prefWidth / c;
     else
+
     sqrSize = prefHeight / r;
 
     if (c * sqrSize > prefWidth)
@@ -151,6 +145,12 @@ function createBoard() {
 
     board.style.width = (sqrSize * c).toString() + 'px';
     board.style.height = (sqrSize * r).toString() + 'px';
+
+    let dd = (board.getBoundingClientRect());
+    dropzone.style.left = (windows.innerWidth - (c * sqrSize) - (15 / 2)).toString() + "px";
+    dropzone.style.top = dd.top.toString() + "px";
+    dropzone.style.width = dropWidth.toString() + 'px';
+    dropzone.style.height = dropHeight.toString() + 'px';
 
     //making dropzone
 
