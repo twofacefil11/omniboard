@@ -36,7 +36,7 @@ let er = 0;
 
 createBoard();
 
-makeDropZone();
+makeDropZone(dropzone);
 
 //SpawnListener
 activateSpawner(pawnSpawn[0], blacksPicker);
