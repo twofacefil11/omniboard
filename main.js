@@ -143,14 +143,14 @@ function createBoard() {
 
     board.style.width = (sqrSize * c).toString() + 'px';
     board.style.height = (sqrSize * r).toString() + 'px';
-
+    
+    //making dropzone
     let dd = (board.getBoundingClientRect());
     dropzone.style.left = (window.innerWidth - (c * sqrSize) - 30 / 2).toString() + "px";
     dropzone.style.top = dd.top.toString() + "px";
     dropzone.style.width = (prefWidth + 0.1).toString() + 'px';
     dropzone.style.height = prefHeight.toString() + 'px';
 
-    //making dropzone
 
     //populating the div with squares
     for (let i = 0; i < r; i++) {
