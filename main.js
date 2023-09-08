@@ -188,7 +188,7 @@ function makeDropZone() {
 
     dropzone.style.width = (window.innerWidth * 0.9).toString() + 'px';
     dropzone.style.height = prefHeight.toString() + 'px';
-    dropzone.style.left = ((window.innerWidth * 0.1) / 2).toString() + "px";
+    dropzone.style.left = (window.innerWidth * 005).toString() + "px";
     dropzone.style.top = dd.top.toString() + "px";
 
 }
