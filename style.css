@@ -65,7 +65,7 @@ label {
     transition: transform 0.5s ease-in, opacity 0.5s ease-in;
 }
 
-.dropzone {
+#dropzone {
     position: fixed;
     background: #161616;
     z-index: -9999;
