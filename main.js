@@ -187,7 +187,7 @@ function createBoard() {
 function makeDropZone(dropzone) {
     dropzone.style.width = (window.innerWidth * 0.84).toString() + 'px';
     dropzone.style.height = (window.innerHeight * 0.8).toString() + 'px';
-    dropzone.style.left = (window.innerWidth * 0.02).toString() + "px";
+    dropzone.style.left = (window.innerWidth * 0.12).toString() + "px";
     dropzone.style.top = ((window.innerHeight * 0.15)).toString() + "px";
 }
 //TODO:
