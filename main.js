@@ -128,7 +128,8 @@ function createBoard() {
     let dtopHeight = (window.innerHeight * fixed).toFixed(1);
     
     //making dropzone
-    
+    dropzone.style.width = dropWidth.toString() + 'px';
+    dropzone.style.height = dropWidth.toString() + 'px';
 
     
     if (window.innerHeight > window.innerWidth)
