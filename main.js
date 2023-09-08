@@ -127,8 +127,8 @@ function createBoard() {
     let dropWidth = (window.innerWidth * 0.9).toFixed(1);
     let dropHeight = (window.innerHeight * fixed).toFixed(1);
     
-    let dl = (board.getBoundingClientRect()).left;
-    let dt = (board.getBoundingClientRect()).top;
+    let dl = (board.getBoundingClientRect());
+    let dt = (board.getBoundingClientRect());
 
     //making dropzone
     dropzone.style.left = dl;
