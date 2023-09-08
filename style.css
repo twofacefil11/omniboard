@@ -67,6 +67,7 @@ label {
 
 #dropzone {
     position: absolute;
+    padding: 15px;
     border-radius: 20px;
     background: #161616;
     z-index: -9999;
