@@ -130,8 +130,8 @@ function createBoard() {
     let dd = (board.getBoundingClientRect());
 
     //making dropzone
-    dropzone.style.left = dl.left;
-    dropzone.style.top = dt.top;
+    dropzone.style.left = dd.left;
+    dropzone.style.top = dd.top;
     dropzone.style.width = dropWidth.toString() + 'px';
     dropzone.style.height = dropHeight.toString() + 'px';
 
