@@ -105,13 +105,13 @@ function createBoard() {
 
     board.style.borderRadius = boardRadiusSldr.value + 'px';
     board.style.borderTop = `15px ridge ${boardClrPicker.value}`;
-    board.style.borderBottom = `15px ridge ${boardClrPicker.value}`;
     board.style.borderLeft = `15px ridge ${boardClrPicker.value}`;
-    board.style.borderRight = `15px ridge ${boardClrPicker.value}`;
+    board.style.borderBottom = `15px groove ${boardClrPicker.value}`;
+    board.style.borderRight = `15px groove ${boardClrPicker.value}`;
 
-    dropzone.style.borderTop = `1vw groove ${boardClrPicker.value}`;
+    dropzone.style.borderTop = `1vw ridge ${boardClrPicker.value}`;
+    dropzone.style.borderLeft = `1vw ridge ${boardClrPicker.value}`;
     dropzone.style.borderBottom = `1vw groove ${boardClrPicker.value}`;
-    dropzone.style.borderLeft = `1vw groove ${boardClrPicker.value}`;
     dropzone.style.borderRight = `1vw groove ${boardClrPicker.value}`;
     
     //clear all
