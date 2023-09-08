@@ -64,3 +64,8 @@ label {
     position: fixed;
     transition: transform 0.5s ease-in, opacity 0.5s ease-in;
 }
+
+.dropzone {
+    position: fixed;
+    
+}
