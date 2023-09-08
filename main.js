@@ -63,7 +63,7 @@ function update(r) {
         pawnsArr.forEach(e => {
             if (!e.isOnBoard()) {
                 if (e.isInDropzone) {
-                    makeitBlink
+                    e.makeitBlink;
                 }
                 e.makeItFall();
                 e.fell = true;
