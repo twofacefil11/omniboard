@@ -10,6 +10,7 @@ const boardClrPicker = document.getElementById("boardClr");
 const boardRadiusSldr = document.getElementById("borderRadius");
 const pawnSpawn = document.getElementsByClassName("spawnContainer");
 const controlStrip = document.getElementById('controls');
+const dropzone = document.getElementById("dropzone");
 
 //suwak akszyn
 rowsSldr.addEventListener("input", createBoard);
@@ -122,6 +123,8 @@ function createBoard() {
     let sqrSize = 0;
     let prefWidth = (window.innerWidth * fixed).toFixed(1);
     let prefHeight = (window.innerHeight * fixed).toFixed(1);
+
+
     
     if (window.innerHeight > window.innerWidth)
         sqrSize = prefWidth / c;
