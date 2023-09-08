@@ -183,14 +183,10 @@ function createBoard() {
 }
 
 function makeDropZone() {
-   //making dropzone
-//    let dd = (board.getBoundingClientRect());
-
     dropzone.style.width = (window.innerWidth * 0.9).toString() + 'px';
     dropzone.style.height = prefHeight.toString() + 'px';
     dropzone.style.left = (window.innerWidth * 0.05).toString() + "px";
-    dropzone.style.top = dd.top.toString() + "px";
-
+    dropzone.style.top = (window.innerHeight * 0.1).toString() + "px";
 }
 //TODO:
 // COLOR PAWN SYSTEMS,
