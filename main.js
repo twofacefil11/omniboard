@@ -70,7 +70,7 @@ function update(r) {
                 else {
                     e.makeItFall();
                 }
-            // }
+            }
             // else if (e.isOnBoard() && e.fell){
             //     e.makeItBlink();
             // }
