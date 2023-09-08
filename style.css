@@ -71,4 +71,5 @@ label {
     border-radius: 20px;
     background: #141414;
     z-index: -9999;
+    left: 50%
 }
