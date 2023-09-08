@@ -70,10 +70,10 @@ label {
     position: absolute;
     padding: 15px;
     border-radius: 20px;
-    border-top: 15px groove #141414;
+    /* border-top: 15px groove #141414;
     border-left: 15px groove #141414;
     border-bottom: 15px ridge #141414;
-    border-right: 15px ridge #141414;
+    border-right: 15px ridge #141414; */
     background: #141414;
     z-index: -9999;
     left: 50%;
