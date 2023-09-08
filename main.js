@@ -59,46 +59,39 @@ document.addEventListener('mouseup', function() {
 
 function update(r) {
 
-if (pawnsArr.length > 0) {
-    pawnsArr.forEach(e => {
-        if (!e.isOnBoard()) {
-            e.makeItFall();
-            e.fell = true;
-            if (e.isOnBoard() && e.fell) {
-                e.makeItBlink();
+    if (pawnsArr.length > 0) {
+        pawnsArr.forEach(e => {
+            if (!e.isOnBoard()) {
+                e.makeItFall();
+                e.fell = true;
+                if (e.isOnBoard() && e.fell) {
+                    e.makeItBlink();
+                }
             }
-        }
-    })
-}
+        })
+    }
 
-// if (pawnsArr.length > 0) {
-//     pawnsArr.forEach(e => {
-//         if (e.isOnBoard() && e.fell) {
-//             e.makeItBlink();
-//         }
-//     })
-// }
-
+    // if (pawnsArr.length > 0) {
+    //     pawnsArr.forEach(e => {
+    //         if (e.isOnBoard() && e.fell) {
+    //             e.makeItBlink();
+    //         }
+    //     })
+    // }
 
 
+    pawnSpawn[0].innerHTML = '';
+    pawnSpawn[1].innerHTML = '';
 
-// if (e.isOnBoard() && e.fell)
-// e.makeItBlink();
+    const blacksSpawn = new Pawn(blacks, "pawnSpawn", r);
+    const whitesSpawn = new Pawn(whites, "pawnSpawn", r);
 
+    pawnSpawn[0].appendChild(blacksSpawn.actualThing);
+    pawnSpawn[1].appendChild(whitesSpawn.actualThing);
 
-
-pawnSpawn[0].innerHTML = '';
-pawnSpawn[1].innerHTML = '';
-
-const blacksSpawn = new Pawn(blacks, "pawnSpawn", r);
-const whitesSpawn = new Pawn(whites, "pawnSpawn", r);
-
-pawnSpawn[0].appendChild(blacksSpawn.actualThing);
-pawnSpawn[1].appendChild(whitesSpawn.actualThing);
-
-blacksSpawn.currentCollor = whitesPicker.value;
-whitesSpawn.currentCollor = blacksPicker.value;
-}
+    blacksSpawn.currentCollor = whitesPicker.value;
+    whitesSpawn.currentCollor = blacksPicker.value;
+    }
 
 
 function createBoard() {
@@ -110,6 +103,7 @@ function createBoard() {
     // setting board looks
     board.style.backgroundColor = boardClrPicker.value;
     board.style.borderRadius = boardRadiusSldr.value + 'px';
+    dropzone.style.border = `1vw ridge #${boardClrPicker.value}`
     
     //clear all
     board.innerHTML = '';
