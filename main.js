@@ -62,7 +62,9 @@ function update(r) {
     if (pawnsArr.length > 0) {
         pawnsArr.forEach(e => {
             if (!e.isOnBoard()) {
-                if (e.isInDropzone)
+                if (e.isInDropzone) {
+                    makeitBlink
+                }
                 e.makeItFall();
                 e.fell = true;
                 if (e.isOnBoard() && e.fell) {
