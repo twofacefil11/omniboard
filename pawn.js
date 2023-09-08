@@ -188,7 +188,5 @@ class Pawn {
         this.actualThing.style.top = '0px';
     }
 
-    // deleteIt() {
-    //     pawnsArr.filter()
-    // }
+    
 }
