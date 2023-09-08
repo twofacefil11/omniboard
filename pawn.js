@@ -43,6 +43,8 @@ class Pawn {
         svg.setAttributeNS(null, "height", (r * 2).toString());
         svg.setAttributeNS(null, "viewBox", `${-r} ${-r} ${r * 2} ${r * 2}`);
 
+        svg.setAttributeNS(null, 'opacity', `${90}%`)
+
         circle1.setAttributeNS(null, "r", ars[0].toString());
         circle2.setAttributeNS(null, "r", ars[1].toString());
         circle3.setAttributeNS(null, "r", ars[4].toString());
