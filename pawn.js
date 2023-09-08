@@ -174,6 +174,25 @@ class Pawn {
         );
     }
 
+    isInDropzone() {
+        const boardRect = dropzone.getBoundingClientRect();
+
+        const pawnRect = this.actualThing.getBoundingClientRect();
+
+        const boardCenterX = boardRect.left + boardRect.width / 2;
+        const boardCenterY = boardRect.top + boardRect.height / 2;
+      
+        const pawnCenterX = pawnRect.left + pawnRect.width / 2;
+        const pawnCenterY = pawnRect.top + pawnRect.height / 2;
+      
+        return (
+          pawnCenterX >= boardRect.left &&
+          pawnCenterX <= boardRect.right &&
+          pawnCenterY >= boardRect.top &&
+          pawnCenterY <= boardRect.bottom
+        );
+    }
+
     makeItFall() {
         this.actualThing.style.transform = 'scale(0.4)';
         this.actualThing.style.opacity = '30%'
@@ -188,5 +207,5 @@ class Pawn {
         this.actualThing.style.top = '0px';
     }
 
-    
+
 }
