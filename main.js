@@ -133,8 +133,8 @@ function createBoard() {
     //making dropzone
     dropzone.style.width = dropWidth.toString() + 'px';
     dropzone.style.height = dropHeight.toString() + 'px';
-    dropzone.style.top = dt;
     dropzone.style.let = dl;
+    dropzone.style.top = dt;
 
 
     
