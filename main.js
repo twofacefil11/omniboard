@@ -65,7 +65,7 @@ function update(r) {
             if (!e.isOnBoard()) {
                 e.fell = true;
                 if (e.isInDropzone() ) {
-                    e.makeitBlink();
+                    e.makeItBlink();
                 }
                 else {
                     e.makeItFall();
