@@ -63,15 +63,16 @@ function update(r) {
         pawnsArr.forEach(e => {
             //out of board, and in drop zone
             if (!e.isOnBoard()) {
+                e.fell = true;
                 if (e.isInDropzone() ) {
-                    e.fell = true;
                     e.makeitBlink();
                 }
-                e.makeItFall();
-                e.fell = true;
-                if (e.isOnBoard() && e.fell) {
-                    e.makeItBlink();
+                else {
+                    e.makeItFall();
                 }
+            }
+            else if (e.isOnBoard() && e.fell){
+                e.makeItBlink();
             }
         })
     }
