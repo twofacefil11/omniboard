@@ -13,8 +13,11 @@ const controlStrip = document.getElementById('controls');
 const dropzone = document.getElementById("dropzone");
 
 //suwak akszyn
+
+opacity = '100%';
 rowsSldr.addEventListener("input", createBoard);
 columnsSldr.addEventListener("input", createBoard);
+columnsSldr.addEventListener("input", );
 
 //color akszyn:
 whitesPicker.addEventListener("input", createBoard);
