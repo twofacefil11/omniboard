@@ -106,8 +106,6 @@ function createBoard() {
     whites = whitesPicker.value;
     blacks = blacksPicker.value;
 
-
-
     // setting board looks
     board.style.backgroundColor = boardClrPicker.value;
     board.style.borderRadius = boardRadiusSldr.value + 'px';
@@ -125,32 +123,25 @@ function createBoard() {
     let prefHeight = (window.innerHeight * fixed).toFixed(1);
 
     
-    
     if (window.innerHeight > window.inner)
-    sqrSize = prefWidth / c;
+        sqrSize = prefWidth / c;
     else
 
-    sqrSize = prefHeight / r;
+        sqrSize = prefHeight / r;
 
     if (c * sqrSize > prefWidth)
-    sqrSize = prefWidth / c;
+        sqrSize = prefWidth / c;
     else if (r * sqrSize > prefHeight)
-    sqrSize = prefHeight / r;
+        sqrSize = prefHeight / r;
 
     //cap the square size at the fixed size of control bar
     if (sqrSize >= controls.clientHeight)
-    sqrSize = controls.clientHeight;
+        sqrSize = controls.clientHeight;
 
     board.style.width = (sqrSize * c).toString() + 'px';
     board.style.height = (sqrSize * r).toString() + 'px';
     
-    //making dropzone
-    let dd = (board.getBoundingClientRect());
-    dropzone.style.left = (dd.left - (window.innerWidth * 0.1)).toString() + "px";
-    dropzone.style.top = dd.top.toString() + "px";
-    dropzone.style.width = (window.innerWidth * 0.9).toString() + 'px';
-    dropzone.style.height = prefHeight.toString() + 'px';
-
+ 
 
     //populating the div with squares
     for (let i = 0; i < r; i++) {
@@ -191,7 +182,16 @@ function createBoard() {
     return sqrSize / 2;
 
 }
- 
+
+function makeDropZone() {
+   //making dropzone
+   let dd = (board.getBoundingClientRect());
+   dropzone.style.left = (dd.left - (window.innerWidth * 0.1)).toString() + "px";
+   dropzone.style.top = dd.top.toString() + "px";
+   dropzone.style.width = (window.innerWidth * 0.9).toString() + 'px';
+   dropzone.style.height = prefHeight.toString() + 'px';
+
+}
 //TODO:
 // COLOR PAWN SYSTEMS,
 //QOL: color change, snapping on grid, intersections, borders, buttons, 
