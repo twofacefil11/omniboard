@@ -148,6 +148,7 @@ function createBoard() {
     let dd = (board.getBoundingClientRect());
     dropzone.style.left = (window.innerWidth - (c * sqrSize) - 30 / 2).toString() + "px";
     dropzone.style.top = dd.top.toString() + "px";
+    console.log(prefWidth + 0.1)
     dropzone.style.width = (prefWidth + 0.1).toString() + 'px';
     dropzone.style.height = prefHeight.toString() + 'px';
 
