@@ -136,7 +136,7 @@ function createBoard() {
     dropzone.style.height = dropHeight.toString() + 'px';
 
 
-    if (window.innerHeight > window.inner   Width)
+    if (window.innerHeight > window.inner)
         sqrSize = prefWidth / c;
     else
         sqrSize = prefHeight / r;
