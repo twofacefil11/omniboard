@@ -14,12 +14,12 @@ const dropzone = document.getElementById("dropzone");
 
 //suwak akszyn
 
-opacity = '100%';
+// opacity = '100%';
 
 rowsSldr.addEventListener("input", createBoard);
 columnsSldr.addEventListener("input", createBoard);
-opacitySldr.addEventListener("input", () => 
-    opacity = `${opacitySldr.value}%`);
+// opacitySldr.addEventListener("input", () => 
+//     opacity = `${opacitySldr.value}%`);
 
 //color akszyn:
 whitesPicker.addEventListener("input", createBoard);
