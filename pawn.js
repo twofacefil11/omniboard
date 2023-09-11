@@ -14,6 +14,7 @@ class Pawn {
         this.points = [];
         this.actualThing = this.generateSVG(this.r)
         this.fell = false;
+        this.movePawn();
     }
 
     generateSVG(r) {
