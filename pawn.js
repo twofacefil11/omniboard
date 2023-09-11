@@ -14,7 +14,6 @@ class Pawn {
         this.points = [];
         this.actualThing = this.generateSVG(this.r)
         this.fell = false;
-        this.dragged = false;
     }
 
     generateSVG(r) {
@@ -110,7 +109,12 @@ class Pawn {
 
 
     movePawn() {
-        this.actualThing.addEventListener('mousedown', function() {
+        this.actualThing.addEventListener('mousedown', function(event) {
+            mousepressed = true;
+            dragged = this.actualThing;
+            event.preventDefault;
+
+            document.addEventListener('mousemove', onMouseMove);
 
         })
     }
