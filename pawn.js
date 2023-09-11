@@ -15,6 +15,7 @@ class Pawn {
         this.actualThing = this.generateSVG(this.r)
         this.fell = false;
         this.movePawn();
+        this.letGoListener();
     }
 
     generateSVG(r) {
