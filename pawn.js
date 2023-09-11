@@ -112,7 +112,7 @@ class Pawn {
     movePawn() {
         console.log('an attepmt')
         this.actualThing.addEventListener('mousedown', function(event) {
-            mousepressed = true;
+            mousePressed = true;
             dragged = this.actualThing;
             event.preventDefault;
 
