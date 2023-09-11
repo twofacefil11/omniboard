@@ -226,7 +226,7 @@ class Pawn {
         // this.actualThing.style.top = '0px';
     }
 
-    mouseMove() {
+    mouseMove(event) {
         console.log('mousemove')
         if (mousePressed && dragged) {
           this.actualThing.style.left = `${event.clientX - er}px`;
