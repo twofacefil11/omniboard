@@ -226,7 +226,7 @@ class Pawn {
     }
 
     letGoListener() {
-        this.actualThing.addEventListener('mouseup', function() {
+        document.addEventListener('mouseup', function() {
             if (dragged) {
                 mousePressed = false;
                 console.log("puściłęś się");
