@@ -115,7 +115,6 @@ class Pawn {
             mousePressed = true;
             dragged = this.actualThing;
             event.preventDefault;
-
             document.addEventListener('mousemove', onMouseMove);
         })
     }
@@ -225,6 +224,21 @@ class Pawn {
         // this.actualThing.style.top = '0px';
     }
 
+    letGoListener() {
+        document.addEventListener('mouseup', function() {
+            if (dragged) {
+                mousePressed = false;
+                console.log("puściłęś się");
+                
+                document.removeEventListener('mousemove', onMouseMove);
+                
+                if (!(dragged.isOnBoard())) 
+                      dragged.makeItFall();
+        
+                dragged = null;
+            }
+        });
+    }
 
 
 
