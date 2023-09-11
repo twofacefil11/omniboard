@@ -116,7 +116,7 @@ class Pawn {
             mousePressed = true;
             dragged = this.actualThing;
             event.preventDefault;
-            document.addEventListener('mousemove', onMouseMove);
+            document.addEventListener('mousemove', MouseMove);
         })
     }
 
