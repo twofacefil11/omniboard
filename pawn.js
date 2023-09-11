@@ -225,21 +225,21 @@ class Pawn {
         // this.actualThing.style.top = '0px';
     }
 
-    letGoListener() {
-        document.addEventListener('mouseup', function() {
-            if (dragged) {
-                mousePressed = false;
-                console.log("puściłęś się");
+    // letGoListener() {
+    //     document.addEventListener('mouseup', function() {
+    //         if (dragged) {
+    //             mousePressed = false;
+    //             console.log("puściłęś się");
                 
-                document.removeEventListener('mousemove', onMouseMove);
+    //             document.removeEventListener('mousemove', onMouseMove);
                 
-                if (!(dragged.isOnBoard())) 
-                      dragged.makeItFall();
+    //             if (!(dragged.isOnBoard())) 
+    //                   dragged.makeItFall();
         
-                dragged = null;
-            }
-        });
-    }
+    //             dragged = null;
+    //         }
+    //     });
+    // }
 
 
 
