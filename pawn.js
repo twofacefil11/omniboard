@@ -115,7 +115,6 @@ class Pawn {
             event.preventDefault;
 
             document.addEventListener('mousemove', onMouseMove);
-
         })
     }
 
