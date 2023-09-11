@@ -46,7 +46,7 @@ function activateSpawner(spawner, color) {
     mousePressed = true;
     pawnsArr.push(new Pawn(color.value, "pawn", er, spawnPosition.left, spawnPosition.top, idIt()));
     dragged = pawnsArr[pawnsArr.length - 1].actualThing;
-    document.body.appendChild(dragged.actualThing);
+    document.body.appendChild(actualThing);
     
     event.preventDefault;
 
