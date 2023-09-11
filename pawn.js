@@ -14,6 +14,7 @@ class Pawn {
         this.points = [];
         this.actualThing = this.generateSVG(this.r)
         this.fell = false;
+        this.dragged = false;
     }
 
     generateSVG(r) {
@@ -108,6 +109,13 @@ class Pawn {
     }
 
 
+    movePawn() {
+        this.actualThing.addEventListener('mousedown', function() {
+
+        })
+    }
+
+
     calculateGradient() {
         let isDark = this.isItDark();
         // let gradientMap = [30, 60, 80, 100, 165]
@@ -195,11 +203,13 @@ class Pawn {
         );
     }
 
+
     makeItFall() {
         this.actualThing.style.transform = 'scale(0.4)';
         this.actualThing.style.opacity = '30%'
         this.actualThing.style.zIndex = "-100";
     }
+
 
     makeItBlink() {
         console.log("blink")
@@ -209,6 +219,9 @@ class Pawn {
         // this.actualThing.style.left = '0px';
         // this.actualThing.style.top = '0px';
     }
+
+
+
 
 
 }
