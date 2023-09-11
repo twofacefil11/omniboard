@@ -229,8 +229,8 @@ class Pawn {
     mouseMove() {
         console.log('mousemove')
         if (mousePressed && dragged) {
-          dragged.actualThing.style.left = `${event.clientX - er}px`;
-          dragged.actualThing.style.top = `${event.clientY - er}px`;
+          this.actualThing.style.left = `${event.clientX - er}px`;
+          this.actualThing.style.top = `${event.clientY - er}px`;
         }
       }
     // letGoListener() {
