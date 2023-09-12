@@ -116,7 +116,6 @@ class Pawn {
             console.log('klik kórwa')
             mousePressed = true;
             dragged = this.actualThing;
-            event.preventDefault;
             document.addEventListener('mousemove', this.mouseMove);
         })
     }
@@ -234,7 +233,7 @@ class Pawn {
         }
       }
 
-      
+
     // letGoListener() {
     //     document.addEventListener('mouseup', function() {
     //         if (dragged) {
