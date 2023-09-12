@@ -13,7 +13,7 @@ function deHex(hex) {
   }
 
   
-  function onMouseMove() {
+  function onMouseMove(event) {
     event.preventDefault;
 
     console.log('mousemove')
