@@ -117,22 +117,18 @@ class Pawn {
         this.actualThing.addEventListener('mousedown', function(event) {
             console.log('klik kórwa')
             mousePressed = true;
-            console.log('1', event.target)
             dragged = event.target;
             
             // dragged = this.actualThing;
             document.addEventListener('mousemove', function(e) {
                 e.preventDefault;
                 let target = e.target;
-        
-            console.log('2', target)
-    
-            console.log('mousemove classs function')
-            if (mousePressed) {
-                target.style.left = `${event.clientX - er}px`;
-                target.style.top = `${event.clientY - er}px`;
-            }
-
+            
+                console.log('mousemove classs function')
+                if (mousePressed) {
+                    target.style.left = `${event.clientX - er}px`;
+                    target.style.top = `${event.clientY - er}px`;
+                }
             });
         })
     }
