@@ -108,18 +108,33 @@ class Pawn {
         this.points.push(r);
         return this.points;
     }
-
-
+    
+    
+    
     movePawn() {
         console.log('an attepmt')
+        console.log(this.actualThing)
         this.actualThing.addEventListener('mousedown', function(event) {
             console.log('klik kórwa')
             mousePressed = true;
-            dragged = this.actualThing;
-            document.addEventListener('mousemove', dragged.mouseMove(event));
+            console.log('1', event.target)
+            
+            // dragged = this.actualThing;
+            event.preventDefault;
+            document.addEventListener('mousemove', function() {
+        
+            console.log('2', this.actualThing)
+    
+            console.log('mousemove classs function')
+            if (mousePressed) {
+                actualThing.style.left = `${event.clientX - er}px`;
+                actualThing.style.top = `${event.clientY - er}px`;
+            }
+
+            });
         })
     }
-
+    
 
     calculateGradient() {
         let isDark = this.isItDark();
@@ -225,15 +240,6 @@ class Pawn {
         // this.actualThing.style.top = '0px';
     }
 
-    mouseMove(event) {
-        event.preventDefault;
-
-        console.log('mousemove classs function')
-        if (mousePressed && dragged) {
-          this.actualThing.style.left = `${event.clientX - er}px`;
-          this.actualThing.style.top = `${event.clientY - er}px`;
-        }
-      }
 
 
     // letGoListener() {
