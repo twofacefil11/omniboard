@@ -122,6 +122,7 @@ class Pawn {
             // dragged = this.actualThing;
             document.addEventListener('mousemove', function(e) {
                 e.preventDefault;
+                let target = e.target;
         
             console.log('2', this.actualThing)
     
