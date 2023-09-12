@@ -14,7 +14,6 @@ function deHex(hex) {
 
   
   function onMouseMove(event) {
-    event.preventDefault;
 
     console.log('mousemove')
     if (mousePressed && dragged) {
