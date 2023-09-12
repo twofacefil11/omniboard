@@ -52,7 +52,7 @@ document.addEventListener('mouseup', function() {
         mousePressed = false;
         console.log("puściłęś się");
         
-        document.removeEventListener('mousemove', function());
+        document.removeEventListener('mousemove', function() {});
         
 
         // if (!(dragged.constructor.isOnBoard())) 
