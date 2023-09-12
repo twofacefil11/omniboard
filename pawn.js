@@ -128,8 +128,8 @@ class Pawn {
     
             console.log('mousemove classs function')
             if (mousePressed) {
-                actualThing.style.left = `${event.clientX - er}px`;
-                actualThing.style.top = `${event.clientY - er}px`;
+                target.style.left = `${event.clientX - er}px`;
+                target.style.top = `${event.clientY - er}px`;
             }
 
             });
