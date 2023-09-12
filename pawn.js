@@ -120,8 +120,8 @@ class Pawn {
             dragged = event.target;
             
             // dragged = this.actualThing;
+            event.preventDefault;
             document.addEventListener('mousemove', function(e) {
-                e.preventDefault;
                 let target = e.target;
             
                 console.log('mousemove classs function')
@@ -132,6 +132,8 @@ class Pawn {
             });
         })
     }
+
+    
     
 
     calculateGradient() {
