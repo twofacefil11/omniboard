@@ -118,6 +118,7 @@ class Pawn {
             console.log('klik kórwa')
             mousePressed = true;
             console.log('1', event.target)
+            dragged = event.target
             
             // dragged = this.actualThing;
             document.addEventListener('mousemove', function(e) {
