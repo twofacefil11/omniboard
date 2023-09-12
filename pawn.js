@@ -132,12 +132,12 @@ class Pawn {
             });
         })
         this.actualThing.addEventListener('mouseup', function() {
-            
+
             if (dragged) {
                 mousePressed = false;
                 console.log("puściłęś się");
                 
-                document.removeEventListener('mousemove', onMouseMove);
+                document.removeEventListener('mousemove', onMouseMfunove);
                 document.removeEventListener('mousemove', onMouseMove);
                 
         
@@ -149,6 +149,9 @@ class Pawn {
         
             }
         });
+    }
+    mouseMove(event) {
+
     }
 
     
