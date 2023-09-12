@@ -124,7 +124,7 @@ class Pawn {
                 e.preventDefault;
                 let target = e.target;
         
-            console.log('2', this.actualThing)
+            console.log('2', target)
     
             console.log('mousemove classs function')
             if (mousePressed) {
