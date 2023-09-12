@@ -121,7 +121,7 @@ class Pawn {
             
             // dragged = this.actualThing;
             event.preventDefault;
-            document.addEventListener('mousemove', this.mouseMove(event));
+            document.addEventListener('mousemove', mouseMove(event));
         })
 
         this.actualThing.addEventListener('mouseup', function() {
@@ -143,15 +143,7 @@ class Pawn {
         });
     }
 
-    mouseMove(event) {
-        let target = event.target;
-            
-        console.log('mousemove classs function')
-        if (mousePressed) {
-            target.style.left = `${event.clientX - er}px`;
-            target.style.top = `${event.clientY - er}px`;
-        }
-    }
+
 
 
     
