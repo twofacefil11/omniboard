@@ -121,15 +121,7 @@ class Pawn {
             
             // dragged = this.actualThing;
             event.preventDefault;
-            document.addEventListener('mousemove', function(e) {
-                let target = e.target;
-            
-                console.log('mousemove classs function')
-                if (mousePressed) {
-                    target.style.left = `${event.clientX - er}px`;
-                    target.style.top = `${event.clientY - er}px`;
-                }
-            });
+            document.addEventListener('mousemove', this.mouseMove(event));
         })
         this.actualThing.addEventListener('mouseup', function() {
 
@@ -151,7 +143,14 @@ class Pawn {
         });
     }
     mouseMove(event) {
-
+        let target = event.target;
+            
+        console.log('mousemove classs function')
+        if (mousePressed) {
+            target.style.left = `${event.clientX - er}px`;
+            target.style.top = `${event.clientY - er}px`;
+        }
+    }
     }
 
     
