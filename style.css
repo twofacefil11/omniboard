@@ -85,3 +85,6 @@ label {
     width: 85vw;
     ;
 }
+#pawnsvgactual {
+    pointer-events: none;
+}
