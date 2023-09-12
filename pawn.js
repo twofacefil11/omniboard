@@ -130,7 +130,7 @@ class Pawn {
                 mousePressed = false;
                 console.log("puściłęś się");
                 
-                document.removeEventListener('mousemove', this.mouseMove(event));
+                document.removeEventListener('mousemove', mouseMove(event));
                 
         
                 // if (!(dragged.constructor.isOnBoard())) 
