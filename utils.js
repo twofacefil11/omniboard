@@ -14,6 +14,8 @@ function deHex(hex) {
 
   
   function onMouseMove() {
+    event.preventDefault;
+
     console.log('mousemove')
     if (mousePressed && dragged) {
       dragged.actualThing.style.left = `${event.clientX - er}px`;
