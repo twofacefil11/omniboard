@@ -226,13 +226,13 @@ class Pawn {
         // this.actualThing.style.top = '0px';
     }
 
-    mouseMove(event) {
-        console.log('mousemove')
-        if (mousePressed && dragged) {
-          this.actualThing.style.left = `${event.clientX - er}px`;
-          this.actualThing.style.top = `${event.clientY - er}px`;
-        }
-      }
+    // mouseMove() {
+    //     console.log('mousemove')
+    //     if (mousePressed && dragged) {
+    //       this.actualThing.style.left = `${event.clientX - er}px`;
+    //       this.actualThing.style.top = `${event.clientY - er}px`;
+    //     }
+    //   }
     // letGoListener() {
     //     document.addEventListener('mouseup', function() {
     //         if (dragged) {
