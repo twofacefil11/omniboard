@@ -228,7 +228,7 @@ class Pawn {
     mouseMove(event) {
         event.preventDefault;
 
-        console.log('mousemove')
+        console.log('mousemove classs function')
         if (mousePressed && dragged) {
           this.actualThing.style.left = `${event.clientX - er}px`;
           this.actualThing.style.top = `${event.clientY - er}px`;
