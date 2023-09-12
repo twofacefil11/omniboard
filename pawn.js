@@ -131,6 +131,23 @@ class Pawn {
                 }
             });
         })
+        this.actualThing.addEventListener('mouseup', function() {
+            if (dragged) {
+                mousePressed = false;
+                console.log("puściłęś się");
+                
+                document.removeEventListener('mousemove', onMouseMove);
+                document.removeEventListener('mousemove', onMouseMove);
+                
+        
+                // if (!(dragged.constructor.isOnBoard())) 
+                //       dragged.constructor.makeItFall();
+                
+                dragged = null;
+        
+        
+            }
+        });
     }
 
     
