@@ -16,12 +16,12 @@ function deHex(hex) {
   function onMouseMove(event) {
 
     console.log('mousemove')
-    if (mousePressed && dragged) {
-      if (event.target.classList.contains('pawnSpawn')) {
-        dragged.actualThing.style.left = `${event.clientX - er}px`;
-        dragged.actualThing.style.top = `${event.clientY - er}px`;
-      }
-      else if (event.target.classList.contains('svgDiv')) {
+    // if (mousePressed && dragged) {
+    //   if (event.target.classList.contains('pawnSpawn')) {
+    //     dragged.actualThing.style.left = `${event.clientX - er}px`;
+    //     dragged.actualThing.style.top = `${event.clientY - er}px`;
+    //   }
+      if (event.target.classList.contains('svgDiv')) {
         event.target.actualThing.style.left = `${event.clientX - er}px`;
         event.target.actualThing.style.top = `${event.clientY - er}px`;
       }
