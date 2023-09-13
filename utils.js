@@ -21,8 +21,8 @@ function deHex(hex) {
     //     dragged.actualThing.style.left = `${event.clientX - er}px`;
     //     dragged.actualThing.style.top = `${event.clientY - er}px`;
     //   }
-        event.target.actualThing.style.left = `${event.clientX - er}px`;
-        event.target.actualThing.style.top = `${event.clientY - er}px`;
+        dragged.actualThing.style.left = `${event.clientX - er}px`;
+        dragged.actualThing.style.top = `${event.clientY - er}px`;
       }
   
 
