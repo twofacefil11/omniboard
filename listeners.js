@@ -34,9 +34,8 @@ function onMouseMove(event) {
     // so we make shure that something is in fact dragged and that mouse is still pressed;
     if (mousePressed && dragged) {
         event.preventDefault;
-        //if yes then wonderful, we need to update the correct thingies position. the dragged thingie postition to be precise
-        // we passed the current "dragged" to on MouseMove so we ara shure we fuck with the correct thing
-        // the pawn is already placed exxactly where it needs to be;
+
+        //and update the its possition correctly offsetted by radius of a square
         dragged.style.left = `${event.clientX - er}px`;
         dragged.style.top = `${event.clientY - er}px`;
     }
