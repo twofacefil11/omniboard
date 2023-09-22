@@ -23,6 +23,7 @@ function activateSpawner(spawner, color) {
 function onMouseMove(event) {
     //this is important, it prevents text higlighting
     event.preventDefault;
+    console.log('runs')
 
     // so we make shure that something is in fact dragged and that mouse is still pressed;
     if (mousePressed && dragged) {
