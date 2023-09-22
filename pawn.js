@@ -30,8 +30,8 @@ class Pawn {
         const polygon2 = document.createElementNS(this.NS, "polygon");
 
         if (this.type === "pawn") {
-            svg.setAttribute("class", "svgDiv");
-            svg.setAttribute("position", "absolute");
+            svg.setAttributeNS(null, "class", "svgDiv");
+            svg.setAttributeNS(null, "position", "absolute");
 
             // svg.style.left = this.xpos.toString() + 'px';
             // svg.style.top = this.ypos.toString() + 'px';
