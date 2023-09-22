@@ -112,17 +112,17 @@ class Pawn {
     
     
     
-    movePawn() {
-        console.log('an attepmt')
-        this.actualThing.addEventListener('mousedown', function(event) {
-            console.log('klik kórwa')
-            mousePressed = true;
-            dragged = event.target;
+    // movePawn() {
+    //     console.log('an attepmt')
+    //     this.actualThing.addEventListener('mousedown', function(event) {
+    //         console.log('klik kórwa')
+    //         mousePressed = true;
+    //         dragged = event.target;
             
-            // dragged = this.actualThing;
-            event.preventDefault;
-            document.addEventListener('mousemove', onMouseMove(event));
-        })
+    //         // dragged = this.actualThing;
+    //         event.preventDefault;
+    //         document.addEventListener('mousemove', onMouseMove(event));
+    //     })
 
         // this.actualThing.addEventListener('mouseup', function() {
 
@@ -141,7 +141,7 @@ class Pawn {
         
         //     }
         // });
-    }
+    // }
 
 
 
