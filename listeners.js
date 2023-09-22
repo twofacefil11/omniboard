@@ -10,7 +10,7 @@ function activateSpawner(spawner, color) {
       document.body.appendChild(dragged.actualThing);
     //   dragged.movePawn();
       
-      document.addEventListener('mousemove', onMouseMove(event));
+      document.addEventListener('mousemove', onMouseMove(dragged));
     });
   }
   
