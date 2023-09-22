@@ -19,6 +19,7 @@ function deHex(hex) {
     console.log('mousemove')
     if (mousePressed && dragged) {
       if (event.target.classList.contains('pawnSpawn')) {
+        console.log(event.clientX - er, ", ", event.clientY - er)
         dragged.actualThing.style.left = `${event.clientX - er}px`;
         dragged.actualThing.style.top = `${event.clientY - er}px`;
       }
