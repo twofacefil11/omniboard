@@ -21,7 +21,7 @@ class Pawn {
     generateSVG(r) {
         let ars = this.makePawn(r);
 
-        const svgDiv = document.createElement("div");
+        // const svgDiv = document.createElement("div");
         const svg = document.createElementNS(this.NS, "svg");
         const circle1 = document.createElementNS(this.NS, "circle");
         const circle2 = document.createElementNS(this.NS, "circle");
@@ -30,16 +30,16 @@ class Pawn {
         const polygon2 = document.createElementNS(this.NS, "polygon");
 
         if (this.type === "pawn") {
-            svgDiv.setAttribute("class", "svgDiv");
-            svgDiv.setAttribute("position", "absolute");
+            svg.setAttribute("class", "svgDiv");
+            svg.setAttribute("position", "absolute");
 
-            svgDiv.style.left = this.xpos.toString() + 'px';
-            svgDiv.style.top = this.ypos.toString() + 'px';
+            svg.style.left = this.xpos.toString() + 'px';
+            svg.style.top = this.ypos.toString() + 'px';
 
         }
 
         else
-            svgDiv.setAttribute("class", "pawnSpawn");
+            svg.setAttribute("class", "pawnSpawn");
 
         svg.setAttributeNS(null, "pointer-events", 'none');
         svg.setAttributeNS(null, "width", (r * 2).toString());
@@ -77,11 +77,11 @@ class Pawn {
         svg.appendChild(polygon2);
         svg.appendChild(circle3);
 
-        svgDiv.style.height = (r * 2).toString();
-        svgDiv.style.width = (r * 2).toString();
+        svg.style.height = (r * 2).toString();
+        svg.style.width = (r * 2).toString();
         
-        svgDiv.appendChild(svg);
-        return svgDiv;
+        // svgDiv.appendChild(svg);
+        return svg;
     }
 
 
