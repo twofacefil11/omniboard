@@ -41,7 +41,7 @@ class Pawn {
         else
             svgDiv.setAttribute("class", "pawnSpawn");
 
-        svg.setAttributeNS(null, "pointer-events", 'none');
+        svgDiv.setAttributeNS(null, "pointer-events", 'none');
         svg.setAttributeNS(null, "width", (r * 2).toString());
         svg.setAttributeNS(null, "height", (r * 2).toString());
         svg.setAttributeNS(null, "viewBox", `${-r} ${-r} ${r * 2} ${r * 2}`);
@@ -108,45 +108,7 @@ class Pawn {
         }
         this.points.push(r);
         return this.points;
-    }
-    
-    
-    
-    // movePawn() {
-    //     console.log('an attepmt')
-    //     this.actualThing.addEventListener('mousedown', function(event) {
-    //         console.log('klik kórwa')
-    //         mousePressed = true;
-    //         dragged = event.target;
-            
-    //         // dragged = this.actualThing;
-    //         event.preventDefault;
-    //         document.addEventListener('mousemove', onMouseMove(event));
-    //     })
-
-        // this.actualThing.addEventListener('mouseup', function() {
-
-        //     if (dragged) {
-        //         mousePressed = false;
-        //         console.log("puściłęś się");
-                
-        //         document.removeEventListener('mousemove', mouseMove(event));
-                
-        
-        //         // if (!(dragged.constructor.isOnBoard())) 
-        //         //       dragged.constructor.makeItFall();
-                
-        //         dragged = null;
-        
-        
-        //     }
-        // });
-    // }
-
-
-
-
-    
+    }    
     
 
     calculateGradient() {
