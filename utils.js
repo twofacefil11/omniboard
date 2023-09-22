@@ -65,11 +65,11 @@ function activateSpawner(spawner, color) {
     dragged = pawnsArr[pawnsArr.length - 1];
     document.body.appendChild(dragged.actualThing);
     dragged.movePawn();
-    // onMouseMove();
+    onMouseMove();
     
     // event.preventDefault;
 
-    document.addEventListener('mousemove', onMouseMove());
+    // document.addEventListener('mousemove', onMouseMove(event));
   });
 }
 
