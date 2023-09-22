@@ -15,12 +15,12 @@ function activateSpawner(spawner, color) {
         document.body.appendChild(dragged.actualThing);
 
         //now i would very much like to be able to move it while i hold.
-        document.addEventListener('mousemove', onMouseMove(dragged, event));
+        document.addEventListener('mousemove', onMouseMove(event));
     });
 }
 
 //I want this to take care of freashly spawned as well as picked again pawns;
-function onMouseMove(dragged, event) {
+function onMouseMove(event) {
     //this is important, it prevents text higlighting
     event.preventDefault;
 
