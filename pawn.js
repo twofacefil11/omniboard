@@ -33,8 +33,8 @@ class Pawn {
             svg.setAttribute("class", "svgDiv");
             svg.setAttribute("position", "absolute");
 
-            svg.style.left = this.xpos.toString() + 'px';
-            svg.style.top = this.ypos.toString() + 'px';
+            // svg.style.left = this.xpos.toString() + 'px';
+            // svg.style.top = this.ypos.toString() + 'px';
 
             svg.setAttributeMS(null, 'left', this.xpos.toString() + 'px');
             svg.setAttributeMS(null, 'top', this.ypos.toString() + 'px');
