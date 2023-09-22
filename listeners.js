@@ -15,7 +15,7 @@ function activateSpawner(spawner, color) {
         document.body.appendChild(dragged.actualThing);
 
         //now i would very much like to be able to move it while i hold.
-        document.addEventListener('mousemove', onMouseMove(dragged));
+        document.addEventListener('mousemove', onMouseMove(dragged, event));
     });
 }
 
