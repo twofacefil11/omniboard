@@ -45,9 +45,9 @@ function onMouseMove(event) {
 }
 
 function onMouseUp() {
-    console.log("puściłeś się");
-
+    
     if (dragged) {
+        console.log("puściłeś się");
         MousePressed = false;
         dragged = null;
     }
