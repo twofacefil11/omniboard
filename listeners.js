@@ -17,7 +17,7 @@ function activateSpawner(spawner, color) {
   function onMouseMove(event) {
     // event.preventDefault;
 
-    console.log('mousemove')
+    console.log('mousemove');
     if (mousePressed && dragged) {
       if (event.target.classList.contains('pawnSpawn')) {
         console.log(event.clientX - er, ", ", event.clientY - er)
