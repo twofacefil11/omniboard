@@ -30,7 +30,6 @@ function onMouseMove(event) {
         //if yes then wonderful, we need to update the correct thingies position. the dragged thingie postition to be precise
         // we passed the current "dragged" to on MouseMove so we ara shure we fuck with the correct thing
         // the pawn is already placed exxactly where it needs to be;
-        console.log(event.clientX - er, ", ", event.clientY - er)
         dragged.actualThing.style.left = `${event.clientX - er}px`;
         dragged.actualThing.style.top = `${event.clientY - er}px`;
     }
