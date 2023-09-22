@@ -69,7 +69,7 @@ function activateSpawner(spawner, color) {
     
     // event.preventDefault;
 
-    // document.addEventListener('mousemove', onMouseMove(event));
+    document.addEventListener('mousemove', onMouseMove(event));
   });
 }
 
