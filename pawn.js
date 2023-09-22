@@ -36,8 +36,8 @@ class Pawn {
             // svg.style.left = this.xpos.toString() + 'px';
             // svg.style.top = this.ypos.toString() + 'px';
 
-            svg.setAttributeMS(null, 'left', this.xpos.toString() + 'px');
-            svg.setAttributeMS(null, 'top', this.ypos.toString() + 'px');
+            svg.setAttributeNS(null, 'left', this.xpos.toString() + 'px');
+            svg.setAttributeNS(null, 'top', this.ypos.toString() + 'px');
 
         }
 
