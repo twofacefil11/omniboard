@@ -17,14 +17,14 @@ function deHex(hex) {
     event.preventDefault
 
     console.log('mousemove')
-    // if (mousePressed && dragged) {
-    //   if (event.target.classList.contains('pawnSpawn')) {
-    //     dragged.actualThing.style.left = `${event.clientX - er}px`;
-    //     dragged.actualThing.style.top = `${event.clientY - er}px`;
-    //   }
+    if (mousePressed && dragged) {
+      if (event.target.classList.contains('pawnSpawn')) {
         dragged.actualThing.style.left = `${event.clientX - er}px`;
         dragged.actualThing.style.top = `${event.clientY - er}px`;
       }
+        // dragged.actualThing.style.left = `${event.clientX - er}px`;
+        // dragged.actualThing.style.top = `${event.clientY - er}px`;
+    }
   
 
 //   function mouseMove(event) {
