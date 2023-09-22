@@ -48,6 +48,8 @@ activateSpawner(pawnSpawn[1], whitesPicker);
 
 document.addEventListener('mousemove', onMouseMove);
 
+document.addEventListener('mouseup', onMouseUp);
+
 // //action on mouseup
 // document.addEventListener('mouseup', function() {
 //     if (dragged) {
