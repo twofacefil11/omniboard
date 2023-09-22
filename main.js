@@ -46,23 +46,23 @@ createBoard();
 activateSpawner(pawnSpawn[0], blacksPicker);
 activateSpawner(pawnSpawn[1], whitesPicker);
 
-//action on mouseup
-document.addEventListener('mouseup', function() {
-    if (dragged) {
-        mousePressed = false;
-        console.log("puściłęś się");
+// //action on mouseup
+// document.addEventListener('mouseup', function() {
+//     if (dragged) {
+//         mousePressed = false;
+//         console.log("puściłęś się");
         
-        document.removeEventListener('mousemove', onMouseMove(event));
+//         document.removeEventListener('mousemove', onMouseMove(event));
         
 
-        // if (!(dragged.constructor.isOnBoard())) 
-        //       dragged.constructor.makeItFall();
+//         // if (!(dragged.constructor.isOnBoard())) 
+//         //       dragged.constructor.makeItFall();
         
-        dragged = null;
+//         dragged = null;
 
 
-    }
-});
+//     }
+// });
 
 
 function update(r) {
