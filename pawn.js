@@ -48,7 +48,7 @@ class Pawn {
         let reer = r * 0.8;
         svg.setAttributeNS(null, "width", (r * 2).toString());
         svg.setAttributeNS(null, "height", (r * 2).toString());
-        svg.setAttributeNS(null, "viewBox", `${-r} ${-r} ${r * 2} ${r * 2}`);
+        svg.setAttributeNS(null, "viewBox", `${-reer} ${-reer} ${reer * 2} ${reer * 2}`);
 
         svg.setAttributeNS(null, 'opacity', `${opacitySldr.value}%`)
 
