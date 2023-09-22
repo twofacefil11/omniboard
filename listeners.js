@@ -19,7 +19,7 @@ function activateSpawner(spawner, color) {
 }
 
 function onPickUp(event) {
-    console.log(event.target)
+    console.log(event.target.classList)
 }
 
 //I want this to take care of freashly spawned as well as picked again pawns;
