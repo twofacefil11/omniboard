@@ -32,16 +32,6 @@ function onMouseMove(event) {
         dragged.actualThing.style.left = `${event.clientX - er}px`;
         dragged.actualThing.style.top = `${event.clientY - er}px`;
     }
-
-
-    //   function mouseMove(event) {
-    //     let target = event.target;
-
-    //     console.log('mousemove classs function')
-    //     if (mousePressed) {
-    //         target.style.left = `${event.clientX - er}px`;
-    //         target.style.top = `${event.clientY - er}px`;
-    //     }
 }
 
 function onMouseUp() {
