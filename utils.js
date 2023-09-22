@@ -35,7 +35,7 @@ function deHex(hex) {
 //         target.style.left = `${event.clientX - er}px`;
 //         target.style.top = `${event.clientY - er}px`;
 //     }
-// }
+}
 
   function getAbsolutePosition(element) {
     let left = 0;
