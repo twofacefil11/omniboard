@@ -42,7 +42,7 @@ let er = 0;
 createBoard();
 
 
-//SpawnListener
+//SpawnListeners
 activateSpawner(pawnSpawn[0], blacksPicker);
 activateSpawner(pawnSpawn[1], whitesPicker);
 
