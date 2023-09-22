@@ -45,6 +45,7 @@ class Pawn {
             svg.setAttribute("class", "pawnSpawn");
 
         // svg.setAttributeNS(null, "pointer-events", 'none');
+        let reer = r * 0.8;
         svg.setAttributeNS(null, "width", (r * 2).toString());
         svg.setAttributeNS(null, "height", (r * 2).toString());
         svg.setAttributeNS(null, "viewBox", `${-r} ${-r} ${r * 2} ${r * 2}`);
