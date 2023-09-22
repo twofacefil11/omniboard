@@ -20,7 +20,8 @@ function activateSpawner(spawner, color) {
 
 function onPickUp(event) {
     if (event.target.classList == "svgDiv") {
-        
+        dragged = event.target;
+        mousePressed = true;
     }
 }
 
