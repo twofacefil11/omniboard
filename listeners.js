@@ -20,7 +20,7 @@ function activateSpawner(spawner, color) {
 }
 
 //I want this to take care of freashly spawned as well as picked again pawns;
-function onMouseMove(dragged) {
+function onMouseMove(dragged, event) {
     //this is important, it prevents text higlighting
     event.preventDefault;
 
