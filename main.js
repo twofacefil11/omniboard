@@ -46,29 +46,10 @@ createBoard();
 activateSpawner(pawnSpawn[0], blacksPicker);
 activateSpawner(pawnSpawn[1], whitesPicker);
 
+//drag&drop listeners
 document.addEventListener('mousedown', onPickUp)
-
 document.addEventListener('mousemove', onMouseMove);
-
 document.addEventListener('mouseup', onMouseUp);
-
-// //action on mouseup
-// document.addEventListener('mouseup', function() {
-//     if (dragged) {
-//         mousePressed = false;
-//         console.log("puściłęś się");
-        
-//         document.removeEventListener('mousemove', onMouseMove(event));
-        
-
-//         // if (!(dragged.constructor.isOnBoard())) 
-//         //       dragged.constructor.makeItFall();
-        
-//         dragged = null;
-
-
-//     }
-// });
 
 
 function update(r) {
