@@ -19,6 +19,7 @@ function activateSpawner(spawner, color) {
 
     console.log('mousemove');
     if (mousePressed && dragged) {
+        console.log(event.target)
       if (event.target.classList.contains('pawnSpawn')) {
         console.log(event.clientX - er, ", ", event.clientY - er)
         dragged.actualThing.style.left = `${event.clientX - er}px`;
