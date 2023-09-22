@@ -19,7 +19,9 @@ function activateSpawner(spawner, color) {
 }
 
 function onPickUp(event) {
-    console.log(event.target.classList == "svgDiv")
+    if (event.target.classList == "svgDiv") {
+        
+    }
 }
 
 //I want this to take care of freashly spawned as well as picked again pawns;
