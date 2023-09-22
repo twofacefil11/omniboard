@@ -48,6 +48,6 @@ function onMouseUp() {
         console.log("puściłeś się");
         MousePressed = false;
         dragged = null;
-        update();
+        update(er);
     }
 }
