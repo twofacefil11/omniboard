@@ -18,6 +18,10 @@ function activateSpawner(spawner, color) {
     });
 }
 
+function onPickUp(event) {
+    
+}
+
 //I want this to take care of freashly spawned as well as picked again pawns;
 function onMouseMove(event) {
     //this is important, it prevents text higlighting
