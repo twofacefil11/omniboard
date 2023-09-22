@@ -10,9 +10,9 @@ function activateSpawner(spawner, color) {
         //push a new thingie to the array of thingies
         pawnsArr.push(new Pawn(color.value, "pawn", er, spawnPosition.left, spawnPosition.top, idIt()));
         //this freshly pushed thingie is now dragged
-        dragged = pawnsArr[pawnsArr.length - 1];
+        dragged = pawnsArr[pawnsArr.length - 1].actualThing;
         //and the thingie element is added to html
-        document.body.appendChild(dragged.actualThing);
+        document.body.appendChild(dragged);
 
         //now i would very much like to be able to move it while i hold.
     });
