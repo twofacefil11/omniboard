@@ -46,6 +46,8 @@ createBoard();
 activateSpawner(pawnSpawn[0], blacksPicker);
 activateSpawner(pawnSpawn[1], whitesPicker);
 
+document.addEventListener('mousemove', onMouseMove(event));
+
 // //action on mouseup
 // document.addEventListener('mouseup', function() {
 //     if (dragged) {
