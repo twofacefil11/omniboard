@@ -43,3 +43,12 @@ function onMouseMove() {
     //         target.style.top = `${event.clientY - er}px`;
     //     }
 }
+
+function onMouseUp() {
+    console.log("puściłeś się");
+
+    if (dragged) {
+        MousePressed = false;
+        dragged = null;
+    }
+}
