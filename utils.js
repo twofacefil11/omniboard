@@ -67,7 +67,7 @@ function activateSpawner(spawner, color) {
     dragged.movePawn();
     // onMouseMove();
     
-    event.preventDefault;
+    // event.preventDefault;
 
     document.addEventListener('mousemove', onMouseMove(event));
   });
