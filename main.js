@@ -17,7 +17,7 @@ const snapCheckbox = document.getElementById("snap");
 // opacity = '100%';
 
 
-let = shouldSnap false;
+let shouldSnap = false;
 
 snapCheckbox.addEventListener("change", () => {
     shouldSnap = !shouldSpnap;
