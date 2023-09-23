@@ -1,17 +1,17 @@
 
-const body = document.getElementsByTagName("body");
-const board = document.getElementById("board");
-const columnsSldr = document.getElementById("columns")
-const opacitySldr = document.getElementById("opacity")
-const rowsSldr = document.getElementById("rows")
+const pawnSpawn = document.getElementsByClassName("spawnContainer");
+const boardRadiusSldr = document.getElementById("borderRadius");
+const boardClrPicker = document.getElementById("boardClr");
+const controlStrip = document.getElementById('controls');
+const columnsSldr = document.getElementById("columns");
+const opacitySldr = document.getElementById("opacity");
 const whitesPicker = document.getElementById("whites");
 const blacksPicker = document.getElementById("blacks");
-const boardClrPicker = document.getElementById("boardClr");
-const boardRadiusSldr = document.getElementById("borderRadius");
-const pawnSpawn = document.getElementsByClassName("spawnContainer");
-const controlStrip = document.getElementById('controls');
 const dropzone = document.getElementById("dropzone");
 const snapCheckbox = document.getElementById("snap");
+const body = document.getElementsByTagName("body");
+const rowsSldr = document.getElementById("rows");
+const board = document.getElementById("board");
 
 let mousePressed = false;
 let shouldSnap = false;
@@ -81,15 +81,15 @@ function createBoard() {
     board.style.backgroundColor = boardClrPicker.value;
     
     board.style.borderRadius = boardRadiusSldr.value + 'px';
-    board.style.borderTop = `15px ridge ${boardClrPicker.value}`;
-    board.style.borderLeft = `15px ridge ${boardClrPicker.value}`;
     board.style.borderBottom = `15px groove ${boardClrPicker.value}`;
     board.style.borderRight = `15px groove ${boardClrPicker.value}`;
+    board.style.borderLeft = `15px ridge ${boardClrPicker.value}`;
+    board.style.borderTop = `15px ridge ${boardClrPicker.value}`;
     
-    dropzone.style.borderTop = `15px groove ${boardClrPicker.value}`;
-    dropzone.style.borderLeft = `15px groove ${boardClrPicker.value}`;
     dropzone.style.borderBottom = `15px ridge ${boardClrPicker.value}`;
+    dropzone.style.borderLeft = `15px groove ${boardClrPicker.value}`;
     dropzone.style.borderRight = `15px ridge ${boardClrPicker.value}`;
+    dropzone.style.borderTop = `15px groove ${boardClrPicker.value}`;
     
     //clear all
     board.innerHTML = '';
