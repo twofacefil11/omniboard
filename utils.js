@@ -104,7 +104,7 @@ function findTheClosestSquare(event) {
   let bestIndex = 0;
   
   for (let x = 0; x < squaresPositions.length; x++) {
-    if ()
+    if (x)
     closestX = Math.min(closestX, squaresPositions[x].x);
     closesty = Math.min(closestY, squaresPositions[x].y);
   }
