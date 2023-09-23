@@ -71,8 +71,8 @@ function calculateCenters(c, r) {
   // console.log(board.children[0].getBoundingClientRect())
 
   const firstRect = board.children[0].getBoundingClientRect();
-  const beforeLeft = firstRect.left - firstRect.width / 2;
-  const beforeTop = firstRect.top - firstRect.height / 2;
+  let beforeLeft = firstRect.left - firstRect.width / 2;
+  let beforeTop = firstRect.top - firstRect.height / 2;
 
   
   for (let x = 0; x < c * r; x++) {
