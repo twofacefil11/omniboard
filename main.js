@@ -98,7 +98,7 @@ function createBoard() {
     
     let c = columnsSldr.value;
     let r = rowsSldr.value;
-    centers = [c * r];
+    centers = Arrau(c * r);
     const fixed = 0.8;
     
     
