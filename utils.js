@@ -77,14 +77,17 @@ function calculateCenters(c, r) {
   // centers = Array(c * r);
   
   for (let x = 0; x < c * r; x++) {
-    console.log();
-  }
-  
-  centers.forEach((sq) => {
     beforeLeft += firstRect.width;
     beforeTop += firstRect.height;
     sq = {x: beforeLeft, y: beforeTop};
-  });
+
+  }
+  
+  // centers.forEach((sq) => {
+  //   beforeLeft += firstRect.width;
+  //   beforeTop += firstRect.height;
+  //   sq = {x: beforeLeft, y: beforeTop};
+  // });
   
 
   
