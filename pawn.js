@@ -111,12 +111,6 @@ class Pawn {
     }
 
 
-    updateZI() {
-        highest++;
-        this.actualThing.style.zIndex = `${highest}`;
-    }
-    
-
     calculateGradient() {
         let isDark = this.isItDark();
         // let gradientMap = [30, 60, 80, 100, 165]
