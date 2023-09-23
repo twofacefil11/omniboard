@@ -75,6 +75,7 @@ function calculateCenters(c, r) {
   let beforeTop = firstRect.top - firstRect.height / 2;
 
   centers = [];
+  
   for (let x = 0; x < c * r; x++) {
     beforeLeft += firstRect.width;
     beforeTop += firstRect.height;
