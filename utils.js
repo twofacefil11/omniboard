@@ -16,15 +16,15 @@ function getAbsolutePosition(element) {
   let left = 0;
   let top = 0;
 
-  // while (element) {
-  //   left += element.offsetLeft;
-  //   top += element.offsetTop;
-  //   element = element.offsetParent;
-  // }
-  let rect = element.getBoundingClientRect();
-  left = rect.left;
-  top = rect.top;
-  return { left, top };
+  while (element) {
+    left += element.offsetLeft;
+    top += element.offsetTop;
+    element = element.offsetParent;
+  }
+  // let rect = element.getBoundingClientRect();
+  // left = rect.left;
+  // top = rect.top;
+  // return { left, top };
 }
 
 function idIt() {
