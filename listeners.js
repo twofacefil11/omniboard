@@ -54,6 +54,7 @@ function onMouseUp() {
 
         if (shouldSnap) {
             const pos = findTheClosestSquare();
+            console.log(pos)
             console.log(dragged.style.left, dragged.style.top, pos.x, pos.y)
             dragged.style.left = pos.x ;
             dragged.style.top = pos.y;
