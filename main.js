@@ -22,8 +22,7 @@ snapCheckbox.addEventListener("change", function() {
         shouldSnap = true;
     else
         shouldsnap = false;
-
-}
+});
 
 columnsSldr.addEventListener("input", createBoard);
 rowsSldr.addEventListener("input", createBoard);
