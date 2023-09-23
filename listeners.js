@@ -1,7 +1,7 @@
 
 //this is only for spawning the pawns by clicking on spawners
 function activateSpawner(spawner, color) {
-    console.log(spawner.children[0].getBoundingClientRect())
+    console.log(spawner.children[0].getAbsolutePosition)
     //if you click the ".pawnSpawn" 
     spawner.addEventListener('mousedown', function(event) {
         //get the position so you can create the pawn
