@@ -101,7 +101,7 @@ function fillSquarePositions(c, r) {
   let bok = firstRect.width;
 
   squaresPositions = {x: [], y: []};
-  
+
   for (let x = 0; x < c; x++) {
     squaresPositions.x.push(l);
     l += bok;
@@ -117,15 +117,25 @@ function fillSquarePositions(c, r) {
 function findTheClosestSquare(event) {
   const pl = event.clientX;
   const pt = event.clientY;
-  let closestX = 1000000;
-  let closestY = 1000000;
-  let bestIndex = 0;
   
-  for (let x = 0; x < squaresPositions.length; x++) {
-    if (x)
-    closestX = Math.min(closestX, squaresPositions[x].x);
-    closesty = Math.min(closestY, squaresPositions[x].y);
-  }
+  const columns = squaresPositions.x.length;
+  const rows = squaresPositions.y.length;
+  let closestX;
+  let closestY;
+  
+
+
+
+
+
+
+
+
+  // for (let x = 0; x < squaresPositions.length; x++) {
+  //   if (x)
+  //   closestX = Math.min(closestX, squaresPositions[x].x);
+  //   closesty = Math.min(closestY, squaresPositions[x].y);
+  // }
 
 
   console.log(`x: ${pl}, y: ${pt}`, squaresPositions[closestIndex])
