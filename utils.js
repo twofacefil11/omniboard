@@ -95,12 +95,14 @@ function fillSquarePositions(c, r) {
 
   squaresPositions = {x: [], y: []};
 
-  for (let x = 0; x < c; x++) {
+
+  //+1 for the last square to apply
+  for (let x = 0; x < c + 1; x++) {
     squaresPositions.x.push(l);
     l += bok;
   }
 
-  for (let x = 0; x < r; x++) {
+  for (let x = 0; x < r + 1; x++) {
     squaresPositions.y.push(t);
     t += bok;
   }
