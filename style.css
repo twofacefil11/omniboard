@@ -9,7 +9,6 @@ body {
 }
 
 #board {
-    /* padding: 0 15px 15px 15px; */
     margin-top: 1vh;
     margin-bottom: 1vh;
     display: flex;
@@ -60,9 +59,7 @@ label {
     
 
 }
-/* .pawnSpawnSVG {
-    width: 100%;
-} */
+
 .svgDiv {
     position: fixed;
     transition: transform 0.5s ease-in, opacity 0.5s ease-in;
