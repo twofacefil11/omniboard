@@ -75,7 +75,7 @@ class Pawn {
         svg.appendChild(polygon2);
         svg.appendChild(circle3);
 
-        svgDiv.setAttribute("radius", `${r}`);
+        svgDiv.setAttribute("name", `${r}`);
         svgDiv.style.height = (r * 2).toString();
         svgDiv.style.width = (r * 2).toString();
         
