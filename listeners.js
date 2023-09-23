@@ -53,7 +53,7 @@ function onMouseUp() {
         MousePressed = false;
 
         if (shouldSnap) {
-            console.log(squaresPositions[findTheClosestSquare()];
+            console.log(squaresPositions[findTheClosestSquare()]);
             console.log(pos)
             console.log(dragged.style.left, dragged.style.top, pos.x, pos.y)
             dragged.style.left = pos.x ;
