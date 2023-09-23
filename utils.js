@@ -23,7 +23,7 @@ function getAbsolutePosition(element) {
   // }
   let rect = element.getBoundingClientRect();
   left = rect.left;
-  right = rect.right;
+  top = rect.top;
   return { left, top };
 }
 
