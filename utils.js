@@ -36,7 +36,7 @@ function getPawnCenter(e) {
   console.log()
   let errrr = parseFloat(e.getAttribute('name'))
   let ugh = getAbsolutePosition(e);
-  return {x: ugh.left + errrr, y = ugh + errrr}
+  return {x: ugh.left + errrr, y: ugh + errrr}
 }
 
 
