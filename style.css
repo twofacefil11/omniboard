@@ -60,7 +60,7 @@ input[type="color"] {
 .pawnSpawn {
     align-items: center;
     z-index: 100;
-    transition: tranfrorm 1s ease-in-out;
+    transition: tranfrorm 1s;
     
 
 }
