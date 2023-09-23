@@ -93,7 +93,5 @@ function fillSquarePositions(c, r) {
     centers.push({x: l, y: t});
     l += bok;
     t += bok;
-  }
-  return squaresPositions;
-  
+  }  
 }
