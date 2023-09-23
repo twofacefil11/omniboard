@@ -31,8 +31,8 @@ blacksPicker.addEventListener("input", createBoard);
 columnsSldr.addEventListener("input", createBoard);
 rowsSldr.addEventListener("input", createBoard);
 
-document.addEventListener("resize", () => 
-    console.log(window.innerWidth, window.inneroHeight));
+document.addEventListener("resize", () => {
+    console.log(window.innerWidth, window.inneroHeight)});
 
 //spacing action:
 boardRadiusSldr.addEventListener("input", createBoard);
