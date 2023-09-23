@@ -219,7 +219,10 @@ class Pawn {
 
     deleteThySelf() {
         const index = pawnsArr.findIndex(e => e.ID === this.ID);
-        
+        if (index !== -1)
+            pawnsArr.splice(index, 1);
+        else
+            console.log("An attepmt to delete alrady deleted pawn")
     }
 
 
