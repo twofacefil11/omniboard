@@ -130,6 +130,7 @@ function findTheClosestSquare(event) {
      return i - 1;};
 
   return {x: squaresPositions.x[xi], y: squaresPositions.y[yi]};
+  
   // a neat way to get an index of the square it should snap to but i think i actyally dont need it
   // return (columns * yi) + xi; 
 
