@@ -83,7 +83,7 @@ function calculateCenters(c, r) {
   }
 }
 
-function fillSquarePositions(c * r) {
+function fillSquarePositions(c, r) {
   const firstRect = board.children[0].getBoundingClientRect();
   let l = firstRect.left;
   let t = firstRect.top;
