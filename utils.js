@@ -106,5 +106,5 @@ function findTheClosestSquare() {
     return distance < closestDistance ? i : bestI;
   }, 0);
   console.log(closestIndex)
-  return squarePostitions[closestIndex];
+  return squaresPostitions[closestIndex];
 }
