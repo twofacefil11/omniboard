@@ -52,9 +52,12 @@ function onMouseUp() {
     if (dragged) {
         MousePressed = false;
 
-        if (shouldSnap)
-            findTheClosestSquare();
-
+        if (shouldSnap) {
+            const pos = findTheClosestSquare();
+            dragged.style.left = pos.x ;
+            dragged.style.top = pos.y;
+        }
+        
         dragged = null;
         checkPostitions();
     }
