@@ -98,7 +98,7 @@ function fillSquarePositions(c, r) {
 
 function findTheClosestSquare(event) {
   const pl = event.clientX;
-  const pt = event.lientY;
+  const pt = event.clientY;
   
   const closestIndex = squaresPositions.reduce((bestI, curr, i) => {
     const distance = Math.sqrt((pl - curr.x) ** 2 + (pt - curr.y) ** 2);
