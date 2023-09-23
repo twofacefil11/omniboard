@@ -3,7 +3,7 @@
 function activateSpawner(spawner, color) {
     // console.log(getAbsolutePosition(spawner.children[0]))
     //if you click the ".pawnSpawn" 
-    spawner.addEventListener('mousedown', function(event) {
+    spawner.addEventListener('mousedown', function (event) {
         //get the position so you can create the pawn
         const spawnPosition = getAbsolutePosition(spawner.children[0]);
         //you have indeed clicked
@@ -23,7 +23,7 @@ function activateSpawner(spawner, color) {
 
 function onPickUp(event) {
     if (event.target.classList == "svgDiv" && !dragged) {
-        if (canPickup(getPawnCenter(event.target), {x: event.clientX, y:  event.clientY})) {
+        if (canPickup(getPawnCenter(event.target), { x: event.clientX, y: event.clientY })) {
             getPawnCenter(event.target)
             // console.log('pick up attempt')
             dragged = event.target;
@@ -36,7 +36,7 @@ function onPickUp(event) {
 //I want this to take care of freashly spawned as well as picked again pawns;
 function onMouseMove(event) {
     // console.log('runs')
-    
+
     // so we make shure that something is in fact dragged and that mouse is still pressed;
     if (mousePressed && dragged) {
         //this is important, it prevents text higlighting
@@ -48,21 +48,26 @@ function onMouseMove(event) {
 }
 
 function onMouseUp() {
-    
+
     if (dragged) {
         MousePressed = false;
 
         if (shouldSnap) {
             console.log(dragged.style.left,
-                        dragged.style.top,
-                        squaresPositions[findTheClosestSquare()].x,
-                        squaresPositions[findTheClosestSquare()].y,
-                        squaresPositions)
+                dragged.style.top,
+                squaresPositions[findTheClosestSquare()].x,
+                squaresPositions[findTheClosestSquare()].y,
+                squaresPositions)
 
-            dragged.style.left = squaresPositions[findTheClosestSquare()].x ;
+            dragged.style.left = squaresPositions[findTheClosestSquare()].x;
             dragged.style.top = squaresPositions[findTheClosestSquare()].y;
+            console.log(dragged.style.left,
+                dragged.style.top,
+                squaresPositions[findTheClosestSquare()].x,
+                squaresPositions[findTheClosestSquare()].y,
+                squaresPositions)
         }
-        
+
         dragged = null;
         checkPostitions();
     }
