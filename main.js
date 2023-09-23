@@ -57,7 +57,9 @@ document.addEventListener('mouseup', onMouseUp);
 function update(r) {
 
     checkPostitions();
-        
+
+    calculeateCenters();
+
     pawnSpawn[0].innerHTML = '';
     pawnSpawn[1].innerHTML = '';
         
