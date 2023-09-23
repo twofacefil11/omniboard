@@ -65,4 +65,8 @@ function updateZI(element) {
   highest++;
   element.style.zIndex = `${highest}`;
 }
-  
+
+
+function calculeateCenters() {
+  console.log(board.children)
+}
