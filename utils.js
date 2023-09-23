@@ -99,11 +99,12 @@ function fillSquarePositions(c, r) {
 function findTheClosestSquare(event) {
   const pl = event.clientX;
   const pt = event.clientY;
+  let closestX = 1000000;
+  let closestY = 1000000;
   
   for (let x = 0; x < squaresPositions.length; x++) {
-    res = {};
-    res.x = 100;
-    console.log(res.x)
+    closestX = Math.min(closesetX, squaresPositions[x].x);
+    closesty = Math.min(closesetY, squaresPositions[x].y);
   }
 
 
