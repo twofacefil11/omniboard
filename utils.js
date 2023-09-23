@@ -73,10 +73,8 @@ function calculeateCenters(c, r) {
   const firstRect = board.children[0].getBoundingClientRect();
 
   centers = Array(c * r);
-  console.log(centers)
-  for (let x = 1; x < (c * r); x++) {
-    console.log()
-  }
+  // console.log(centers);
+  centers.forEach((sq, i, arr) => )
 
   board.children.length;
 }
