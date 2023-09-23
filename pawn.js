@@ -79,6 +79,9 @@ class Pawn {
         svgDiv.style.height = (r * 2).toString();
         svgDiv.style.width = (r * 2).toString();
 
+        svgDiv.setAttribute('height', `${r * 2}`)    
+        svgDiv.setAttribute('width', `${r * 2}`)        
+
         console.log(svgDiv.style.height, svgDiv.style.width);
         
         svgDiv.appendChild(svg);
