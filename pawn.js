@@ -163,7 +163,6 @@ class Pawn {
 
     isOnBoard() {
         const boardRect = board.getBoundingClientRect();
-
         const pawnRect = this.actualThing.getBoundingClientRect();
 
         // const boardCenterX = boardRect.left + boardRect.width / 2;
@@ -182,7 +181,6 @@ class Pawn {
 
     isInDropzone() {
         const boardRect = dropzone.getBoundingClientRect();
-
         const pawnRect = this.actualThing.getBoundingClientRect();
 
         // const boardCenterX = boardRect.left + boardRect.width / 2;
