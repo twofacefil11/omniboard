@@ -59,6 +59,7 @@ function onMouseUp() {
             //     squaresPositions[findTheClosestSquare()].y,
             //     squaresPositions)
             let pos = findTheClosestSquare();
+            console.log(pos)
 
             dragged.style.left = `${pos.x}px`;
             dragged.style.top = `${pos.y}px`;
