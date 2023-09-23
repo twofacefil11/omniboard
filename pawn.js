@@ -166,8 +166,8 @@ class Pawn {
 
         const pawnRect = this.actualThing.getBoundingClientRect();
 
-        const boardCenterX = boardRect.left + boardRect.width / 2;
-        const boardCenterY = boardRect.top + boardRect.height / 2;
+        // const boardCenterX = boardRect.left + boardRect.width / 2;
+        // const boardCenterY = boardRect.top + boardRect.height / 2;
       
         const pawnCenterX = pawnRect.left + pawnRect.width / 2;
         const pawnCenterY = pawnRect.top + pawnRect.height / 2;
@@ -185,8 +185,8 @@ class Pawn {
 
         const pawnRect = this.actualThing.getBoundingClientRect();
 
-        const boardCenterX = boardRect.left + boardRect.width / 2;
-        const boardCenterY = boardRect.top + boardRect.height / 2;
+        // const boardCenterX = boardRect.left + boardRect.width / 2;
+        // const boardCenterY = boardRect.top + boardRect.height / 2;
       
         const pawnCenterX = pawnRect.left + pawnRect.width / 2;
         const pawnCenterY = pawnRect.top + pawnRect.height / 2;
