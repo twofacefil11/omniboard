@@ -32,7 +32,7 @@ columnsSldr.addEventListener("input", createBoard);
 rowsSldr.addEventListener("input", createBoard);
 
 //spacing action:
-boardRadiusSldr.addEventListener("input", createBoard);
+boardRadiusSldr.addEventListener("input", createBoard);s
 
 boardClr = boardClrPicker.value;
 whites = whitesPicker.value;
