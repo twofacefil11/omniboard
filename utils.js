@@ -35,8 +35,8 @@ function canPickup(p1, p2) {
 function getPawnCenter(e) {
   let errrr = parseFloat(e.getAttribute('name'))
   let ugh = getAbsolutePosition(e);
-  console.log({x: ugh.left + errrr, y: ugh.top + errrr})
-  return {x: ugh.left + errrr, y: ugh.top + errrr};
+  console.log({ x: ugh.left + errrr, y: ugh.top + errrr })
+  return { x: ugh.left + errrr, y: ugh.top + errrr };
 }
 
 
@@ -45,31 +45,22 @@ function idIt() {
   return ID;
 }
 
-function checkPostitions() {    
+function checkPostitions() {
 
   if (pawnsArr.length > 0) {
-      pawnsArr.forEach(e => {
-          //out of board, and in drop zone
-          if (!e.isOnBoard()) {
-              e.fell = true;
-              if (e.isInDropzone() ) {
-                  e.makeItBlink();
-              }
-              else {
-                  e.makeItFall();
-              }
-          }
-          // else if (e.isOnBoard() && e.fell){
-              //     e.makeItBlink();
-              // }
-          })
+    pawnsArr.forEach(e => {
+      if (!e.isOnBoard()) {
+        e.fell = true;
+        if (e.isInDropzone()) e.makeItBlink();
+        else e.makeItFall();
       }
-      
-      if (pawnsArr.length > 0) {
-          pawnsArr.forEach(e => {
-              if (e.isOnBoard() && e.fell) {
-                  e.makeItBlink();
-              }
-          })
-      }
+    })
   }
+
+  if (pawnsArr.length > 0) {
+    pawnsArr.forEach(e => {
+      if (e.isOnBoard() && e.fell)
+        e.makeItBlink();
+    })
+  }
+}
