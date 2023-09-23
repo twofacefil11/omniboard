@@ -28,6 +28,7 @@ function onPickUp(event) {
             console.log('pick up attempt')
             dragged = event.target;
             mousePressed = true;
+            dragged.updateZI();
         }
     }
 }
