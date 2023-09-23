@@ -99,6 +99,7 @@ function fillSquarePositions(c, r) {
 function findTheClosestSquare() {
   const pl = dragged.style.left;
   const pt = dragged.style.top;
+  console.log(pl, pt)
   
   const closestIndex = squaresPositions.reduce((bestI, curr, i) => {
     const distance = Math.sqrt((pl - curr.x) ** 2 + (pt - curr.y) ** 2);
