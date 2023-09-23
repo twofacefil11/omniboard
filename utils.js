@@ -87,9 +87,11 @@ function fillSquarePositions() {
   const firstRect = board.children[0].getBoundingClientRect();
   let l = firstRect.left;
   let t = firstRect.top;
+  let bok = firstRect.width;
   squaresPositions = [];
   for (let x = 0; x < c * r; x++) {
     centers.push({x: l, y: t});
+    l += firstRect.width
   }
   
 }
