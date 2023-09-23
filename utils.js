@@ -59,4 +59,10 @@ function checkPostitions() {
   // i dont remember why i thought the secend loop is nececary, maybe ill remember
   // if (pawnsArr.length > 0)
   //   pawnsArr.forEach(e => { if (e.isOnBoard() && e.fell) e.makeItBlink(); })
+
+
+  function updateZI(element) {
+    highest++;
+    element.style.zIndex = `${highest}`;
+  }
 }
