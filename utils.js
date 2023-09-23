@@ -33,7 +33,10 @@ function canPickup(p1, p2) {
 
 
 function getPawnCenter(e) {
-  console.log(parseFloat(e.getAttribute('name')))
+  console.log()
+  let errrr = parseFloat(e.getAttribute('name'))
+  let ugh = getAbsolutePosition(e);
+  return {x: ugh.left + errrr, y = ugh + errrr}
 }
 
 
