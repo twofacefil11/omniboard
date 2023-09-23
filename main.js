@@ -85,10 +85,10 @@ function createBoard() {
     board.style.backgroundColor = boardClrPicker.value;
     
     board.style.borderRadius = boardRadiusSldr.value + 'px';
-    board.style.borderBottom = `15px groove ${boardClrPicker.value}`;
-    board.style.borderRight = `15px groove ${boardClrPicker.value}`;
-    board.style.borderLeft = `15px ridge ${boardClrPicker.value}`;
-    board.style.borderTop = `15px ridge ${boardClrPicker.value}`;
+    board.style.borderBottom = `1vh groove ${boardClrPicker.value}`;
+    board.style.borderRight = `1vh groove ${boardClrPicker.value}`;
+    board.style.borderLeft = `1vh ridge ${boardClrPicker.value}`;
+    board.style.borderTop = `1vh ridge ${boardClrPicker.value}`;
     
     //not shure if i like it
     // dropzone.style.borderBottom = `15px ridge ${boardClrPicker.value}`;
