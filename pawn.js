@@ -76,11 +76,11 @@ class Pawn {
         //i decided to store the ongiś radius in the name attr xd. for science
         svgDiv.setAttribute("name", `${r}`);
 
-        // svgDiv.style.height = (r * 2).toString();
-        // svgDiv.style.width = (r * 2).toString();
+        svgDiv.style.height = `${r * 2}px`;
+        svgDiv.style.width = `${r * 2}px`;
 
-        svgDiv.setAttribute('height', `${r * 2}`);    
-        svgDiv.setAttribute('width', `${r * 2}`);        
+        // svgDiv.setAttribute('height', `${r * 2}`);    
+        // svgDiv.setAttribute('width', `${r * 2}`);        
 
         console.log(svgDiv.style.height, svgDiv.style.width);
         
