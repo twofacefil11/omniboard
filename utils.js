@@ -91,7 +91,7 @@ function fillSquarePositions(c, r) {
   squaresPositions = [];
   for (let x = 0; x < c * r; x++) {
     console.log(l, t, bok)
-    centers.push({x: l, y: t});
+    squaresPositions.push({x: l, y: t});
     l += bok;
     t += bok;
   }  
