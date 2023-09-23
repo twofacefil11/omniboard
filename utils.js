@@ -83,5 +83,4 @@ function calculateCenters(c, r) {
   })
   
   console.log(centers);
-  board.children.length;
 }
