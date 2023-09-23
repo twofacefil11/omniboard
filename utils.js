@@ -24,13 +24,20 @@ function getAbsolutePosition(element) {
   return { left, top };
 }
 
+
+function canPickup(p1, p2, R) {
+  const distance = Math.sqrt((p2.x - p1.x) ** 2 + (p2.y - p1.y) ** 2);
+  return distance <= R;
+}
+
+
 function idIt() {
   ID++;
   return ID;
 }
 
 function checkPostitions() {    
-  
+
   if (pawnsArr.length > 0) {
       pawnsArr.forEach(e => {
           //out of board, and in drop zone
