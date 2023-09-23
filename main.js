@@ -16,29 +16,29 @@ const dropzone = document.getElementById("dropzone");
 
 // opacity = '100%';
 
-rowsSldr.addEventListener("input", createBoard);
 columnsSldr.addEventListener("input", createBoard);
+rowsSldr.addEventListener("input", createBoard);
 // opacitySldr.addEventListener("input", () => 
 //     opacity = `${opacitySldr.value}%`);
 
 //color akszyn:
+boardClrPicker.addEventListener("input", createBoard);
 whitesPicker.addEventListener("input", createBoard);
 blacksPicker.addEventListener("input", createBoard);
-boardClrPicker.addEventListener("input", createBoard);
 
 //spacing action:
 boardRadiusSldr.addEventListener("input", createBoard);
 
+boardClr = boardClrPicker.value;
 whites = whitesPicker.value;
 blacks = blacksPicker.value;
-boardClr = boardClrPicker.value;
 
-let ID = 0;
 let mousePressed = false;
-let pawnsArr = [];
 let dragged = null;
-let er = 0;
+let pawnsArr = [];
 let highest = 500;
+let ID = 0;
+let er = 0;
 
 createBoard();
 
