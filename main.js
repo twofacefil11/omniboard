@@ -19,20 +19,14 @@ const snapCheckbox = document.getElementById("snap");
 
 let shouldSnap = false;
 
-snapCheckbox.addEventListener("change", () => {
-    shouldSnap = !shouldSnap;
-    // if (snapCheckbox.checked)
-    //     shouldSnap = true;
-    // else
-    //     shouldsnap = false;
-    console.log(shouldSnap)
-});
 
 
 columnsSldr.addEventListener("input", createBoard);
 rowsSldr.addEventListener("input", createBoard);
 opacitySldr.addEventListener("input", () => 
     opacity = `${opacitySldr.value}%`);
+snapCheckbox.addEventListener("change", () =>
+    shouldSnap = !shouldSnap);
 
 //color akszyn:
 boardClrPicker.addEventListener("input", createBoard);
