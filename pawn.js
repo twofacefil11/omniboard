@@ -62,6 +62,12 @@ class Pawn {
         polygon2.setAttributeNS(null, "fill", this.trueColor[3]);
         circle3.setAttributeNS(null, "fill", this.trueColor[4]);
 
+        // circle1.setAttributeNS(null, "pointer-events", 'none');
+        circle2.setAttributeNS(null, "pointer-events", 'none');
+        polygon1.setAttributeNS(null, "pointer-events", 'none');
+        polygon2.setAttributeNS(null, "pointer-events", 'none');
+        circle3.setAttributeNS(null, "pointer-events", 'none');
+
         let p1 = '';
         let p2 = '';
 
