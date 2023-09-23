@@ -161,7 +161,6 @@ er = sqrSize / 2;
 
 // calculateCenters(c, r);
 fillSquarePositions(c, r);
-console.log(squaresPositions)
 
 update(sqrSize / 2);
 return sqrSize / 2;
