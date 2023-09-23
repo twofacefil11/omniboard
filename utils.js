@@ -76,7 +76,7 @@ function calculateCenters(c, r) {
 
   toBeCenters = Array(c * r);
   
-  centers = toBeCentersforEach((sq) => {
+  centers = toBeCenters.forEach((sq) => {
     beforeLeft += firstRect.width;
     beforeTop += firstRect.height;
     sq = {x: beforeLeft, y: beforeTop};
