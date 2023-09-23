@@ -29,7 +29,8 @@ function idIt() {
   return ID;
 }
 
-function checkPostition() {    
+function checkPostitions() {    
+  
   if (pawnsArr.length > 0) {
       pawnsArr.forEach(e => {
           //out of board, and in drop zone
