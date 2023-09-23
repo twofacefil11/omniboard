@@ -78,7 +78,6 @@ class Pawn {
 
         svgDiv.style.height = (r * 2).toString();
         svgDiv.style.width = (r * 2).toString();
-    
         
         svgDiv.appendChild(svg);
 
