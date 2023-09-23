@@ -6,7 +6,7 @@ function activateSpawner(spawner, color) {
     spawner.addEventListener('mousedown', function (event) {
         //get the position so you can create the pawn
 
-        spawner.style.transform = 'scale(0.8)'
+        spawner.style.transform = 'scale(0.8)';
 
 
         const spawnPosition = getAbsolutePosition(spawner.children[0]);
