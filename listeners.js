@@ -7,6 +7,8 @@ function activateSpawner(spawner, color) {
         //get the position so you can create the pawn
 
         spawner.style.transform = 'scale(0.8)';
+        spawner.style.transition = 'transform 1s ease-in'
+        spawner.style.transform = 'scale(1)';
         // spawner.style.transform = 'scale(1)'
         console.log(spawner)
 
