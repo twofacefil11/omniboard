@@ -69,4 +69,5 @@ function updateZI(element) {
 
 function calculeateCenters() {
   console.log(board.children[0].getBoundingClientRect())
+  board.children.length;
 }
