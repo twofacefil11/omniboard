@@ -16,6 +16,15 @@ const snapCheckbox = document.getElementById("snap");
 
 // opacity = '100%';
 
+
+snapCheckbox.addEventListener("change", function() {
+    if (snapCheckbox.checked)
+        shouldSnap = true;
+    else
+        shouldsnap = false;
+
+}
+
 columnsSldr.addEventListener("input", createBoard);
 rowsSldr.addEventListener("input", createBoard);
 opacitySldr.addEventListener("input", () => 
