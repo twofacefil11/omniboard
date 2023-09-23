@@ -9,7 +9,8 @@ body {
 }
 
 #board {
-    margin-top: 1%;
+    /* padding: 0 15px 15px 15px; */
+    margin-top: 8px;
     display: flex;
     flex-wrap: wrap;
     background-color: #C08261;
@@ -25,10 +26,11 @@ label {
     height: 15vh;
     display: flex;
     flex-direction: row;
+    
 }
 
 .ctrlDiv {
-    display: flex;
+    display: Flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -46,16 +48,20 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-right: 20px;
+    margin-left:20px;
     flex: 1;
 }
 
 .pawnSpawn {
     align-items: center;
     z-index: 100;
-}
+    
 
+}
+/* .pawnSpawnSVG {
+    width: 100%;
+} */
 .svgDiv {
     position: fixed;
     transition: transform 0.5s ease-in, opacity 0.5s ease-in;
@@ -63,13 +69,18 @@ label {
 
 #dropzone {
     position: absolute;
-    padding: 2%;
-    border-radius: 2%;
+    padding: 15px;
+    border-radius: 20px;
+    /* border-top: 15px groove #141414;
+    border-left: 15px groove #141414;
+    border-bottom: 15px ridge #141414;
+    border-right: 15px ridge #141414; */
     background: #141414;
     z-index: -9999;
     left: 50%;
     transform: translateX(-50%);
-    top: 2%;
+    top: 15%;
     height: 80vh;
     width: 85vw;
+    ;
 }
