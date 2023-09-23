@@ -32,7 +32,7 @@ function canPickup(p1, p2) {
 
 
 function getPawnCenter(e) {
-  
+  console.log(e.left)
 }
 
 
