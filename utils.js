@@ -61,8 +61,8 @@ function checkPostitions() {
   //   pawnsArr.forEach(e => { if (e.isOnBoard() && e.fell) e.makeItBlink(); })
 
 
-  function updateZI(element) {
-    highest++;
-    element.style.zIndex = `${highest}`;
-  }
+function updateZI(element) {
+  highest++;
+  element.style.zIndex = `${highest}`;
+}
   
