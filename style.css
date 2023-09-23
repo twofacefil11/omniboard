@@ -60,14 +60,14 @@ input[type="color"] {
 .pawnSpawn {
     align-items: center;
     z-index: 100;
-    transition: transform 3s ease-in;
+    /* transition: transform 3s ease-in; */
     
 
 }
 
 .svgDiv {
     position: fixed;
-    transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+    /* transition: transform 0.5s ease-in, opacity 0.5s ease-in; */
 }
 
 #dropzone {
