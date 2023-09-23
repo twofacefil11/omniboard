@@ -100,7 +100,6 @@ function findTheClosestSquare() {
   const pl = dragged.style.left;
   const pt = dragged.style.top;
   
-
   const closestIndex = squaresPositions.reduce((bestI, curr, i) => {
     const distance = Math.sqrt((pl - curr.x) ** 2 + (pt - curr.y) ** 2);
     const closestDistance = Math.sqrt((pl - squaresPositions[bestI].x) ** 2 + (pt - squaresPositions[bestI].y) ** 2);
