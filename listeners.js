@@ -53,20 +53,20 @@ function onMouseUp() {
         MousePressed = false;
 
         if (shouldSnap) {
-            console.log(dragged.style.left,
-                dragged.style.top,
-                squaresPositions[findTheClosestSquare()].x,
-                squaresPositions[findTheClosestSquare()].y,
-                squaresPositions)
+            // console.log(dragged.style.left,
+            //     dragged.style.top,
+            //     squaresPositions[findTheClosestSquare()].x,
+            //     squaresPositions[findTheClosestSquare()].y,
+            //     squaresPositions)
 
             dragged.style.left = `${squaresPositions[findTheClosestSquare()].x}px`;
             dragged.style.top = `${squaresPositions[findTheClosestSquare()].y}px`;
 
-            console.log(dragged.style.left,
-                dragged.style.top,
-                squaresPositions[findTheClosestSquare()].x,
-                squaresPositions[findTheClosestSquare()].y,
-                squaresPositions)
+            // console.log(dragged.style.left,
+            //     dragged.style.top,
+            //     squaresPositions[findTheClosestSquare()].x,
+            //     squaresPositions[findTheClosestSquare()].y,
+            //     squaresPositions)
         }
 
         dragged = null;
