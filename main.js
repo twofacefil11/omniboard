@@ -36,7 +36,7 @@ blacks = blacksPicker.value;
 let mousePressed = false;
 let dragged = null;
 let pawnsArr = [];
-let highest = 111;
+let highest = 666;
 let ID = 0;
 let er = 0;
 
