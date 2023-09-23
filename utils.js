@@ -25,9 +25,8 @@ function getAbsolutePosition(element) {
 }
 
 
-function canPickup(p1, p2, R) {
-  const distance = Math.sqrt((p2.x - p1.x) ** 2 + (p2.y - p1.y) ** 2);
-  return distance <= R;
+function canPickup(p1, p2, er) {
+  return er >= Math.sqrt((p2.x - p1.x) ** 2 + (p2.y - p1.y) ** 2);
 }
 
 
