@@ -39,7 +39,7 @@ let pawnsArr = [];
 let highest = 666;
 let ID = 0;
 let er = 0;
-let centers= [];
+let centers = [];
 
 createBoard();
 
