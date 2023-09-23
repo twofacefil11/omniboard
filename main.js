@@ -101,7 +101,7 @@ function createBoard() {
     
     let c = columnsSldr.value;
     let r = rowsSldr.value;
-    const fixed = 0.8;
+    const fixed = 0.78;
     
     
     //fitting the board on the screen
