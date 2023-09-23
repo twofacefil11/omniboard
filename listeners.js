@@ -53,21 +53,11 @@ function onMouseUp(event) {
         MousePressed = false;
 
         if (shouldSnap) {
-            // console.log(dragged.style.left,
-            //     dragged.style.top,
-            //     squaresPositions[findTheClosestSquare()].x,
-            //     squaresPositions[findTheClosestSquare()].y,
-            //     squaresPositions)
-            let pos = findTheClosestSquare(event);
 
+            let pos = findTheClosestSquare(event);
+            console.log(pos)
             dragged.style.left = `${pos.x}px`;
             dragged.style.top = `${pos.y}px`;
-
-            // console.log(dragged.style.left,
-            //     dragged.style.top,
-            //     squaresPositions[findTheClosestSquare()].x,
-            //     squaresPositions[findTheClosestSquare()].y,
-            //     squaresPositions)
         }
 
         dragged = null;
