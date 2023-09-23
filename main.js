@@ -164,7 +164,6 @@ function createBoard() {
 }
 
 //TODO:
-// COLOR PAWN SYSTEMS,
 //QOL: color change, snapping on grid, intersections, borders, buttons, 
 // saving settings, saving game, multiplying pawns like manna, disposing of pawns
 
