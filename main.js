@@ -23,6 +23,7 @@ snapCheckbox.addEventListener("change", function() {
     else
         shouldsnap = false;
 });
+
 console.log(shouldSnap)
 
 columnsSldr.addEventListener("input", createBoard);
@@ -49,7 +50,7 @@ let highest = 666;
 let ID = 0;
 let er = 0;
 let centers = [];
-let shouldSnap;
+let shouldSnap;12
 
 createBoard();
 
