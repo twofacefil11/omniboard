@@ -55,36 +55,11 @@ document.addEventListener('mouseup', onMouseUp);
 
 function update(r) {
 
-    if (pawnsArr.length > 0) {
-        pawnsArr.forEach(e => {
-            //out of board, and in drop zone
-            if (!e.isOnBoard()) {
-                e.fell = true;
-                if (e.isInDropzone() ) {
-                    e.makeItBlink();
-                }
-                else {
-                    e.makeItFall();
-                }
-            }
-            // else if (e.isOnBoard() && e.fell){
-            //     e.makeItBlink();
-            // }
-        })
-    }
-
-    if (pawnsArr.length > 0) {
-        pawnsArr.forEach(e => {
-            if (e.isOnBoard() && e.fell) {
-                e.makeItBlink();
-            }
-        })
-    }
-
-
+    checkPostition();
+        
     pawnSpawn[0].innerHTML = '';
     pawnSpawn[1].innerHTML = '';
-
+        
     const blacksSpawn = new Pawn(blacks, "pawnSpawn", r);
     const whitesSpawn = new Pawn(whites, "pawnSpawn", r);
 
