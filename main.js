@@ -12,10 +12,6 @@ const pawnSpawn = document.getElementsByClassName("spawnContainer");
 const controlStrip = document.getElementById('controls');
 const dropzone = document.getElementById("dropzone");
 const snapCheckbox = document.getElementById("snap");
-//suwak akszyn
-
-// opacity = '100%';
-
 
 let mousePressed = false;
 let shouldSnap = false;
@@ -26,13 +22,8 @@ let ID = 0;
 let er = 0;
 let centers = [];
 
-opacitySldr.addEventListener("input", () => 
-opacity = `${opacitySldr.value}%`);
-
-snapCheckbox.addEventListener("change", () =>
-shouldSnap = !shouldSnap);
-
-//color akszyn:
+opacitySldr.addEventListener("input", () => opacity = `${opacitySldr.value}%`);
+snapCheckbox.addEventListener("change", () => shouldSnap = !shouldSnap);
 boardClrPicker.addEventListener("input", createBoard);
 whitesPicker.addEventListener("input", createBoard);
 blacksPicker.addEventListener("input", createBoard);
@@ -78,12 +69,7 @@ function update(r) {
     whitesSpawn.currentCollor = blacksPicker.value;
 
 
-    centers.forEach((c, i ,a) => {
-        
-    })
 }
-
-
 function createBoard() {
     
     //setting new colours
