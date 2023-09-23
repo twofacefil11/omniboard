@@ -109,6 +109,10 @@ class Pawn {
         this.points.push(r);
         return this.points;
     }
+
+    updateZI() {
+        this.actualThing.style.zIndex = `${highest}`;
+    }
     
     calculateGradient() {
         let isDark = this.isItDark();
