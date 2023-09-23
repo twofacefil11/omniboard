@@ -1,7 +1,7 @@
 
 //this is only for spawning the pawns by clicking on spawners
 function activateSpawner(spawner, color) {
-    console.log(getAbsolutePosition(spawner.children[0]))
+    // console.log(getAbsolutePosition(spawner.children[0]))
     //if you click the ".pawnSpawn" 
     spawner.addEventListener('mousedown', function(event) {
         //get the position so you can create the pawn
@@ -22,7 +22,7 @@ function activateSpawner(spawner, color) {
 function onPickUp(event) {
     if (event.target.classList == "svgDiv" && !dragged) {
         // if (canPickup(event, )) {
-            getPawnCenter(event.target)
+            getPawnCenter(event.target.neme)
             console.log('pick up attempt')
             dragged = event.target;
             mousePressed = true;
