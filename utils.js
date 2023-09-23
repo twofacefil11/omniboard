@@ -82,5 +82,5 @@ function calculateCenters(c, r) {
     centers.push({x: beforeLeft, y: beforeTop});
   }
   
-  console.log(centers)
+  // console.log(centers)
 }
