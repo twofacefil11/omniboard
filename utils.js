@@ -24,7 +24,7 @@ function getAbsolutePosition(element) {
   // let rect = element.getBoundingClientRect();
   // left = rect.left;
   // top = rect.top;
-  // return { left, top };
+  return { left, top };
 }
 
 function idIt() {
