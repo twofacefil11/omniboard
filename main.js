@@ -162,7 +162,7 @@ board.append(square);
 
 er = sqrSize / 2;
 
-calculeateCenters(c, r);
+calculateCenters(c, r);
 
 update(sqrSize / 2);
 return sqrSize / 2;
