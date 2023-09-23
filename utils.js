@@ -1,8 +1,6 @@
 function deHex(hex) {
   // Remove the '#' if it's present
-  // console.log(hex)
   hex = hex.replace(/^#/, '');
-  // console.log(hex, 'hex')
 
   // Parse the hexadecimal values into separate RGB components
   let r = parseInt(hex.substring(0, 2), 16);
