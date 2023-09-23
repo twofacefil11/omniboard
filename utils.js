@@ -79,7 +79,7 @@ function calculateCenters(c, r) {
   for (let x = 0; x < c * r; x++) {
     beforeLeft += firstRect.width;
     beforeTop += firstRect.height;
-    sq = {x: beforeLeft, y: beforeTop};
+    centers.push({x: beforeLeft, y: beforeTop});
   }
   
   // centers.forEach((sq) => {
