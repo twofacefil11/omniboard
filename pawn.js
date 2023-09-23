@@ -31,7 +31,7 @@ class Pawn {
 
         if (this.type === "pawn") {
             svg.setAttributeNS(null, "class", "svgDiv");
-            svg.setAttributeNS(null, "position", "fixed");
+            svg.setAttributeNS(null, "position", "absolute");
 
             // svg.style.left = this.xpos.toString() + 'px';
             // svg.style.top = this.ypos.toString() + 'px';
