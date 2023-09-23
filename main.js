@@ -160,7 +160,9 @@ board.append(square);
 er = sqrSize / 2;
 
 // calculateCenters(c, r);
+console.log(squaresPositions)
 squaresPositions = fillSquarePositions();
+console.log(squaresPositions)
 
 
 update(sqrSize / 2);
