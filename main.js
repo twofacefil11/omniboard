@@ -18,8 +18,8 @@ const dropzone = document.getElementById("dropzone");
 
 columnsSldr.addEventListener("input", createBoard);
 rowsSldr.addEventListener("input", createBoard);
-// opacitySldr.addEventListener("input", () => 
-//     opacity = `${opacitySldr.value}%`);
+opacitySldr.addEventListener("input", () => 
+    opacity = `${opacitySldr.value}%`);
 
 //color akszyn:
 boardClrPicker.addEventListener("input", createBoard);
