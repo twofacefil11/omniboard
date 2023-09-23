@@ -119,10 +119,10 @@ function findTheClosestSquare(event) {
   const rows = squaresPositions.y.length;
   const pl = event.clientX;
   const pt = event.clientY;
-  let xi = () => {for (let i = 0; i < columns; i++)
+  let xi = function() => {for (let i = 0; i < columns; i++)
     if (squaresPositions.x[i] > pl) 
     return i - 1;};
-  let yi = () => {for (let i = 0; i < rows; i++)
+  let yi = function() => {for (let i = 0; i < rows; i++)
     if (squaresPositions.y[i] > pt) 
     return i - 1;};
   
