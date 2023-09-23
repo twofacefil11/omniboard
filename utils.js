@@ -119,18 +119,16 @@ function findTheClosestSquare(event) {
   const rows = squaresPositions.y.length;
   const pl = event.clientX;
   const pt = event.clientY;
-  let closestX;
-  let closestY;
   
   let xi = () => {for (let i = 0; i < columns; i++)
      if (squaresPositions.x[i] > pl) 
      return i - 1;};
   let yi = () => {for (let i = 0; i < rows; i++)
-     if (squaresPositions.y[i] > pl) 
+     if (squaresPositions.y[i] > pt) 
      return i - 1;};
 
   return {x: squaresPositions.x[xi], y: squaresPositions.y[yi]};
-  
+
   // a neat way to get an index of the square it should snap to but i think i actyally dont need it
   // return (columns * yi) + xi; 
 
