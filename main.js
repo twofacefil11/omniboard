@@ -56,20 +56,19 @@ function update(r) {
 
     checkPostitions();
     
-    
     pawnSpawn[0].innerHTML = '';
     pawnSpawn[1].innerHTML = '';
     
     const blacksSpawn = new Pawn(blacks, "pawnSpawn", r);
     const whitesSpawn = new Pawn(whites, "pawnSpawn", r);
-
+    
     pawnSpawn[0].appendChild(blacksSpawn.actualThing);
     pawnSpawn[1].appendChild(whitesSpawn.actualThing);
     
     blacksSpawn.currentCollor = whitesPicker.value;
     whitesSpawn.currentCollor = blacksPicker.value;
-
-
+    
+    
 }
 function createBoard() {
     
@@ -160,7 +159,9 @@ board.append(square);
 
 er = sqrSize / 2;
 
-calculateCenters(c, r);
+// calculateCenters(c, r);
+squaresPositions = fillSquarePositions();
+
 
 update(sqrSize / 2);
 return sqrSize / 2;
