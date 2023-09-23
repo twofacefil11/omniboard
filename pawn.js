@@ -112,6 +112,7 @@ class Pawn {
 
 
     updateZI() {
+        highest++;
         this.actualThing.style.zIndex = `${highest}`;
     }
     
@@ -157,7 +158,7 @@ class Pawn {
         return res;
     }
 
-    
+
     isItDark() {
         if (this.color.reduce((e, a) => e + a, 0) / 3 >  70)
             return -1;
