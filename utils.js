@@ -71,10 +71,14 @@ function calculateCenters(c, r) {
   console.log(board.children[0].getBoundingClientRect())
 
   const firstRect = board.children[0].getBoundingClientRect();
+  const beforeLeft = firstRect.left - firstRect.width / 2;
+  const beforeTop = firstRect.top - firstRect.height / 2;
 
   centers = Array(c * r);
   // console.log(centers);
-  centers.forEach((sq, i, arr) => )
+  centers.forEach((sq, i, arr) => {
+    sq = 
+  })
 
   board.children.length;
 }
