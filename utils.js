@@ -70,11 +70,11 @@ function updateZI(element) {
 function calculeateCenters(c, r) {
   console.log(board.children[0].getBoundingClientRect())
 
-  const firstRect = board.children[x].getBoundingClientRect();
+  const firstRect = board.children[0].getBoundingClientRect();
   centers
   
   for (let x = 1; x < (c * r); x++) {
-    
+    console.log()
   }
 
   board.children.length;
