@@ -18,7 +18,7 @@ function getAbsolutePosition(element) {
     top += element.offsetTop;
     element = element.offsetParent;
   }
-  // ALT: (for custom elements that do not inherit offsets)
+  // ALT: (for custom elements that do not inherit offsets it seems)
   // let rect = element.getBoundingClientRect();
   // left = rect.left;
   // top = rect.top;
