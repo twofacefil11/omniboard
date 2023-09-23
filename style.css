@@ -29,6 +29,10 @@ label {
     flex-direction: row;
 }
 
+input[type="color"] {
+    height: 2vh;
+}
+
 .ctrlDiv {
     display: Flex;
     flex-direction: column;
