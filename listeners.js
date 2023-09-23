@@ -14,6 +14,8 @@ function activateSpawner(spawner, color) {
         dragged = pawnsArr[pawnsArr.length - 1].actualThing;
         //and the thingie element is added to html
         document.body.appendChild(dragged);
+        //update z-index to be on top of other pawns
+        dragged.updateZI();
 
         //now i would very much like to be able to move it while i hold.
     });
