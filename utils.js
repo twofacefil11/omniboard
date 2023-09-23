@@ -94,6 +94,6 @@ function fillSquarePositions() {
     l += bok;
     t += bok;
   }
-  return centers;
+  return squaresPositions;
   
 }
