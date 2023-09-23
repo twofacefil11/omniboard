@@ -17,13 +17,14 @@ const snapCheckbox = document.getElementById("snap");
 // opacity = '100%';
 
 
-let shouldSnap;
-    
-snapCheckbox.addEventListener("change", function() {
-    if (snapCheckbox.checked)
-        shouldSnap = true;
-    else
-        shouldsnap = false;
+let = shouldSnap false;
+
+snapCheckbox.addEventListener("change", () => {
+    shouldSnap = !shouldSpnap;
+    // if (snapCheckbox.checked)
+    //     shouldSnap = true;
+    // else
+    //     shouldsnap = false;
 });
 
 console.log(shouldSnap)
