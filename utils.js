@@ -117,10 +117,9 @@ function fillSquarePositions(c, r) {
 function findTheClosestSquare(event) {
   const columns = squaresPositions.x.length;
   const rows = squaresPositions.y.length;
-  console.log(rows, columns)
   const pl = event.clientX;
   const pt = event.clientY;
-  
+  console.log(pl, pt)  
   let xi = () => {for (let i = 0; i < columns; i++)
      if (squaresPositions.x[i] > pl) 
      return i - 1;};
