@@ -28,7 +28,7 @@ function getAbsolutePosition(element) {
 
 //to know if you click within the radius of a pawn. to avoid picking by air
 function canPickup(p1, p2) {
-  return Math.sqrt((p2.x - p1.x) ** 2 + (p2.y - p1.y) ** 2) <= er;
+  return Math.sqrt((p2.x - p1.x) ** 2 + (p2.y - p1.y) ** 2) <= er * 0.8;
 }
 
 //DUH
