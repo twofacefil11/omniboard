@@ -84,16 +84,32 @@ function calculateCenters(c, r) {
 }
 
 function fillSquarePositions(c, r) {
+  // const firstRect = board.children[0].getBoundingClientRect();
+  // let l = firstRect.left;
+  // let t = firstRect.top;
+  // let bok = firstRect.width;
+  // squaresPositions = [];
+  // for (let x = 0; x < c * r; x++) {
+  //   squaresPositions.push({x: l, y: t});
+  //   l += bok;
+  //   t += bok;
+  // }  
+
   const firstRect = board.children[0].getBoundingClientRect();
   let l = firstRect.left;
   let t = firstRect.top;
   let bok = firstRect.width;
-  squaresPositions = [];
-  for (let x = 0; x < c * r; x++) {
-    squaresPositions.push({x: l, y: t});
+
+  squaresPositions = {x: [], y: []};
+  for (let x = 0; x < c; x++) {
+    squaresPositions.x.push(l);
     l += bok;
+  }
+  for (let x = 0; x < r; x++) {
+    squaresPositions.y.push(t);
     t += bok;
-  }  
+  }
+
 }
 
 function findTheClosestSquare(event) {
