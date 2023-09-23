@@ -31,8 +31,8 @@ class Pawn {
             svgDiv.setAttribute("class", "svgDiv");
             svgDiv.setAttribute("position", "absolute");
 
-            svgDiv.style.left = this.xpos + 'px';
-            svgDiv.style.top = this.ypos + 'px';
+            svgDiv.style.left = this.xpos.toString() + 'px';
+            svgDiv.style.top = this.ypos.toString() + 'px';
         }
         else
             svgDiv.setAttribute("class", "pawnSpawn");
