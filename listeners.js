@@ -5,6 +5,10 @@ function activateSpawner(spawner, color) {
     //if you click the ".pawnSpawn" 
     spawner.addEventListener('mousedown', function (event) {
         //get the position so you can create the pawn
+
+        spawner.style.transform = 'scale(0.8)'
+
+
         const spawnPosition = getAbsolutePosition(spawner.children[0]);
         //you have indeed clicked
         mousePressed = true;
