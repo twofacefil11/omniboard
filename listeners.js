@@ -8,7 +8,7 @@ function activateSpawner(spawner, color) {
 
         spawner.children[0].style.transform = 'scale(0.8)';
         spawner.children[0].style.transition = 'transform 2s'
-        spawner.children[0].style.transform = 'scale(1)';
+        // spawner.children[0].style.transform = 'scale(1)';
         // spawner.style.transform = 'scale(1)'
         console.log(spawner)
 
