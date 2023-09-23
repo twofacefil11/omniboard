@@ -18,7 +18,7 @@ const snapCheckbox = document.getElementById("snap");
 
 
 let shouldSnap;
-
+    
 snapCheckbox.addEventListener("change", function() {
     if (snapCheckbox.checked)
         shouldSnap = true;
