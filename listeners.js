@@ -25,7 +25,7 @@ function onPickUp(event) {
     if (event.target.classList == "svgDiv" && !dragged) {
         if (canPickup(getPawnCenter(event.target), {x: event.clientX, y:  event.clientY})) {
             getPawnCenter(event.target)
-            console.log('pick up attempt')
+            // console.log('pick up attempt')
             dragged = event.target;
             mousePressed = true;
             updateZI(dragged);
@@ -35,13 +35,12 @@ function onPickUp(event) {
 
 //I want this to take care of freashly spawned as well as picked again pawns;
 function onMouseMove(event) {
-    //this is important, it prevents text higlighting
-    console.log('runs')
+    // console.log('runs')
     
     // so we make shure that something is in fact dragged and that mouse is still pressed;
     if (mousePressed && dragged) {
+        //this is important, it prevents text higlighting
         event.preventDefault;
-
         //and update the its possition correctly offsetted by radius of a square
         dragged.style.left = `${event.clientX - er}px`;
         dragged.style.top = `${event.clientY - er}px`;
@@ -51,7 +50,7 @@ function onMouseMove(event) {
 function onMouseUp() {
     
     if (dragged) {
-        console.log("puściłeś się");
+        // console.log("puściłeś się");
         MousePressed = false;
         dragged = null;
         checkPostitions();
