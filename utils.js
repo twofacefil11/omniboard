@@ -58,8 +58,6 @@ function checkPostitions() {
   }
 
   if (pawnsArr.length > 0) {
-    pawnsArr.forEach(e => {
-      if (e.isOnBoard() && e.fell) e.makeItBlink();
-    })
+    pawnsArr.forEach(e => { if (e.isOnBoard() && e.fell) e.makeItBlink(); })
   }
 }
