@@ -10,7 +10,7 @@ body {
 
 #board {
     /* padding: 0 15px 15px 15px; */
-    margin-top: 8px;
+    margin-top: 1vh;
     display: flex;
     flex-wrap: wrap;
     background-color: #C08261;
