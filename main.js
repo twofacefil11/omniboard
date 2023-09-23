@@ -21,17 +21,19 @@ let shouldSnap = false;
 
 
 
-columnsSldr.addEventListener("input", createBoard);
-rowsSldr.addEventListener("input", createBoard);
+
 opacitySldr.addEventListener("input", () => 
-    opacity = `${opacitySldr.value}%`);
+opacity = `${opacitySldr.value}%`);
+
 snapCheckbox.addEventListener("change", () =>
-    shouldSnap = !shouldSnap);
+shouldSnap = !shouldSnap);
 
 //color akszyn:
 boardClrPicker.addEventListener("input", createBoard);
 whitesPicker.addEventListener("input", createBoard);
 blacksPicker.addEventListener("input", createBoard);
+columnsSldr.addEventListener("input", createBoard);
+rowsSldr.addEventListener("input", createBoard);
 
 //spacing action:
 boardRadiusSldr.addEventListener("input", createBoard);
