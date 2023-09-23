@@ -100,11 +100,13 @@ function findTheClosestSquare(event) {
   const pl = event.clientX;
   const pt = event.clientY;
   
-  const closestIndex = squaresPositions.reduce((bestI, curr, i) => {
-    const distance = Math.sqrt((pl - curr.x) ** 2 + (pt - curr.y) ** 2);
-    const closestDistance = Math.sqrt((pl - squaresPositions[bestI].x) ** 2 + (pt - squaresPositions[bestI].y) ** 2);
-    return distance < closestDistance ? i : bestI;
-  }, 0);
+  for (let x = 0; x < squaresPositions.length; x++) {
+    res = {x, y};
+    res.x = 100;
+    console.log(res.x)
+  }
+
+
   console.log(`x: ${pl}, y: ${pt}`, squaresPositions[closestIndex])
   return squaresPositions[closestIndex];
 }
