@@ -39,7 +39,7 @@ let pawnsArr = [];
 let highest = 666;
 let ID = 0;
 let er = 0;
-let centers = [];
+let centers;
 
 createBoard();
 
@@ -57,21 +57,20 @@ document.addEventListener('mouseup', onMouseUp);
 function update(r) {
 
     checkPostitions();
-
-    calculeateCenters();
-
+    
+    
     pawnSpawn[0].innerHTML = '';
     pawnSpawn[1].innerHTML = '';
-        
+    
     const blacksSpawn = new Pawn(blacks, "pawnSpawn", r);
     const whitesSpawn = new Pawn(whites, "pawnSpawn", r);
 
     pawnSpawn[0].appendChild(blacksSpawn.actualThing);
     pawnSpawn[1].appendChild(whitesSpawn.actualThing);
-
+    
     blacksSpawn.currentCollor = whitesPicker.value;
     whitesSpawn.currentCollor = blacksPicker.value;
-    }
+}
 
 
 function createBoard() {
@@ -79,16 +78,16 @@ function createBoard() {
     //setting new colours
     whites = whitesPicker.value;
     blacks = blacksPicker.value;
-
+    
     // setting board looks
     board.style.backgroundColor = boardClrPicker.value;
-
+    
     board.style.borderRadius = boardRadiusSldr.value + 'px';
     board.style.borderTop = `15px ridge ${boardClrPicker.value}`;
     board.style.borderLeft = `15px ridge ${boardClrPicker.value}`;
     board.style.borderBottom = `15px groove ${boardClrPicker.value}`;
     board.style.borderRight = `15px groove ${boardClrPicker.value}`;
-
+    
     dropzone.style.borderTop = `15px groove ${boardClrPicker.value}`;
     dropzone.style.borderLeft = `15px groove ${boardClrPicker.value}`;
     dropzone.style.borderBottom = `15px ridge ${boardClrPicker.value}`;
@@ -101,22 +100,23 @@ function createBoard() {
     let r = rowsSldr.value;
     const fixed = 0.8;
     
+    
     //fitting the board on the screen
     let sqrSize = 0;
     let prefWidth = (window.innerWidth * fixed).toFixed(1);
     let prefHeight = (window.innerHeight * fixed).toFixed(1);
-
+    
     
     if (window.innerHeight > window.inner)
-        sqrSize = prefWidth / c;
-    else
+    sqrSize = prefWidth / c;
+else
 
-        sqrSize = prefHeight / r;
+sqrSize = prefHeight / r;
 
-    if (c * sqrSize > prefWidth)
-        sqrSize = prefWidth / c;
-    else if (r * sqrSize > prefHeight)
-        sqrSize = prefHeight / r;
+if (c * sqrSize > prefWidth)
+sqrSize = prefWidth / c;
+else if (r * sqrSize > prefHeight)
+sqrSize = prefHeight / r;
 
     //cap the square size at the fixed size of control bar
     if (sqrSize >= controls.clientHeight)
@@ -125,11 +125,11 @@ function createBoard() {
     board.style.width = (sqrSize * c).toString() + 'px';
     board.style.height = (sqrSize * r).toString() + 'px';
     
-
+    
     //populating the div with squares
     for (let i = 0; i < r; i++) {
         let flip = ((i + 1) % 2 == 0) ? 1 : 2;
-
+        
         for (let j = 0; j < c; j++) {
             
             const square = document.createElement("div");
@@ -143,7 +143,7 @@ function createBoard() {
         square.style.backgroundColor = blacks;
     
     //board radius to corners
-            let br = (parseInt(boardRadiusSldr.value) - 10).toString();
+    let br = (parseInt(boardRadiusSldr.value) - 10).toString();
             if (i == 0) {
                 if (j == 0)
                 square.style.borderRadius = br + 'px 0px 0px 0px';
@@ -155,14 +155,18 @@ function createBoard() {
         square.style.borderRadius = '0px 0px ' + br + 'px 0px';
     else if (j == 0)
     square.style.borderRadius = '0px 0px 0px ' + br + 'px';
-            }
-            board.append(square);
-        } 
-    }
-    
-    er = sqrSize / 2;
-    update(sqrSize / 2);
-    return sqrSize / 2;
+}
+board.append(square);
+} 
+}
+
+er = sqrSize / 2;
+
+calculeateCenters(c, r);
+
+update(sqrSize / 2);
+return sqrSize / 2;
+
 
 }
 
