@@ -21,7 +21,7 @@ function activateSpawner(spawner, color) {
 
 function onPickUp(event) {
     if (event.target.classList == "svgDiv" && !dragged) {
-        if (canPickup(getPawnCenter(event), {x: event.clientX, y:  event.clientY})) {
+        if (canPickup(getPawnCenter(event.target), {x: event.clientX, y:  event.clientY})) {
             getPawnCenter(event.target)
             console.log('pick up attempt')
             dragged = event.target;
