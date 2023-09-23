@@ -21,7 +21,7 @@ class Pawn {
     generateSVG(r) {
         let ars = this.makePawn(r);
 
-        // const svgDiv = document.createElement("div");
+        const svgDiv = document.createElement("div");
         const svg = document.createElementNS(this.NS, "svg");
         const circle1 = document.createElementNS(this.NS, "circle");
         const circle2 = document.createElementNS(this.NS, "circle");
@@ -30,25 +30,21 @@ class Pawn {
         const polygon2 = document.createElementNS(this.NS, "polygon");
 
         if (this.type === "pawn") {
-            svg.setAttributeNS(null, "class", "svgDiv");
-            svg.setAttributeNS(null, "position", "absolute");
+            svgDiv.setAttribute("class", "svgDiv");
+            svgDiv.setAttribute("position", "absolute");
 
-            // svg.style.left = this.xpos.toString() + 'px';
-            // svg.style.top = this.ypos.toString() + 'px';
-
-            svg.setAttributeNS(null, 'left', this.xpos.toString() + 'px');
-            svg.setAttributeNS(null, 'top', this.ypos.toString() + 'px');
+            svgDiv.style.left = this.xpos.toString() + 'px';
+            svgDiv.style.top = this.ypos.toString() + 'px';
 
         }
 
         else
-            svg.setAttribute("class", "pawnSpawn");
+            svgDiv.setAttribute("class", "pawnSpawn");
 
-        // svg.setAttributeNS(null, "pointer-events", 'none');
-        let reer = r * 0.8;
+        svg.setAttributeNS(null, "pointer-events", 'none');
         svg.setAttributeNS(null, "width", (r * 2).toString());
         svg.setAttributeNS(null, "height", (r * 2).toString());
-        svg.setAttributeNS(null, "viewBox", `${-reer} ${-reer} ${reer * 2} ${reer * 2}`);
+        svg.setAttributeNS(null, "viewBox", `${-r} ${-r} ${r * 2} ${r * 2}`);
 
         svg.setAttributeNS(null, 'opacity', `${opacitySldr.value}%`)
 
@@ -61,12 +57,6 @@ class Pawn {
         polygon1.setAttributeNS(null, "fill", this.trueColor[2]);
         polygon2.setAttributeNS(null, "fill", this.trueColor[3]);
         circle3.setAttributeNS(null, "fill", this.trueColor[4]);
-
-        // circle1.setAttributeNS(null, "pointer-events", 'none');
-        circle2.setAttributeNS(null, "pointer-events", 'none');
-        polygon1.setAttributeNS(null, "pointer-events", 'none');
-        polygon2.setAttributeNS(null, "pointer-events", 'none');
-        circle3.setAttributeNS(null, "pointer-events", 'none');
 
         let p1 = '';
         let p2 = '';
@@ -87,14 +77,11 @@ class Pawn {
         svg.appendChild(polygon2);
         svg.appendChild(circle3);
 
-        // svg.style.height = (r * 2).toString();
-        // svg.style.width = (r * 2).toString();
-
-        svg.setAttributeNS(null, 'height', (r * 2).toString());
-        svg.setAttributeNS(null, 'width', (r * 2).toString());
+        svgDiv.style.height = (r * 2).toString();
+        svgDiv.style.width = (r * 2).toString();
         
-        // svgDiv.appendChild(svg);
-        return svg;
+        svgDiv.appendChild(svg);
+        return svgDiv;
     }
 
 
@@ -121,9 +108,8 @@ class Pawn {
         }
         this.points.push(r);
         return this.points;
-    }    
+    }
     
-
     calculateGradient() {
         let isDark = this.isItDark();
         // let gradientMap = [30, 60, 80, 100, 165]
