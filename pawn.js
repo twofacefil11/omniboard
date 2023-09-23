@@ -214,9 +214,7 @@ class Pawn {
         this.actualThing.style.zIndex = "-100";
         // this.actualThing.style.left = '0px';
         // this.actualThing.style.top = '0px';
-        console.log(pawnsArr)
         this.deleteThySelf();
-        console.log(pawnsArr)
 
     }
 
@@ -228,6 +226,4 @@ class Pawn {
         else
             console.log("KINDA_ERROR: What does not exist decided to unexist itself once more smhw");
     }
-
-
 }
