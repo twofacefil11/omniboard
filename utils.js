@@ -65,4 +65,5 @@ function checkPostitions() {
     highest++;
     element.style.zIndex = `${highest}`;
   }
+  
 }
