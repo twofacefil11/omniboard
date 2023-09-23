@@ -7,6 +7,7 @@ function activateSpawner(spawner, color) {
         //get the position so you can create the pawn
 
         spawner.style.transform = 'scale(0.8)';
+        console.log(spawner)
 
 
         const spawnPosition = getAbsolutePosition(spawner.children[0]);
