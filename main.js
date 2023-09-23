@@ -17,10 +17,14 @@ const snapCheckbox = document.getElementById("snap");
 // opacity = '100%';
 
 
+let mousePressed = false;
 let shouldSnap = false;
-
-
-
+let dragged = null;
+let pawnsArr = [];
+let highest = 666;
+let ID = 0;
+let er = 0;
+let centers = [];
 
 opacitySldr.addEventListener("input", () => 
 opacity = `${opacitySldr.value}%`);
@@ -42,13 +46,6 @@ boardClr = boardClrPicker.value;
 whites = whitesPicker.value;
 blacks = blacksPicker.value;
 
-let mousePressed = false;
-let dragged = null;
-let pawnsArr = [];
-let highest = 666;
-let ID = 0;
-let er = 0;
-let centers = [];
 
 createBoard();
 
