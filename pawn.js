@@ -222,7 +222,7 @@ class Pawn {
         if (index !== -1)
             pawnsArr.splice(index, 1);
         else
-            console.log("An attepmt to delete alrady deleted pawn")
+            console.log("An attepmt to delete alrady deleted pawn wa made")
     }
 
 
