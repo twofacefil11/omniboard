@@ -214,7 +214,10 @@ class Pawn {
         this.actualThing.style.zIndex = "-100";
         // this.actualThing.style.left = '0px';
         // this.actualThing.style.top = '0px';
+        console.log(pawnsArr)
         this.deleteThySelf();
+        console.log(pawnsArr)
+
     }
 
 
