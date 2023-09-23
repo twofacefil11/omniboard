@@ -50,10 +50,11 @@ function onMouseMove(event) {
 function onMouseUp() {
     
     if (dragged) {
-        // console.log("puściłeś się");
         MousePressed = false;
+
         if (shouldSnap)
             findTheClosestSquare();
+
         dragged = null;
         checkPostitions();
     }
