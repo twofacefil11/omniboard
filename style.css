@@ -23,7 +23,8 @@ label {
 }
 
 #controls {
-    height: 16vh;
+    margin-top: 1vh;
+    height: 15vh;
     display: flex;
     flex-direction: row;
     
