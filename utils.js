@@ -101,10 +101,12 @@ function findTheClosestSquare(event) {
   const pt = event.clientY;
   let closestX = 1000000;
   let closestY = 1000000;
+  let bestIndex = 0;
   
   for (let x = 0; x < squaresPositions.length; x++) {
-    closestX = Math.min(closesetX, squaresPositions[x].x);
-    closesty = Math.min(closesetY, squaresPositions[x].y);
+    if ()
+    closestX = Math.min(closestX, squaresPositions[x].x);
+    closesty = Math.min(closestY, squaresPositions[x].y);
   }
 
 
