@@ -160,7 +160,7 @@ board.append(square);
 er = sqrSize / 2;
 
 // calculateCenters(c, r);
-fillSquarePositions(l, r);
+fillSquarePositions(c, r);
 console.log(squaresPositions)
 
 update(sqrSize / 2);
