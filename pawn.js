@@ -82,7 +82,7 @@ class Pawn {
         svgDiv.style.width = (r * 2).toString();
         
         svgDiv.appendChild(svg);
-        
+
         return svgDiv;
     }
 
@@ -217,24 +217,10 @@ class Pawn {
     }
 
 
-
-    // letGoListener() {
-    //     document.addEventListener('mouseup', function() {
-    //         if (dragged) {
-    //             mousePressed = false;
-    //             console.log("puściłęś się");
-                
-    //             document.removeEventListener('mousemove', onMouseMove);
-                
-    //             if (!(dragged.isOnBoard())) 
-    //                   dragged.makeItFall();
+    deleteThySelf() {
+        const index = pawnsArr.findIndex(e => e.ID === this.ID);
         
-    //             dragged = null;
-    //         }
-    //     });
-    // }
-
-
+    }
 
 
 }
