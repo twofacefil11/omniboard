@@ -96,7 +96,7 @@ function fillSquarePositions(c, r) {
   squaresPositions = {x: [], y: []};
 
 
-  //+1 for the last square to apply
+  //+1 to columns and rows for the last square to apply
   for (let x = 0; x < c + 1; x++) {
     squaresPositions.x.push(l);
     l += bok;
