@@ -21,12 +21,12 @@ function activateSpawner(spawner, color) {
 
 function onPickUp(event) {
     if (event.target.classList == "svgDiv" && !dragged) {
-        // if (canPickup(event, )) {
+        if (canPickup(getPawnCenter(), {event.clientX, event.clientY})) {
             getPawnCenter(event.target)
             console.log('pick up attempt')
             dragged = event.target;
             mousePressed = true;
-        // }
+        }
     }
 }
 
