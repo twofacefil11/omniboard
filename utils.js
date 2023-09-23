@@ -90,7 +90,6 @@ function fillSquarePositions(c, r) {
   let bok = firstRect.width;
   squaresPositions = [];
   for (let x = 0; x < c * r; x++) {
-    console.log(l, t, bok)
     squaresPositions.push({x: l, y: t});
     l += bok;
     t += bok;
