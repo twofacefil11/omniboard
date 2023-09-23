@@ -90,10 +90,11 @@ function createBoard() {
     board.style.borderLeft = `15px ridge ${boardClrPicker.value}`;
     board.style.borderTop = `15px ridge ${boardClrPicker.value}`;
     
-    dropzone.style.borderBottom = `15px ridge ${boardClrPicker.value}`;
-    dropzone.style.borderLeft = `15px groove ${boardClrPicker.value}`;
-    dropzone.style.borderRight = `15px ridge ${boardClrPicker.value}`;
-    dropzone.style.borderTop = `15px groove ${boardClrPicker.value}`;
+    //not shure if i like it
+    // dropzone.style.borderBottom = `15px ridge ${boardClrPicker.value}`;
+    // dropzone.style.borderLeft = `15px groove ${boardClrPicker.value}`;
+    // dropzone.style.borderRight = `15px ridge ${boardClrPicker.value}`;
+    // dropzone.style.borderTop = `15px groove ${boardClrPicker.value}`;
     
     //clear all
     board.innerHTML = '';
