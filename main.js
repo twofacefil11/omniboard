@@ -38,6 +38,7 @@ let mousePressed = false;
 let pawnsArr = [];
 let dragged = null;
 let er = 0;
+let highest = 500;
 
 createBoard();
 
