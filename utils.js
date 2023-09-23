@@ -103,6 +103,7 @@ function findTheClosestSquare(event) {
   const closestIndex = squaresPositions.reduce((bestI, curr, i) => {
     const distance = Math.sqrt((pl - curr.x) ** 2 + (pt - curr.y) ** 2);
     const closestDistance = Math.sqrt((pl - squaresPositions[bestI].x) ** 2 + (pt - squaresPositions[bestI].y) ** 2);
+    console.log(bestI)
     return distance < closestDistance ? i : bestI;
   }, 0);
   return squaresPositions[closestIndex];
