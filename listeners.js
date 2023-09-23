@@ -6,6 +6,8 @@ function activateSpawner(spawner, color) {
     spawner.addEventListener('mousedown', function(event) {
         //get the position so you can create the pawn
         const spawnPosition = getAbsolutePosition(spawner.children[0]);
+
+        console.log(spawnPostion)
         //you have indeed clicked
         mousePressed = true;
         //push a new thingie to the array of thingies
