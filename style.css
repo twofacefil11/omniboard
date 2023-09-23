@@ -67,7 +67,7 @@ input[type="color"] {
 
 .svgDiv {
     position: fixed;
-    /* transition: transform 0.5s ease-in, opacity 0.5s ease-in; */
+    transition: transform 0.5s ease-in, opacity 0.5s ease-in;
 }
 
 #dropzone {
