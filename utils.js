@@ -101,10 +101,12 @@ function fillSquarePositions(c, r) {
   let bok = firstRect.width;
 
   squaresPositions = {x: [], y: []};
+  
   for (let x = 0; x < c; x++) {
     squaresPositions.x.push(l);
     l += bok;
   }
+
   for (let x = 0; x < r; x++) {
     squaresPositions.y.push(t);
     t += bok;
