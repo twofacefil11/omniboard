@@ -16,11 +16,14 @@ function getAbsolutePosition(element) {
   let left = 0;
   let top = 0;
 
-  while (element) {
-    left += element.offsetLeft;
-    top += element.offsetTop;
-    element = element.offsetParent;
-  }
+  // while (element) {
+  //   left += element.offsetLeft;
+  //   top += element.offsetTop;
+  //   element = element.offsetParent;
+  // }
+  let rect = element.getBoundingClientRect();
+  left = rect.left;
+  right = rect.right;
   return { left, top };
 }
 
