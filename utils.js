@@ -103,8 +103,16 @@ function findTheClosestSquare() {
   const closestIndex = squaresPositions.reduce((bestI, curr, i) => {
     const distance = Math.sqrt((pl - curr.x) ** 2 + (pt - curr.y) ** 2);
     const closestDistance = Math.sqrt((pl - squaresPositions[bestI].x) ** 2 + (pt - squaresPositions[bestI].y) ** 2);
+    console.log(distance, closestDistance)
+    
     return distance < closestDistance ? i : bestI;
   }, 0);
+
+  // const closestIndex = arrayOfObjects.reduce((closestIdx, currentObj, currentIndex) => {
+  //   const distance = Math.sqrt((givenX - currentObj.x) ** 2 + (givenY - currentObj.y) ** 2);
+  //   const closestDistance = Math.sqrt((givenX - arrayOfObjects[closestIdx].x) ** 2 + (givenY - arrayOfObjects[closestIdx].y) ** 2);
+  //   return distance < closestDistance ? currentIndex : closestIdx;
+  // }, 0);
   console.log(closestIndex)
   return squaresPositions[closestIndex];
 }
