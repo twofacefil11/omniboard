@@ -11,7 +11,7 @@ const boardRadiusSldr = document.getElementById("borderRadius");
 const pawnSpawn = document.getElementsByClassName("spawnContainer");
 const controlStrip = document.getElementById('controls');
 const dropzone = document.getElementById("dropzone");
-
+const snapCheckbox = document.getElementById("snap");
 //suwak akszyn
 
 // opacity = '100%';
