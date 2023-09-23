@@ -21,12 +21,11 @@ function activateSpawner(spawner, color) {
 
 function onPickUp(event) {
     if (event.target.classList == "svgDiv" && !dragged) {
-
-        if (canPickup(event.clientX, event.clientY))
-
-        console.log('pick up attempt')
-        dragged = event.target;
-        mousePressed = true;
+        if (canPickup(event.clientX, event.clientY)) {
+            console.log('pick up attempt')
+            dragged = event.target;
+            mousePressed = true;
+        }
     }
 }
 
