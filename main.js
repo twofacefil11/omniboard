@@ -17,6 +17,8 @@ const snapCheckbox = document.getElementById("snap");
 // opacity = '100%';
 
 
+let shouldSnap;
+
 snapCheckbox.addEventListener("change", function() {
     if (snapCheckbox.checked)
         shouldSnap = true;
@@ -50,7 +52,6 @@ let highest = 666;
 let ID = 0;
 let er = 0;
 let centers = [];
-let shouldSnap;
 
 createBoard();
 
