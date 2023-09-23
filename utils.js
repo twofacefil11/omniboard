@@ -101,7 +101,7 @@ function findTheClosestSquare(event) {
   const pt = event.clientY;
   
   for (let x = 0; x < squaresPositions.length; x++) {
-    res = {x, y};
+    res = {};
     res.x = 100;
     console.log(res.x)
   }
