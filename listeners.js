@@ -53,9 +53,13 @@ function onMouseUp() {
         MousePressed = false;
 
         if (shouldSnap) {
-            console.log(dragged.style.left, dragged.style.top, squaresPositions[findTheClosestSquare()].x, squaresPositions[findTheClosestSquare()].y)
-            dragged.style.left = pos.x ;
-            dragged.style.top = pos.y;
+            console.log(dragged.style.left,
+                        dragged.style.top,
+                        squaresPositions[findTheClosestSquare()].x,
+                        squaresPositions[findTheClosestSquare()].y)
+
+            dragged.style.left = squaresPositions[findTheClosestSquare()].x ;
+            dragged.style.top = squaresPositions[findTheClosestSquare()].y;
         }
         
         dragged = null;
