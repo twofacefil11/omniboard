@@ -32,7 +32,8 @@ columnsSldr.addEventListener("input", createBoard);
 rowsSldr.addEventListener("input", createBoard);
 
 document.addEventListener("resize", () => {
-    console.log(window.innerWidth, window.inneroHeight)});
+    console.log(window.innerWidth, window.inneroHeight)
+});
 
 //spacing action:
 boardRadiusSldr.addEventListener("input", createBoard);
@@ -41,11 +42,7 @@ boardClr = boardClrPicker.value;
 whites = whitesPicker.value;
 blacks = blacksPicker.value;
 
-
 createBoard();
-
-
-
 
 //SpawnListeners
 activateSpawner(pawnSpawn[0], blacksPicker);
@@ -60,66 +57,66 @@ document.addEventListener('mouseup', onMouseUp);
 function update(r) {
 
     checkPostitions();
-    
+
     pawnSpawn[0].innerHTML = '';
     pawnSpawn[1].innerHTML = '';
-    
+
     const blacksSpawn = new Pawn(blacks, "pawnSpawn", r);
     const whitesSpawn = new Pawn(whites, "pawnSpawn", r);
-    
+
     pawnSpawn[0].appendChild(blacksSpawn.actualThing);
     pawnSpawn[1].appendChild(whitesSpawn.actualThing);
-    
+
     blacksSpawn.currentCollor = whitesPicker.value;
     whitesSpawn.currentCollor = blacksPicker.value;
-    
-    
+
+
 }
 function createBoard() {
-    
+
     //setting new colours
     whites = whitesPicker.value;
     blacks = blacksPicker.value;
-    
+
     // setting board looks
     board.style.backgroundColor = boardClrPicker.value;
-    
+
     board.style.borderRadius = boardRadiusSldr.value + 'px';
     board.style.borderBottom = `2vh groove ${boardClrPicker.value}`;
     board.style.borderRight = `2vh groove ${boardClrPicker.value}`;
     board.style.borderLeft = `2vh ridge ${boardClrPicker.value}`;
     board.style.borderTop = `2vh ridge ${boardClrPicker.value}`;
-    
+
     //not shure if i like it
     // dropzone.style.borderBottom = `15px ridge ${boardClrPicker.value}`;
     // dropzone.style.borderLeft = `15px groove ${boardClrPicker.value}`;
     // dropzone.style.borderRight = `15px ridge ${boardClrPicker.value}`;
     // dropzone.style.borderTop = `15px groove ${boardClrPicker.value}`;
-    
+
     //clear all
     board.innerHTML = '';
-    
+
     let c = columnsSldr.value;
     let r = rowsSldr.value;
     const fixed = 0.78;
-    
-    
+
+
     //fitting the board on the screen
     let sqrSize = 0;
     let prefWidth = (window.innerWidth * fixed).toFixed(1);
     let prefHeight = (window.innerHeight * fixed).toFixed(1);
-    
-    
+
+
     if (window.innerHeight > window.inner)
-    sqrSize = prefWidth / c;
-else
+        sqrSize = prefWidth / c;
+    else
 
-sqrSize = prefHeight / r;
+        sqrSize = prefHeight / r;
 
-if (c * sqrSize > prefWidth)
-sqrSize = prefWidth / c;
-else if (r * sqrSize > prefHeight)
-sqrSize = prefHeight / r;
+    if (c * sqrSize > prefWidth)
+        sqrSize = prefWidth / c;
+    else if (r * sqrSize > prefHeight)
+        sqrSize = prefHeight / r;
 
     //cap the square size at the fixed size of control bar
     if (sqrSize >= controls.clientHeight)
@@ -127,54 +124,54 @@ sqrSize = prefHeight / r;
 
     board.style.width = (sqrSize * c).toString() + 'px';
     board.style.height = (sqrSize * r).toString() + 'px';
-    
-    
+
+
     //populating the div with squares
     for (let i = 0; i < r; i++) {
         let flip = ((i + 1) % 2 == 0) ? 1 : 2;
-        
+
         for (let j = 0; j < c; j++) {
-            
+
             const square = document.createElement("div");
             square.classList.add("square");
             square.style.width = sqrSize.toString() + 'px';
             square.style.height = sqrSize.toString() + 'px';
-            
+
             if ((j + flip) % 2 == 0)
-            square.style.backgroundColor = whites;
-        else
-        square.style.backgroundColor = blacks;
-    
-    //board radius to corners
-    let br = (parseInt(boardRadiusSldr.value) - 10).toString();
+                square.style.backgroundColor = whites;
+            else
+                square.style.backgroundColor = blacks;
+
+            //board radius to corners
+            let br = (parseInt(boardRadiusSldr.value) - 10).toString();
             if (i == 0) {
                 if (j == 0)
-                square.style.borderRadius = br + 'px 0px 0px 0px';
-            else if (j == c - 1)
-            square.style.borderRadius = '0px ' + br + 'px 0px 0px';
+                    square.style.borderRadius = br + 'px 0px 0px 0px';
+                else if (j == c - 1)
+                    square.style.borderRadius = '0px ' + br + 'px 0px 0px';
+            }
+            else if (i == r - 1) {
+                if (j == c - 1)
+                    square.style.borderRadius = '0px 0px ' + br + 'px 0px';
+                else if (j == 0)
+                    square.style.borderRadius = '0px 0px 0px ' + br + 'px';
+            }
+            board.append(square);
+        }
     }
-    else if (i == r - 1) {
-        if (j == c - 1)
-        square.style.borderRadius = '0px 0px ' + br + 'px 0px';
-    else if (j == 0)
-    square.style.borderRadius = '0px 0px 0px ' + br + 'px';
-}
-board.append(square);
-} 
-}
 
-er = sqrSize / 2;
+    er = sqrSize / 2;
 
-// calculateCenters(c, r);
-fillSquarePositions(c, r);
+    // calculateCenters(c, r);
+    fillSquarePositions(c, r);
 
-update(sqrSize / 2);
-return sqrSize / 2;
+    update(sqrSize / 2);
+    return sqrSize / 2;
 
 
 }
 
 //TODO:
-//QOL: color change, snapping on grid, intersections, borders, buttons, 
+//QOL: color change, snapping on grid, intersections, borders, buttons,
 // saving settings, saving game, multiplying pawns like manna, disposing of pawns
 
