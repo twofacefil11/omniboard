@@ -13,6 +13,8 @@ const body = document.getElementsByTagName("body");
 const rowsSldr = document.getElementById("rows");
 const board = document.getElementById("board");
 
+const rangeInputrs = document.querySelectorAll('input[type="range"]')
+
 let mousePressed = false;
 let shouldSnap = false;
 let dragged = null;
