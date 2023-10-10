@@ -12,6 +12,7 @@ body {
 /* APPARENTLY THOSE ARE DIFFERENT FOR MOZILLA */
 input[type="range"]::-ms-thumb {
     background-color: #191919;
+    accent-color: coral;
 }
 input[type="range"]::-webkit-slider-runnable-track {
     background-color: green; 
