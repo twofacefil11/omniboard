@@ -82,8 +82,7 @@ function createBoard() {
     board.style.backgroundColor = boardClrPicker.value;
 
     //calculating the correct font biggnes
-    let blah = controlStrip.getBoundingClientRect
-    console.log(blah);
+    console.log(controlStrip.offsetHeight);
 
 
 
