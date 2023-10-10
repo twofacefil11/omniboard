@@ -20,6 +20,7 @@ input[type=range]::-webkit-slider-runnable-track  {
     box-shadow: none;
     border: none;
     background: transparent;
+    border: nonde;
   }
 
 
