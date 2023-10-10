@@ -78,12 +78,11 @@ function createBoard() {
     whites = whitesPicker.value;
     blacks = blacksPicker.value;
 
-    // setting board looks
-    board.style.backgroundColor = boardClrPicker.value;
-
     //calculating the correct font biggnes
     document.body.style.fontSize = controlStrip.offsetHeight / 10 + "px";
 
+    // setting board looks
+    board.style.backgroundColor = boardClrPicker.value;
 
     board.style.borderRadius = boardRadiusSldr.value + 'px';
     board.style.borderBottom = `2vh groove ${boardClrPicker.value}`;
