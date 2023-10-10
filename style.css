@@ -22,7 +22,8 @@ input[type=range]::-webkit-slider-runnable-track  {
 }
 
 input[type="range"] {
-    border: none;
+    border: 0;
+    background-color: transparent;
 }
 
 #board {
