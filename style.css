@@ -23,7 +23,7 @@ input[type=range]::-webkit-slider-runnable-track  {
 
 input[type="color"] {
     background-color: transparent;
-    border-radius: 20%;
+    border-radius: 70%;
     }
 
 #board {
