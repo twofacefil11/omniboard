@@ -82,7 +82,7 @@ function createBoard() {
     board.style.backgroundColor = boardClrPicker.value;
 
     //calculating the correct font biggnes
-    console.log(controlStrip.style.height)
+    console.log(controlStrip.style.height);
 
 
 
