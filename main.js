@@ -133,7 +133,7 @@ function createBoard() {
     if (sqrSize >= controls.clientHeight)
         sqrSize = controls.clientHeight;
 
-    board.style.width = (sqrSize * c).toString() + 'px';
+    board.style.width = (sqrSize * c) + 0.1 + 'px';
     board.style.height = (sqrSize * r).toString() + 'px';
 
 
