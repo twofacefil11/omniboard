@@ -23,6 +23,8 @@ let er = 0;
 let centers = [];
 let squaresPositions = [];
 
+//updating the board on resize so it doesnt brake
+Window.addEventListener("resize", createBoard)
 opacitySldr.addEventListener("input", () => opacity = `${opacitySldr.value}%`);
 snapCheckbox.addEventListener("change", () => shouldSnap = !shouldSnap);
 boardClrPicker.addEventListener("input", createBoard);
