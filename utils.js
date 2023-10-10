@@ -134,7 +134,7 @@ function findTheClosestSquare(event) {
 }
 
 function updateDropzone() {
-  dropzone.style.left = "15px";
+  dropzone.style.left = "50%";
   dropzone.style.transform = "translateX(-50%)";
   dropzone.style.top = "16%";
   dropzone.style.height = "81vh";
