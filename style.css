@@ -22,7 +22,7 @@ input[type=range]::-webkit-slider-runnable-track  {
 }
 
 input[type="color"] {
-    border: none;
+    border: 10px red
     background-color: transparent;
 }
 
