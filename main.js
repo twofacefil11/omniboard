@@ -82,16 +82,16 @@ function createBoard() {
     board.style.backgroundColor = boardClrPicker.value;
 
     board.style.borderRadius = boardRadiusSldr.value + 'px';
-    // board.style.borderBottom = `2vh groove ${boardClrPicker.value}`;
-    // board.style.borderRight = `2vh groove ${boardClrPicker.value}`;
-    // board.style.borderLeft = `2vh ridge ${boardClrPicker.value}`;
-    // board.style.borderTop = `2vh ridge ${boardClrPicker.value}`;
+    board.style.borderBottom = `2vh groove ${boardClrPicker.value}`;
+    board.style.borderRight = `2vh groove ${boardClrPicker.value}`;
+    board.style.borderLeft = `2vh ridge ${boardClrPicker.value}`;
+    board.style.borderTop = `2vh ridge ${boardClrPicker.value}`;
 
     //not shure if i like it
-    dropzone.style.borderBottom = `15px ridge ${boardClrPicker.value}`;
-    dropzone.style.borderLeft = `15px groove ${boardClrPicker.value}`;
-    dropzone.style.borderRight = `15px ridge ${boardClrPicker.value}`;
-    dropzone.style.borderTop = `15px groove ${boardClrPicker.value}`;
+    // dropzone.style.borderBottom = `15px ridge ${boardClrPicker.value}`;
+    // dropzone.style.borderLeft = `15px groove ${boardClrPicker.value}`;
+    // dropzone.style.borderRight = `15px ridge ${boardClrPicker.value}`;
+    // dropzone.style.borderTop = `15px groove ${boardClrPicker.value}`;
 
     //clear all
     board.innerHTML = '';
