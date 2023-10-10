@@ -72,6 +72,7 @@ function update(r) {
     blacksSpawn.currentCollor = whitesPicker.value;
     whitesSpawn.currentCollor = blacksPicker.value;
 
+    updateDropzone();
 
 }
 function createBoard() {
