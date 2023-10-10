@@ -1,4 +1,5 @@
 
+const rangeInputrs = document.querySelectorAll('input[type="range"]');
 const pawnSpawn = document.getElementsByClassName("spawnContainer");
 const boardRadiusSldr = document.getElementById("borderRadius");
 const boardClrPicker = document.getElementById("boardClr");
@@ -13,7 +14,6 @@ const body = document.getElementsByTagName("body");
 const rowsSldr = document.getElementById("rows");
 const board = document.getElementById("board");
 
-const rangeInputrs = document.querySelectorAll('input[type="range"]')
 
 let mousePressed = false;
 let shouldSnap = false;
