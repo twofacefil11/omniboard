@@ -18,6 +18,7 @@ input[type="range"] {
 input[type=range]::-webkit-slider-runnable-track  {
     -webkit-appearance: none;
     box-shadow: none;
+        
 }
 
 
