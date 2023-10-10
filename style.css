@@ -21,10 +21,9 @@ input[type=range]::-webkit-slider-runnable-track  {
 
 }
 
-input[type="range"] {
+input[type="color"] {
     border: 0;
-    background-color: transparent
-    ;
+    background-color: ;
 }
 
 #board {
