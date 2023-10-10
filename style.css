@@ -8,6 +8,13 @@ body {
     align-items: center;
 }
 
+input[type="range"] {
+    color: red;
+    background-color: blue;
+    background: green;
+
+}
+
 #board {
     margin-top: 1vh;
     margin-bottom: 1vh;
