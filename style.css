@@ -11,7 +11,7 @@ body {
 
 /* APPARENTLY THOSE ARE DIFFERENT FOR MOZILLA */
 input[type="range"]::-webkit-slider-thumb {
-    background-color: blue;
+    background-color: #989898;
 }
 input[type="range"]::-webkit-slider-runnable-track {
     background-color: green; 
