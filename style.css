@@ -10,7 +10,7 @@ body {
 
 
 /* APPARENTLY THOSE ARE DIFFERENT FOR MOZILLA */
-input[type="range"]::-ms-thumb {
+input[type="range"] {
     background-color: #191919;
     accent-color: coral;
 }
