@@ -12,7 +12,7 @@ body {
 /* APPARENTLY THOSE ARE DIFFERENT FOR MOZILLA */
 input[type="range"] {
     accent-color: #C08261;
-    height: 10vw
+    height: 2vh;    
 
 }
 
