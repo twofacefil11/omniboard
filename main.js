@@ -82,8 +82,7 @@ function createBoard() {
     board.style.backgroundColor = boardClrPicker.value;
 
     //calculating the correct font biggnes
-    console.log(controlStrip.offsetHeight);
-
+    document.body.style.fontSize = controlStrip.offsetHeight / 10 + "px";
 
 
     board.style.borderRadius = boardRadiusSldr.value + 'px';
