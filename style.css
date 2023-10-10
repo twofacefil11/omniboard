@@ -24,7 +24,6 @@ input[type=range]::-webkit-slider-runnable-track  {
 input[type="color"] {
     background-color: transparent;
     border: none;
-    accent-color: red;;
     }
 
 #board {
@@ -98,7 +97,7 @@ input[type="color"] {
     left: 50%;
     transform: translateX(-50%) ;
     top: 16%;
-    height: 81vh;
+    height: 80vh;
     width: 85vw;
 
     /* border-top: 15px groove #141414;
