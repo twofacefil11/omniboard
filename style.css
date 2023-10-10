@@ -24,6 +24,7 @@ input[type=range]::-webkit-slider-runnable-track  {
 input[type="color"] {
     background-color: transparent;
     border: none;
+    accent-color: red;;
     }
 
 #board {
