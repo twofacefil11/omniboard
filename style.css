@@ -11,19 +11,9 @@ body {
 
 /* APPARENTLY THOSE ARE DIFFERENT FOR MOZILLA */
 input[type="range"] {
-    background-color: #191919;
-    accent-color: coral;
+    accent-color: #C08261;
 }
-/* input[type="range"]::-webkit-slider-runnable-track {
-    background-color: green; 
-    border-radius:10px; */
-}
-input[type="range"]::-moz-range-thumb {
-    background-color: #007bff; 
-}
-input[type="range"]::-moz-range-track {
-    background-color: #ddd; 
-}
+
 
 
 #board {
