@@ -10,7 +10,7 @@ body {
 
 
 /* APPARENTLY THOSE ARE DIFFERENT FOR MOZILLA */
-input[type="range"]::-webkit-slider-thumb {
+input[type="range"]::-ms-slider-thumb {
     background-color: #191919;
 }
 input[type="range"]::-webkit-slider-runnable-track {
