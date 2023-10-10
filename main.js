@@ -83,7 +83,7 @@ function createBoard() {
 
     //calculating the correct font biggnes
     let blah = controlStrip.getBoundingClientRect
-    console.log(blah.left);
+    console.log(blah);
 
 
 
