@@ -87,7 +87,7 @@ function createBoard() {
     board.style.borderLeft = `2vh ridge ${boardClrPicker.value}`;
     board.style.borderTop = `2vh ridge ${boardClrPicker.value}`;
 
-    //not shure if i like it
+    //not shure if i like itĆ
     // dropzone.style.borderBottom = `15px ridge ${boardClrPicker.value}`;
     // dropzone.style.borderLeft = `15px groove ${boardClrPicker.value}`;
     // dropzone.style.borderRight = `15px ridge ${boardClrPicker.value}`;
@@ -143,7 +143,7 @@ function createBoard() {
                 square.style.backgroundColor = blacks;
 
             //board radius to corners
-            let br = (parseInt(boardRadiusSldr.value) - 10).toString();
+            let br = (parseInt(boardRadiusSldr.value) - 8).toString();
             if (i == 0) {
                 if (j == 0)
                     square.style.borderRadius = br + 'px 0px 0px 0px';
