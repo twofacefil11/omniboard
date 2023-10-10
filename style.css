@@ -8,13 +8,23 @@ body {
     align-items: center;
 }
 
-input[type="range"] {
-    color: red;
-    background-color: blue;
-    background: green;
-    
 
+/* APPARENTLY THOSE ARE DIFFERENT FOR MOZILLA XD  */
+input[type="range"]::-webkit-slider-thumb {
+    background-color: #007bff; /* Set your desired color for WebKit browsers */
 }
+
+input[type="range"]::-moz-range-thumb {
+    background-color: #007bff; /* Set your desired color for Firefox browsers */
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #ddd; /* Set your desired background color for WebKit browsers */
+}
+
+input[type="range"]::-moz-range-track {
+    background-color: #ddd; /* Set your desired background color for Firefox browsers */
+}
+
 
 #board {
     margin-top: 1vh;
