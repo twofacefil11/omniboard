@@ -77,7 +77,7 @@ input[type="color"] {
     background: #141414;
     z-index: -9999;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-2%);
     top: 15%;
     height: 80vh;
     width: 85vw;
