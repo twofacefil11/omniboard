@@ -13,9 +13,6 @@ body {
 input[type="range"] {
     accent-color: #C08261;
 
-    background: rgba(001, 255, 100, 0.6);
-    background-image: linear-gradient(#ff4500, #ff4500);
-    background-size: 70% 100%;
 
 }
 
