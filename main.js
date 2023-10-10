@@ -1,5 +1,5 @@
 
-const rangeInputrs = document.querySelectorAll('input[type="range"]');
+const rangeInputs = document.querySelectorAll('input[type="range"]');
 const pawnSpawn = document.getElementsByClassName("spawnContainer");
 const boardRadiusSldr = document.getElementById("borderRadius");
 const boardClrPicker = document.getElementById("boardClr");
