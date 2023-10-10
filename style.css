@@ -11,7 +11,7 @@ body {
 
 /* APPARENTLY THOSE ARE DIFFERENT FOR MOZILLA */
 input[type="range"]::-webkit-slider-thumb {
-    background-color: #007bff;
+    background-color: #172635;
 }
 input[type="range"]::-moz-range-thumb {
     background-color: #007bff; 
@@ -19,7 +19,6 @@ input[type="range"]::-moz-range-thumb {
 input[type="range"]::-webkit-slider-runnable-track {
     background-color: #ddd; 
 }
-
 input[type="range"]::-moz-range-track {
     background-color: #ddd; 
 }
