@@ -60,20 +60,22 @@ document.addEventListener('mouseup', onMouseUp);
 console.log(opacitySldr)
 
 function update(r) {
-
+    
     checkPostitions();
-
+    
     pawnSpawn[0].innerHTML = '';
     pawnSpawn[1].innerHTML = '';
-
+    
     const blacksSpawn = new Pawn(blacks, "pawnSpawn", r);
     const whitesSpawn = new Pawn(whites, "pawnSpawn", r);
-
+    
     pawnSpawn[0].appendChild(blacksSpawn.actualThing);
     pawnSpawn[1].appendChild(whitesSpawn.actualThing);
-
+    
     blacksSpawn.currentCollor = whitesPicker.value;
     whitesSpawn.currentCollor = blacksPicker.value;
+    
+    rangeInputs.forEach(e => e.style.accentColor = boardClrPicker.value)
 
     updateDropzone();
 
@@ -87,7 +89,7 @@ function createBoard() {
     //calculating the correct font biggnes
     document.body.style.fontSize = controlStrip.offsetHeight / 10 + "px";
 
-    // setting board looks
+    // setting  looks
     board.style.backgroundColor = boardClrPicker.value;
 
     board.style.borderRadius = boardRadiusSldr.value + 'px';
