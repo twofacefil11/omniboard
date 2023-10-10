@@ -131,24 +131,26 @@ function findTheClosestSquare(event) {
   
   // console.log(xi, yi)  
   return {x: squaresPositions.x[xi], y: squaresPositions.y[yi]};
+}
 
-  // a neat way to get an index of the square it should snap to but i think i actyally dont need it
-  // return (columns * yi) + xi; 
-
-
-
-
-
-
-
-
-  // for (let x = 0; x < squaresPositions.length; x++) {
-  //   if (x)
-  //   closestX = Math.min(closestX, squaresPositions[x].x);
-  //   closesty = Math.min(closestY, squaresPositions[x].y);
-  // }
+function updateDropzone() {
+  dropzone.style.left = "15px";
+  dropzone.style.transform = "translateX(-50%)";
+  dropzone.style.top = "16%";
+  dropzone.style.height = "81vh";
+  dropzone.style.width = "85vw";
 
 
-  console.log(`x: ${pl}, y: ${pt}`, squaresPositions[closestIndex])
-  return squaresPositions[closestIndex];
+
+
+    //   position: absolute; zostaje
+    // padding: 15px; zostaje
+    // border-radius: 20px; zostaje
+    // background: #141414;zostaje
+    // z-index: -9999;zostaje
+    // left: 50%;
+    // transform: translateX(-50%) ;
+    // top: 16%;
+    // height: 81vh;
+    // width: 85vw;
 }
