@@ -150,10 +150,6 @@ function cursorInDropzone() {
   const cursorX = event.clientX;
   const cursorY = event.clientY;
 
-
-  const pawnCenterX = pawnRect.left + pawnRect.width / 2;
-  const pawnCenterY = pawnRect.top + pawnRect.height / 2;
-
   if (
       cursorX >= divRect.left &&
       cursorX <= divRect.right &&
