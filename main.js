@@ -57,8 +57,6 @@ document.addEventListener('mousedown', onPickUp)
 document.addEventListener('mousemove', onMouseMove);
 document.addEventListener('mouseup', onMouseUp);
 
-console.log(opacitySldr)
-
 function update(r) {
     
     checkPostitions();
@@ -80,6 +78,8 @@ function update(r) {
     updateDropzone();
 
 }
+
+
 function createBoard() {
 
     //setting new colours
