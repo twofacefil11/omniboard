@@ -156,15 +156,15 @@ function createBoard() {
             let br = (parseInt(boardRadiusSldr.value) * 10).toString();
             if (i == 0) {
                 if (j == 0)
-                    square.style.borderRadius = br + 'dv 0dv 0dv 0dv';
+                    square.style.borderRadius = br + 'vw 0vw 0vw 0vw';
                 else if (j == c - 1)
-                    square.style.borderRadius = '0dv ' + br + 'dv 0dv 0dv';
+                    square.style.borderRadius = '0vw ' + br + 'vw 0vw 0vw';
             }
             else if (i == r - 1) {
                 if (j == c - 1)
-                    square.style.borderRadius = '0dv 0dv ' + br + 'dv 0dv';
+                    square.style.borderRadius = '0vw 0vw ' + br + 'vw 0vw';
                 else if (j == 0)
-                    square.style.borderRadius = '0dv 0dv 0dv ' + br + 'dv';
+                    square.style.borderRadius = '0vw 0vw 0vw ' + br + 'vw';
             }
             board.append(square);
         }
