@@ -44,6 +44,7 @@ function idIt() {
   return ID;
 }
 
+
 function checkPostitions() {
 
   if (pawnsArr.length > 0) {
@@ -83,6 +84,7 @@ function calculateCenters(c, r) {
   }
 }
 
+
 function fillSquarePositions(c, r) {
   //no point in any of that if the board is not a board
   if (c == 0 || r == 0)
@@ -94,7 +96,6 @@ function fillSquarePositions(c, r) {
   let bok = firstRect.width;
 
   squaresPositions = {x: [], y: []};
-
 
   //+1 to columns and rows for the last square to apply
   for (let x = 0; x < c + 1; x++) {
@@ -108,6 +109,7 @@ function fillSquarePositions(c, r) {
   }
 
 }
+
 
 function findTheClosestSquare(event) {
   const columns = squaresPositions.x.length;
@@ -133,24 +135,32 @@ function findTheClosestSquare(event) {
   return {x: squaresPositions.x[xi], y: squaresPositions.y[yi]};
 }
 
+
 function updateDropzone() {
   dropzone.style.left = "50%";
   dropzone.style.transform = "translateX(-50%)";
   dropzone.style.top = "16%";
   dropzone.style.height = "81vh";
   dropzone.style.width = "85vw";
+}
 
 
+function cursorInDropzone() {
+  const boardRect = board.getBoundingClientRect();
+  const cursorX = event.clientX;
+  const cursorY = event.clientY;
 
 
-    //   position: absolute; zostaje
-    // padding: 15px; zostaje
-    // border-radius: 20px; zostaje
-    // background: #141414;zostaje
-    // z-index: -9999;zostaje
-    // left: 50%;
-    // transform: translateX(-50%) ;
-    // top: 16%;
-    // height: 81vh;
-    // width: 85vw;
+  const pawnCenterX = pawnRect.left + pawnRect.width / 2;
+  const pawnCenterY = pawnRect.top + pawnRect.height / 2;
+
+  if (
+      cursorX >= divRect.left &&
+      cursorX <= divRect.right &&
+      cursorY >= divRect.top &&
+      cursorY <= divRect.bottom
+  )
+    return true;
+  else
+    return false;
 }
