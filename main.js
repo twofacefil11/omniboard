@@ -154,7 +154,7 @@ function createBoard() {
                 square.style.backgroundColor = blacks;
 
             //board radius to corners //było 23 w px
-            let br = (parseInt(boardRadiusSldr.value) - 1).toString();
+            let br = (parseInt(boardRadiusSldr.value) - 0).toString();
             if (i == 0) {
                 if (j == 0)
                     square.style.borderRadius = br + '% 0% 0% 0%';
