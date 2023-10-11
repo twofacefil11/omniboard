@@ -180,7 +180,7 @@ class Pawn {
     }
 
     isInDropzone() {
-        const boardRect = dropzonep.getBoundingClientRect();
+        const boardRect = dropzone.getBoundingClientRect();
         const pawnRect = this.actualThing.getBoundingClientRect();
 
         // const boardCenterX = boardRect.left + boardRect.width / 2;
