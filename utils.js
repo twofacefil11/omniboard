@@ -146,7 +146,7 @@ function updateDropzone() {
 
 
 function cursorInDropzone() {
-  const boardRect = board.getBoundingClientRect();
+  const divRect = board.getBoundingClientRect();
   const cursorX = event.clientX;
   const cursorY = event.clientY;
 
