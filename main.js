@@ -153,18 +153,18 @@ function createBoard() {
             else
                 square.style.backgroundColor = blacks;
             //board radius to corners //było 23 w px
-            let br = (parseInt(boardRadiusSldr.value)).toString();
+            let br = (parseInt(boardRadiusSldr.value) - 23).toString();
             if (i == 0) {
                 if (j == 0)
-                    square.style.borderRadius = br + 'vw 0vw 0vw 0vw';
+                    square.style.borderRadius = br + 'px 0px 0px 0px';
                 else if (j == c - 1)
-                    square.style.borderRadius = '0vw ' + br + 'vw 0vw 0vw';
+                    square.style.borderRadius = '0px ' + br + 'px 0px 0px';
             }
             else if (i == r - 1) {
                 if (j == c - 1)
-                    square.style.borderRadius = '0vw 0vw ' + br + 'vw 0vw';
+                    square.style.borderRadius = '0px 0px ' + br + 'px 0px';
                 else if (j == 0)
-                    square.style.borderRadius = '0vw 0vw 0vw ' + br + 'vw';
+                    square.style.borderRadius = '0px 0px 0px ' + br + 'px';
             }
             board.append(square);
         }
