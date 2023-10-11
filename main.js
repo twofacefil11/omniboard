@@ -92,7 +92,7 @@ function createBoard() {
     // setting  looks
     board.style.backgroundColor = boardClrPicker.value;
 
-    board.style.borderRadius = boardRadiusSldr.value + '%';
+    board.style.borderRadius = boardRadiusSldr.value + 'px';
     board.style.borderBottom = `2vh groove ${boardClrPicker.value}`;
     board.style.borderRight = `2vh groove ${boardClrPicker.value}`;
     board.style.borderLeft = `2vh ridge ${boardClrPicker.value}`;
