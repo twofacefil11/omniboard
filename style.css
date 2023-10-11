@@ -91,7 +91,7 @@ input[type="color"] {
 #dropzone {
     position: absolute;
     padding: 15px 15px 0px 15px;
-    border-radius: 1%;
+    border-radius: 2%;
     background: #141414;
     z-index: -9999;
     left: 50%;
