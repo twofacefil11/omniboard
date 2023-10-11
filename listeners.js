@@ -59,8 +59,7 @@ function onMouseUp(event) {
 
     if (dragged) {
         MousePressed = false;
-        console.log(dragged)
-        if (shouldSnap) {
+        if (shouldSnap && cursorInDropzone()) {
 
             let pos = findTheClosestSquare(event);
             console.log(pos)
