@@ -177,8 +177,6 @@ function createBoard() {
 
     update(sqrSize / 2);
     return sqrSize / 2;
-
-
 }
 
 //TODO:
