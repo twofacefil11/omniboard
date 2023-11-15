@@ -90,7 +90,7 @@ function fillSquarePositions(c, r) {
   if (c == 0 || r == 0)
     return;
 
-  const firstRect = board.children[0].getBoundingClientRect();
+  let firstRect = board.children[0].getBoundingClientRect();
   let l = firstRect.left;
   let t = firstRect.top;
   let bok = firstRect.width;
