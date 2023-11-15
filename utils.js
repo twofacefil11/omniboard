@@ -192,7 +192,7 @@ function fillPawns() {
   for (let i = 0; i < c; i++)
     for (let j = 0; j < r; j++) {
       pawnsArr.push(new Pawn("ffffff", "pawn", er, sqCenters[i], sqCenters[j], idIt()));    
-      document.body.appencChild(pawnsArr[counter1].actualThing);
+      document.body.appendChild(pawnsArr[counter1].actualThing);
       counter1++;
     }
   console.log(pawnsArr)
