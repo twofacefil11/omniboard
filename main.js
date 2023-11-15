@@ -13,6 +13,7 @@ const snapCheckbox = document.getElementById("snap");
 const body = document.getElementsByTagName("body");
 const rowsSldr = document.getElementById("rows");
 const board = document.getElementById("board");
+const fillSldr = document.getElementById("fillSlider");
 
 
 let mousePressed = false;
@@ -34,6 +35,7 @@ whitesPicker.addEventListener("input", createBoard);
 blacksPicker.addEventListener("input", createBoard);
 columnsSldr.addEventListener("input", createBoard);
 rowsSldr.addEventListener("input", createBoard);
+
 
 document.addEventListener("resize", () => {
     console.log(window.innerWidth, window.inneroHeight)
