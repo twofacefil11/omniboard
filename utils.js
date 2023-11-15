@@ -179,8 +179,10 @@ function fillMngr() {
   if (sldr == 8)
     clearPawns();
   else if (sldr < 8)
+    clearPawns(); 
     fillPawns();
   else
+    clearPawns();
     fillPawns();
 }
 
