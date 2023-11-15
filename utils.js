@@ -161,7 +161,18 @@ function cursorInDropzone() {
     return false;
 }
 
-function fill() {
+
+//TODOpass fillPawns a parameter that will decide what to do
+function fillMngr() {
   let sldr = parseInt(fillSldr.value);
-  console.log(typeof sldr);
+  if (sldr == 0)
+    clearPawns();
+  else if (sldr < 0)
+    fillPawns();
+  else
+    fillPawns();
+}
+
+function fillPawns() {
+  
 }
