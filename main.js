@@ -35,7 +35,7 @@ whitesPicker.addEventListener("input", createBoard);
 blacksPicker.addEventListener("input", createBoard);
 columnsSldr.addEventListener("input", createBoard);
 rowsSldr.addEventListener("input", createBoard);
-fillSldr.addEventListener("input", fill);
+fillSldr.addEventListener("input", fillMngr);
 
 
 document.addEventListener("resize", () => {
