@@ -187,8 +187,10 @@ function fillMngr() {
 
 
 function fillPawns() {
+
   let counter1 = 0;
   clearPawns();
+  console.log(sqCenters);
   for (let i = 0; i < c; i++)
     for (let j = 0; j < r; j++) {
       pawnsArr.push(new Pawn(whitesPicker.value, "pawn", er, sqCenters.y[i], sqCenters.x[j], idIt()));    
