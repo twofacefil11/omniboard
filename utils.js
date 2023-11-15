@@ -94,6 +94,7 @@ function fillSquarePositions(c, r) {
   let l = firstRect.left;
   let t = firstRect.top;
   let bok = firstRect.width;
+  console.log(firstRect.left, firstRect.top, firstRect.width);
 
   squaresPositions = {x: [], y: []};
   sqCenters = {x: [], y: []};
