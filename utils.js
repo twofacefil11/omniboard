@@ -197,7 +197,6 @@ function fillPawns() {
       document.body.appendChild(pawnsArr[counter1].actualThing);
       counter1++;
     }
-  console.log(pawnsArr)
 }
 
 function clearPawns() {
