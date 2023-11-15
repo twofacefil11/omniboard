@@ -162,6 +162,6 @@ function cursorInDropzone() {
 }
 
 function fill() {
-  let sldr = fillSldr.value;
+  let sldr = parseInt(fillSldr.value);
   console.log(typeof sldr)
 }
