@@ -38,6 +38,8 @@ rowsSldr.addEventListener("input", createBoard);
 fillSldr.addEventListener("input", fillMngr);
 
 
+
+
 document.addEventListener("resize", () => {
     console.log(window.innerWidth, window.inneroHeight)
 });
