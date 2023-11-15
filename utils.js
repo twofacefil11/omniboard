@@ -96,11 +96,15 @@ function fillSquarePositions(c, r) {
   let bok = firstRect.width;
 
   squaresPositions = {x: [], y: []};
+  sqCenters = {x: [], y: []};
 
   //+1 to columns and rows for the last square to apply
   for (let x = 0; x < c + 1; x++) {
     squaresPositions.x.push(l);
     l += bok;
+    if (x <= c) {
+      sqCenters
+    }
   }
 
   for (let x = 0; x < r + 1; x++) {
@@ -181,4 +185,5 @@ function fillMngr() {
 
 function fillPawns() {
   console.log(squaresPositions)
+  
 }
