@@ -176,9 +176,9 @@ function fillMngr() {
 
   //gettign the current value obvi
   let sldr = parseInt(fillSldr.value);
-  if (sldr == 0)
+  if (sldr == 8)
     clearPawns();
-  else if (sldr < 0)
+  else if (sldr < 8)
     fillPawns();
   else
     fillPawns();
@@ -187,5 +187,6 @@ function fillMngr() {
 
 function fillPawns() {
   let amount = c * r;
-  console.log(amount)
+
+
 }
