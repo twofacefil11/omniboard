@@ -186,6 +186,6 @@ function fillMngr() {
 
 
 function fillPawns() {
-  console.log(squaresPositions)
+  console.log(sqCenters)
   
 }
