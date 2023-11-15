@@ -15,6 +15,7 @@ function activateSpawner(spawner, color) {
 
         const spawnPosition = getAbsolutePosition(spawner.children[0]);
         //you have indeed clicked
+        console.log(typeof spawnPosition)
         mousePressed = true;
         //push a new thingie to the array of thingies
         pawnsArr.push(new Pawn(color.value, "pawn", er, spawnPosition.left, spawnPosition.top, idIt()));
