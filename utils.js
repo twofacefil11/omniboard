@@ -186,7 +186,7 @@ function fillMngr() {
 
 
 function fillPawns() {
-  console.log(sqCenters)
+  console.log(typeof sqCenters.x[1])
   clearPawns();
   let counter1 = 0;
   for (let i = 0; i < c; i++)
