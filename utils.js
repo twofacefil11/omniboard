@@ -102,7 +102,7 @@ function fillSquarePositions(c, r) {
   for (let x = 0; x < c + 1; x++) {
     squaresPositions.x.push(l);
     if (x < c) 
-        sqCenters.x.push(l - bok/2);
+        sqCenters.x.push(l + bok/2);
     l += bok;
     
   }
