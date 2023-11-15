@@ -186,6 +186,7 @@ function fillMngr() {
 
 
 function fillPawns() {
+  console.log(sqCenters)
   clearPawns();
   let counter1 = 0;
   let amount = c * r;
