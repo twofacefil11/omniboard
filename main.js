@@ -25,6 +25,7 @@ let ID = 0;
 let er = 0;
 let centers = [];
 let squaresPositions = [];
+let sqCenters = {x: [], y: []}
 
 //updating the board on resize so it doesnt brake
 window.addEventListener("resize", createBoard);
