@@ -187,4 +187,5 @@ function fillMngr() {
 
 function fillPawns() {
   let amount = c * r;
+  console.log(amount)
 }
