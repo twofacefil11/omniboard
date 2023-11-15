@@ -190,7 +190,6 @@ function fillPawns() {
   console.log(typeof spawnPosition.left)
   clearPawns();
   let counter1 = 0;
-  let amount = c * r;
   for (let i = 0; i < c; i++)
     for (let j = 0; j < r; j++) {
       pawnsArr.push(new Pawn("ffffff", "pawn", er, sqCenters[i], sqCenters[j], idIt()));    
