@@ -196,4 +196,5 @@ function fillPawns() {
 
 function clearPawns() {
   pawnsArr = [];
+  console.log(pawnsArr);
 }
