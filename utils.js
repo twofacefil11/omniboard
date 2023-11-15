@@ -193,3 +193,7 @@ function fillPawns() {
       pawnsArr.push(new Pawn("ffffff", "pawn", er, sqCenters[i], sqCenters[j], idIt()));    
   console.log(pawnsArr)
 }
+
+function clearPawns() {
+  pawnsArr = [];
+}
