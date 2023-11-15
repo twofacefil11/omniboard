@@ -187,7 +187,7 @@ function fillMngr() {
 
 function fillPawns() {
   clearPawns();
-  let counter1;
+  let counter1 = 0;
   let amount = c * r;
   for (let i = 0; i < c; i++)
     for (let j = 0; j < r; j++) {
