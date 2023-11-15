@@ -191,7 +191,7 @@ function fillPawns() {
   let counter1 = 0;
   for (let i = 0; i < c; i++)
     for (let j = 0; j < r; j++) {
-      pawnsArr.push(new Pawn("ffffff", "pawn", er, sqCenters[i], sqCenters[j], idIt()));    
+      pawnsArr.push(new Pawn("ffffff", "pawn", er, sqCenters.y[i], sqCenters.x[j], idIt()));    
       document.body.appendChild(pawnsArr[counter1].actualThing);
       counter1++;
     }
