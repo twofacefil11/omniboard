@@ -186,5 +186,5 @@ function fillMngr() {
 
 
 function fillPawns() {
-  let amount = 1;
+  let amount = c * r;
 }
