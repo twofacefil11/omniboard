@@ -101,7 +101,7 @@ function fillSquarePositions(c, r) {
   //+1 to columns and rows for the last square to apply
   for (let x = 0; x < c + 1; x++) {
     squaresPositions.x.push(l);
-    if (x <= c) 
+    if (x < c) 
       sqCenters.x.push(l + bok/2);
     l += bok;
     
@@ -109,7 +109,7 @@ function fillSquarePositions(c, r) {
 
   for (let x = 0; x < r + 1; x++) {
     squaresPositions.y.push(t);
-    if (x <= r)
+    if (x < r)
       sqCenters.y.push(t + bok/2);
     t += bok;
   }
