@@ -160,3 +160,8 @@ function cursorInDropzone() {
   else
     return false;
 }
+
+function fill() {
+  let sldr = fillSldr.value;
+  console.log(sldr);
+}
