@@ -195,6 +195,7 @@ function fillPawns() {
 }
 
 function clearPawns() {
+  pawnsArr.forEach(e => e.actualThing.remove());
   pawnsArr = [];
   console.log(pawnsArr);
 }
