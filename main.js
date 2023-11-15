@@ -114,8 +114,8 @@ function createBoard() {
     //clear all
     board.innerHTML = '';
 
-    let c = columnsSldr.value;
-    let r = rowsSldr.value;
+    c = columnsSldr.value;
+    r = rowsSldr.value;
     const fixed = 0.78;
 
 
