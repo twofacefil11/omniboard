@@ -180,14 +180,13 @@ function fillMngr() {
     clearPawns();
   else if (sldr < 8)
     clearPawns(); 
-    fillPawns();
   else
     clearPawns();
-    fillPawns();
 }
 
 
 function fillPawns() {
+  clearPawns();
   let amount = c * r;
   for (let i = 0; i < c; i++)
     for (let j = 0; j < r; j++)
