@@ -164,6 +164,11 @@ function cursorInDropzone() {
 
 //TODOpass fillPawns a parameter that will decide what to do
 function fillMngr() {
+
+  //the variable storing the squares must be updated everyt time
+  let squareArray = [];
+
+  //gettign the current value obvi
   let sldr = parseInt(fillSldr.value);
   if (sldr == 0)
     clearPawns();
@@ -175,5 +180,5 @@ function fillMngr() {
 
 
 function fillPawns() {
-  
+
 }
