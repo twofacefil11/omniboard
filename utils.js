@@ -187,6 +187,8 @@ function fillMngr() {
 
 function fillPawns() {
   let amount = c * r;
-
+  for (let i = 0; i < c; i++)
+    for (let j = 0; j < r; j++)
+      pawnsArr.push(new Pawn(BlacsPicker.value, "pawn", er, sqCenters[i], sqCenters[j], idIt()));    
 
 }
